@@ -1,0 +1,1536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title> Quanta AI Tech- Life Sciences</title>
+
+     <!--=====FAB ICON=======-->
+    <link rel="shortcut icon" href="assets/img/logo/fav-logo1.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!--===== CSS LINK =======-->
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/aos.css">
+    <link rel="stylesheet" href="assets/css/plugins/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/plugins/mobile.css">
+    <link rel="stylesheet" href="assets/css/plugins/owlcarousel.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/sidebar.css">
+    <link rel="stylesheet" href="assets/css/plugins/slick-slider.css">
+    <link rel="stylesheet" href="assets/css/plugins/nice-select.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!--=====  JS SCRIPT LINK =======-->
+    <script src="assets/js/plugins/jquery-3-7-1.min.js"></script>
+</head>
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: 'Figtee', sans-serif; 
+}
+.banner {
+    position: relative;
+    height: 510px; /* Adjust height as needed */
+    background-image: url('assets/img/all-images/education/hero-img.png'); /* Replace with your image path or URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; 
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+.text-container {
+    position: absolute;
+    left: 60px;
+    bottom: 80px;
+    width: 50%; 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-container h1 {
+    font-size: 54px;
+    line-height: 60px;
+    margin-bottom: 20px;
+    line-height: 60px;
+}
+
+.text-container p {
+    font-size: 18px;
+    line-height: 28px;
+    margin-left: 2px;
+   
+}
+
+
+
+   
+#container{
+  margin-top: 76px !important;
+    height: 510px;
+    /* border: 1px solid black; */
+    background-image: url(assets/img/all-images/education/hero-img.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0px 0px 25px 0px;
+    position: relative;
+}
+
+#mainTitles{
+  z-index: 10;
+  /* border: 1px solid black; */
+  position: absolute;
+  bottom: 80px;
+  left: 60px;
+  color: white;
+}
+#mainTitles h1{
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 65px;
+}
+#mainTitles p{
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+.text-content{
+    margin-bottom: 50px;
+}
+
+.text-content p{
+    margin: 0 125px;
+    font-size: 18px;
+    line-height: 28px;
+    gap: 20px;
+}
+
+.it-healthcare {
+    max-width: 1270px;
+    margin: 0 auto 100px;
+
+}
+
+.it-healthcare h2 {
+    font-size: 54px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.it-healthcare-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px 0;
+}
+
+.it-healthcare-row {
+    display: flex;
+    gap: 40px;
+}
+
+.it-healthcare-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.it-img, .it-healthcare-text {
+    flex: 1;
+}
+
+.it-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.it-healthcare-text p {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+.it-healthcare-text .intro-text {
+    font-size: 18px;
+    line-height: 28px;
+    
+}
+.solutions-grid {
+    background-color: #f5f5f5; 
+    max-height: 820px;
+    margin: 0 125px;
+    margin-bottom: 100px;
+}
+
+.solutions-grid h2{
+    font-size: 54px;
+    line-height: 64px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.container-one {
+    max-height: 480px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.solution-card {
+    flex: 1;
+    padding: 40px;
+    text-align: center;
+    height: 380px;
+    width: 300px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    gap: 20px;
+    
+}
+
+.solution-card h3{
+    font-size: 54px;
+    margin-bottom: 40px;
+}
+
+.solution-card p{
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.one{
+    background-color:rgba(239, 241, 255, 1);
+}
+.two{
+    background-color: rgba(239, 241, 255, 0.75);
+}
+
+.three{
+    background-color: rgba(239, 241, 255, 0.5);
+}
+.four{
+    background-color:  rgba(239, 241, 255, 0.25);
+}
+
+.five
+{
+    background-color:  rgba(239, 241, 255, 0);
+}
+
+.icon-wrapper {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    background-color: paleturquoise;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px; 
+}
+
+.icon img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+
+.badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #007bff; 
+    color: white;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.ctn-btn{
+    display: none;
+    padding: 10px 30px ;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute; /* Position at bottom */
+    bottom: 20px;
+}
+.solution-card:hover  {
+   background-color: #f9f9f9;
+   border-radius: 8px;
+}
+.solution-card:hover .badge {
+   background-color: gold;
+}
+.solution-card:hover .ctn-btn {
+    display: block;
+    border: 1px solid black;
+}
+.solution-card h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.solution-card p {
+    font-size: 0.9em;
+    color: #666;
+    margin: 0;
+}
+
+
+.healthcare-section {
+    margin: 0 125px;
+    background:linear-gradient(to bottom, #FFFFFF, #005EFF);
+    margin-bottom: 100px;
+}
+
+.health-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0px;
+   
+}
+
+.healthcare-section h1 {
+    font-size: 54px;
+    line-height: 64px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 160px;
+   
+   
+}
+
+.sector-list {
+    flex: 1;
+}
+
+.sector-list ul {
+    list-style: none;
+    padding-left: 120px;
+    
+}
+
+.sector-list li {
+    background-color: #fff;
+    padding: 15px 40px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sector-list li::before {
+    content: "•";
+    color: #333;
+    font-size: 18px;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.sector-image {
+    flex: 1;
+    max-width: 500px;
+}
+
+.sector-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+
+.benefits-section {
+    margin:0px 125px 100px;
+}
+
+.benefits-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.benefit-container h2 {
+    font-size: 54px;
+    line-height: 64px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.benefits-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.benefit-card {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px); 
+}
+
+.benefit-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.benefit-card h3 {
+    font-size: 24px;
+    margin: 20px;
+}
+
+.benefit-card p {
+    font-size: 18px;
+    margin: 0 20px 20px;
+    line-height: 1.5;
+}
+
+
+
+
+.faq-main-container{
+  width: 100vw;
+background-color: #f9f9f9;
+}
+
+.faq-container {
+    margin-top: 100px !important;
+    margin: 30px auto;
+    padding: 20px 0px; /* Added horizontal padding */
+    border-radius: 8px; 
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 400;
+    width: 70%;
+}
+
+.faq-title {
+  font-weight: 600;
+  line-height: 65px;
+  font-size: 54px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.faq-item {
+margin-bottom: 15px;
+width: 1000px;
+}
+
+.faq-question {
+    background: #dad6d649;
+    padding: 18px 25px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    position: relative;
+    top: auto;
+}
+.faq-answer {
+    display: none;
+    padding: 20px 25px;
+    font-size: 1em;
+    line-height: 1.2;
+    background: white; /* Light gray background */
+    border-radius: 0 0 6px 6px;
+}
+
+.faq-question::after {
+    transition: transform 0.3s ease;
+}
+
+.toggle {
+    color: #1a1919;
+    font-size: 1.3em;
+    position: absolute;
+    right: 27px;
+}
+
+/* Tablets (768px - 1200px) */
+@media (max-width: 1200px) {
+    .solutions-grid{
+        max-height: 810px;
+        margin-bottom: 80px;
+    }
+
+    .solutions-grid h2{
+        font-size: 40px;
+        line-height: 48px;
+    }
+    .solution-card{
+        width: 45%;
+        height: auto;
+    }
+
+    .container-one{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .solution-card h3{
+        font-size: 24px;
+    }
+    .solution-card p{
+        font-size: 12px;
+    }
+
+
+    .banner {
+        height: 400px;
+    }
+
+    .text-container {
+        left: 40px;
+        bottom: 60px;
+        width: 60%;
+    }
+
+    .text-container h1 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .text-container p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    /* Text Content */
+    .text-content p {
+        margin: 0 50px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    /* IT Healthcare */
+    .it-healthcare {
+        max-width: 100%;
+        margin: 0 50px 80px;
+    }
+
+    .it-healthcare h2 {
+        font-size: 40px;
+    }
+
+    .it-healthcare-row {
+        gap: 30px;
+    }
+
+    .it-healthcare-text p,
+    .it-healthcare-text .intro-text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    /* Healthcare Section */
+    .healthcare-section {
+        margin: 250px 50px 80px;
+    }
+
+    .healthcare-section h1 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .content-wrapper {
+        gap: 80px;
+    }
+
+    .sector-list ul {
+        padding-left: 60px;
+    }
+
+    .sector-list li {
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+
+    .sector-image {
+        max-width: 400px;
+    }
+
+    .benefits-section {
+        margin: 0 50px 80px;
+    }
+
+    .benefit-container h2 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .benefits-grid {
+        gap: 20px;
+    }
+
+    .benefit-card h3 {
+        font-size: 20px;
+    }
+
+    .benefit-card p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+  .faq-title{
+      font-size: 35px !important;
+      color: black;
+      line-height: 40px !important;
+      font-weight: 600;
+      margin-top: 50px !important;
+    }
+    .banner {
+        height: 300px;
+    }
+    .text-container {
+        left: 20px;
+        bottom: 40px;
+        width: 80%;
+    }
+
+    .text-container h1 {
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 15px;
+    }
+
+    .text-container p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .text-content p {
+        margin: 0 20px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .it-healthcare {
+        margin: 0 20px 60px;
+    }
+
+    .it-healthcare h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .it-healthcare-row,
+    .it-healthcare-row.reverse {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .it-healthcare-text p,
+    .it-healthcare-text .intro-text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    /* Solutions Grid */
+    .solutions-grid {
+        margin: 0 20px;
+        margin-bottom: 60px;
+    }
+
+    .solutions-grid h2 {
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 30px;
+    }
+
+    .container-one {
+        display: flex;
+        flex-direction: row;
+        overflow-x:auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        flex-direction: column;
+        background-color: transparent;
+        gap: 15px;
+        scroll-behavior: smooth;
+        
+    }
+
+    .solution-card {
+        flex: 0 0 80%;
+        max-width: 400px;
+        max-height: auto;
+        padding: 20px;
+        scroll-snap-align: start;
+    }
+
+    .solution-card h3 {
+        font-size: 1em;
+    }
+
+    .solution-card p {
+        font-size: 0.7em;
+    }
+
+    .ctn-btn {
+        padding: 10px 30px;
+        bottom: 20px;
+    }
+
+    .container-one::-webkit-scrollbar{
+        display: none;
+    }
+    .container-one{
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .healthcare-section {
+        margin: 0 20px;
+        margin-bottom: 60px;
+    }
+
+    .healthcare-section h1 {
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 30px;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .sector-list ul {
+        padding-left: 0;
+    }
+
+    .sector-list li {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .sector-image {
+        max-width: 100%;
+    }
+
+
+    .benefits-section {
+        margin: 0 20px 60px;
+    }
+
+    .benefit-container h2 {
+        font-size: 24px;
+        line-height: 8px;
+        margin-bottom: 30px;
+    }
+
+    .benefits-grid {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 15px;
+        scroll-behavior: smooth;
+    }
+
+    .benefit-card {
+        flex: 0 0 80%;
+        max-width: 300px;
+        scroll-snap-align: start;
+
+    }
+
+    .benefit-card img {
+        height: 150px;
+    }
+
+    .benefit-card h3 {
+        font-size: 18px;
+        margin: 15px;
+    }
+
+    .benefit-card p {
+        font-size: 14px;
+        margin: 0 15px 15px;
+    }
+
+    .benefits-grid::-webkit-scrollbar{
+        display: none;
+    }
+
+}
+
+/* Small Mobiles (<480px) */
+@media (max-width: 480px) {
+    /* Banner */
+    .banner {
+        height: 250px;
+    }
+
+    .text-container {
+        left: 15px;
+        bottom: 30px;
+        width: 90%;
+    }
+
+    .text-container h1 {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+
+    .text-container p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    /* Text Content */
+    .text-content p {
+        margin: 0 15px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    /* IT Healthcare */
+    .it-healthcare {
+        margin: 0 15px 40px;
+    }
+
+    .it-healthcare h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    /* Solutions Grid */
+    .solutions-grid {
+        margin: 0 15px;
+        margin-bottom: 40px;
+    }
+
+    .solutions-grid h2 {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+
+    /* Healthcare Section */
+    .healthcare-section {
+        margin: 0 15px;
+        margin-bottom: 40px;
+    }
+
+    .healthcare-section h1 {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+    .sector-image{
+        display: none;
+    }
+    /* Benefits Section */
+    .benefit-container h2 {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+  .logiAlign i{
+    margin-top: 9px;
+  }
+  /* Desktop Header Menu Alignment */
+  /* In your style section */
+@media (min-width: 992px) {
+  .faq-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .faq-item{
+      width: 90%;
+    }
+  .reLogo{
+    margin: 8px 0px 0px 50px;
+    width: 30px;
+    height: auto;
+    float: left;
+  }
+  .vl-logo{
+    margin-left: 90px;
+  }
+  .mblres{
+    display: none;
+  }
+  .vl-main-menu{
+    margin-left: 550px;
+  }
+  .vl-main-menu nav ul {
+    display: flex;
+    gap: 35px; /* Add gap between main menu items */
+    white-space: nowrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+  }
+
+  /* Reset submenu display */
+  .has-dropdown .sub-menu {
+    display: block !important;
+    flex-direction: column;
+    gap: 0; /* Remove gap for submenus */
+  }
+
+  /* Main menu list items */
+  .vl-main-menu ul > li {
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Submenu list items */
+  .has-dropdown .sub-menu li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+  }
+}
+
+<!--footer-->
+.footer-logo1 .fa-brands
+{
+  margin-top: 11px;
+}
+.footer
+{
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-left: -80px;
+}
+.footer .col-md-6 ul{
+  width: 300px;
+}
+.footer .col-md-6{
+  width: 20%;
+}
+
+/* Footer Mobile Responsive */
+@media (max-width: 767px) {
+  .iconArrange{
+  display: flex;
+  justify-content:start;
+  gap: 5px;
+  margin-left: 6px !important;
+}
+  .reLogo{
+    margin: 8px 0px 0px 0px;
+    width: 30px;
+    height: auto;
+    float: left;
+  }
+  .mainLogo{
+    width: 120px;
+    margin:3px 0px 0px 38px;
+  }
+  .vl-logo{
+    margin-left: 35px;
+  }
+  .vl-footer1-section-area .row{
+    margin-left: -2px;
+  }
+
+  .vl-footer-widget {
+    margin-bottom: 20px;
+  }
+
+  .vl-footer-widget h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .vl-footer-widget ul li {
+    margin: 2.5px 0 !important;
+    padding: 0 !important;
+  }
+
+  .vl-footer-widget ul li a {
+    font-size: 14px;
+  }
+
+  /* Contact Section */
+  .vl-footer-widget ul li a img {
+    width: 18px;
+    margin-left: 5px;
+  }
+
+  /* Address text adjustment */
+  .vl-footer-widget ul li a div {
+    margin-left: 25px !important;
+    line-height: 1.4;
+    font-size: 14px;
+  }
+
+  /* Social Icons */
+  .footer-logo1{
+    margin:-15px 0px 0px -22px;
+  }
+  .footer-logo1 ul {
+    justify-content: center !important;
+    margin-top: 20px;
+  }
+
+  .footer-logo1 ul li {
+    margin: 0 10px !important;
+  }
+
+  /* Copyright */
+  .vl-copyright-area p {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  /* Grid adjustments */
+  .col-lg-3, .col-lg-2 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  /* Remove negative margins */
+  .col-lg-3[style*="margin-left"] {
+    margin-left: 0 !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Tablet adjustments */
+  .vl-footer-widget {
+    margin-bottom: 30px;
+  }
+
+  .col-lg-2, .col-lg-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .footer-logo1 ul {
+    justify-content: flex-start !important;
+  }
+}
+.iconArrange{
+  display: flex;
+  justify-content:start;
+  gap: 5px;
+  margin-left: 21px;
+}
+.iconArrange a i{
+  margin-top: 11px;
+}
+.vl-footer1-section-area a{
+  color: rgb(255, 255, 255) !important;
+  font-size: 14px !important;
+}
+.vl-footer1-section-area h3{
+  color: white !important;
+  font-weight: 500 !important;
+  font-size: 20px !important;
+}
+.vl-footer1-section-area{
+  background-color: #313030;
+  font-weight: 400 !important;
+}
+.vl-footer1-section-area .fa-brands{
+  color: black;
+}
+.vl-copyright-area p{
+  color: white !important;
+  font-size: 14px !important;
+}
+.vl-footer-widget img {
+  filter: brightness(0) invert(1);
+}
+
+</style> 
+<body class="homepage1-body">
+
+<!--===== PRELOADER STARTS =======-->
+<div class="preloader">
+  <div class="loading-container">
+    <div class="loading"></div>
+    <div id="loading-icon"><img src="assets/img/logo/preloader.png" alt=""></div>
+  </div>
+</div>
+<!--===== PRELOADER ENDS =======-->
+
+<!--===== PROGRESS STARTS=======-->
+<div class="paginacontainer">
+     <div class="progress-wrap">
+       <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+       </svg>
+     </div>
+   </div>
+ <!--===== PROGRESS ENDS=======-->
+
+<!--=====HEADER START=======-->
+<header>
+  <div id="vl-header-sticky" class="vl-header-area vl-transparent-header">
+    <div class="container headerfix">
+      <div class="row align-items-center row-bg3 headerparent">
+        <!-- Logo -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <div class="reLogo"><img src="assets/img/logo/preloader2.jpeg" alt="Logo"></div>
+          <div class="vl-logo">
+            <a href="index.html"><img src="assets/img/logo/logo2.png" alt="Company Logo"></a>
+          </div>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="col-lg-7 d-none d-lg-block">
+          <div class="vl-main-menu text-center">
+            <nav class="vl-mobile-menu-active">
+              <ul>
+                <li class="has-dropdown">
+                  <a href="#">Products <i class="fa-solid fa-angle-down"></i></a>
+                  <ul class="sub-menu">
+                    <li><a href="AI_Agent.html">AI Agent</a></li>
+                    <li><a href="ERP_Solutions.html">ERP Solutions</a></li>
+                    <li><a href="cloud_computing.html">Cloud Computing</a></li>
+                    <li><a href="EMP.html">EMP</a></li>
+                    <li><a href="SCM.html">SCM</a></li>
+                  </ul>
+                </li>
+                <li class="has-dropdown">
+                  <a href="#">Services <i class="fa-solid fa-angle-down"></i></a>
+                  <ul class="sub-menu">
+                    <li><a href="ai_ml.html">AI/ML</a></li>
+                    <li><a href="block_chain.html">Blockchain</a></li>
+                    <li><a href="cybersecurity.html">Cybersecurity</a></li>
+                    <li><a href="iot.html">Internet of Things</a></li>
+                    <li><a href="support_service.html">Support Services</a></li>
+                    <li><a href="it_consulting.html">IT Consulting</a></li>
+                    <li><a href="data_resilience.html">Data Resilience</a></li>
+                    <li><a href="Data_analytics.html">Data Analytics</a></li>
+                    <li><a href="Digital_Marketing.html">Digital Marketing</a></li>
+                    <li><a href="API_management.html">API Management</a></li>
+                  </ul>
+                </li>
+                <li class="has-dropdown">
+                  <a href="#">Industries <i class="fa-solid fa-angle-down"></i></a>
+                  <ul class="sub-menu">
+                    <li><a href="Aerospace.html">Aerospace</a></li>
+                    <li><a href="Agriculture.html">Agriculture</a></li>
+                    <li><a href="Education.html">Education</a></li>
+                    <li><a href="Insurance.html">Insurance</a></li>
+                    <li><a href="Life_sciences.html">Life Sciences</a></li>
+                    <li><a href="Retail.html">Retail</a></li>
+                  </ul>
+                </li>
+                <li><a href="careers.html">Careers</a></li>
+                <li class="has-dropdown">
+                  <a href="#">Company <i class="fa-solid fa-angle-down"></i></a>
+                  <ul class="sub-menu">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-6 mblres">
+          <div class="vl-header-action-item d-block d-lg-none" style="margin-top: -50px;">
+            <button type="button" class="vl-offcanvas-toggle">
+              <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+         </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</header>
+ <!--=====HEADER END =======-->
+
+<!--===== MOBILE HEADER =====-->
+<div class="vl-offcanvas">
+  <div class="vl-offcanvas-wrapper">
+      <div class="vl-offcanvas-header d-flex justify-content-between align-items-center mb-90">
+          <div class="vl-offcanvas-logo">
+            <img src="assets/img/logo/preloader.png" alt="Logo" class="reLogo">
+            <div class="mainLogo"><a href="index.html"><img src="assets/img/logo/logo1.png" alt="Quanta AI Tech"></a></div>
+          </div>
+          <div class="vl-offcanvas-close">
+              <button class="vl-offcanvas-close-toggle"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+      </div>
+      <div class="vl-offcanvas-menu d-lg-none mb-40">
+          <nav></nav>
+      </div>
+      <div class="space24"></div>
+      <div class="vl-offcanvas-info">
+          <span><a href="#"><i class="fa-solid fa-phone"></i>+91 (40) 35055013</a></span>
+          <span><a href="#"><i class="fa-solid fa-location-dot "></i> <div style="margin: -24px 0px 0px 20px;">Rajapushpa Summit, Manikonda, Hyderabad, Telangana 500032</div></a></span>
+          <span><a href="#"><i class="fa-solid fa-envelope"></i> info@quantaaitech.com</a></span>
+      </div>
+      <div class="space24"></div>
+      <div class="vl-offcanvas-social">
+          <h3 class="vl-offcanvas-sm-title">Follow Us</h3>
+          <div class="space8"></div>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a style="margin-left: 5px;" href="#"><i class="fab fa-twitter"></i></a>
+          <a style="margin-left: 5px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a style="margin-left: 5px;" href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+  </div>
+</div>
+<div class="vl-offcanvas-overlay"></div>
+<!--===== MOBILE HEADER  END=====-->
+<div id="container">
+  <div id="mainTitles">
+    <h1>Education That Prepare You<br> For What’s Next</h1>
+    <p>Education That Prepares You for the Future</p>
+  </div>
+</div>
+
+<div class="text-content">
+  <p>Education software plays a vital role in modern learning by offering digital tools that enhance teaching, student engagement, and administrative tasks. These platforms support online courses, streamline student data management, facilitate communication, and enable performance assessment.
+    One of the most widely used types of education software is a Learning Management System (LMS). Educators can use LMS platforms like Moodle and Google Classroom to create, manage, and deliver online courses, upload assignments, track student progress, and communicate effectively.</p>
+  <p>E-learning platforms are another key category, providing self-paced learning opportunities. Websites such as Udemy and Coursera offer a diverse range of courses covering topics from programming to business management.
+    For educational institutions, Student Information Systems (SIS) simplify administrative processes by managing student records, attendance, grades, and schedules, ultimately improving efficiency.
+    Interactive tools, including Kahoot! and Quizizz, enhance engagement by incorporating gamified quizzes and assessments. Additionally, apps like Duolingo and Photomath utilize AI to personalize learning experiences for students.
+    With technological advancements, education software increasingly integrates AI, VR, and data analytics to optimize learning. Adaptive learning systems adjust content based on individual progress, while virtual reality creates immersive educational experience</p>
+</div>
+
+
+<div class="it-healthcare">
+  <h2>Education Solutions</h2>
+  <div class="it-healthcare-container">
+      <div class="it-healthcare-row">
+          <div class="it-img">
+            <div class="image-anime">
+              <img src="assets/img/all-images/education/education-solution1.png" alt="Education Solution 1">
+            </div>
+          </div>
+          <div class="it-healthcare-text">
+              <p class="intro-text">
+                In education, technology is revolutionizing learning experiences. Smart classrooms, digital content delivery, and AI-powered tutoring systems are enhancing both teaching and learning. Education solutions are incorporating virtual reality (VR) and augmented reality (AR) to create immersive learning environments. These technologies help engage students and provide hands-on experiences in fields such as science, engineering, and arts.
+                <br>
+                Additionally, data-driven insights are optimizing educational systems, offering personalized learning paths based on students' needs and progress. AI-based assessments and feedback mechanisms allow educators to better track performance and adapt their teaching methods. With cloud-based platforms, access to educational resources is made easier, promoting global learning and collaboration.
+              </p>
+          </div>
+      </div>
+      <div class="it-healthcare-row reverse">
+          <div class="it-img">
+            <div class="image-anime">
+              <img src="assets/img/all-images/education/education-solution2.png" alt="Education Solution 2">
+            </div>
+          </div>
+          <div class="it-healthcare-text">
+              <p>
+                The role of technology in education continues to evolve, with innovations such as AI tutors and blockchain-based certifications. These advancements not only improve accessibility and quality but also create more engaging, efficient, and personalized learning experiences. Moreover, with the rise of online education platforms and e-learning tools, students around the world can now access quality education, regardless of location or financial background.
+              </p>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+<div class="solutions-grid">
+  <h2>Empowering Education Through DigIT</h2>
+  <div class="container-one">
+      <div class="solution-card one">
+          <div class="icon-wrapper">
+              <div class="icon">
+                <div class="image-anime">
+                  <img src="assets/img/all-images/education/icons/1.png" alt="stethoscope">
+                </div>
+              </div>
+              <span class="badge">01</span>
+          </div>
+          <h3>Future of EdTech</h3>
+          <p>Revolutionizing Education: The Future of EdTech</p>
+          <button class="ctn-btn">Learn More</button>
+      </div>
+
+      <div class="solution-card two">
+          <div class="icon-wrapper">
+              <div class="icon">
+                <div class="image-anime">
+                  <img src="assets/img/all-images/education/icons/2.png" alt="">
+                  </div>
+              </div>
+              <span class="badge">02</span>
+          </div>
+          <h3>Personalized lessons</h3>
+          <p>Tailored Learning for Every Student: Personalized Lessons</p>
+          <button class="ctn-btn">Learn More</button>
+      </div>
+      <div class="solution-card three">
+          <div class="icon-wrapper">
+              <!-- Placeholder for icon; replace with actual image or icon -->
+              <div class="icon">
+                <div class="image-anime">
+                  <img src="assets/img/all-images/education/icons/3.png" alt="">
+                </div>
+              </div>
+              <span class="badge">03</span>
+          </div>
+          <h3>Blended education</h3>
+          <p>Integrating the Best of Both Worlds: Blended Education</p>
+          <button class="ctn-btn">Learn More</button>
+      </div>
+      <div class="solution-card four">
+          <div class="icon-wrapper">
+              <!-- Placeholder for icon; replace with actual image or icon -->
+              <div class="icon">
+                <div class="image-anime">
+                  <img src="assets/img/all-images/education/icons/4.png" alt="">
+                </div>
+              </div>
+              <span class="badge">04</span>
+          </div>
+          <h3>Paperless education</h3>
+          <p>Revolutionizing Learning with Paperless Education</p>
+          <button class="ctn-btn">Learn More</button>
+      </div>
+      <div class="solution-card five">
+          <div class="icon-wrapper">
+              <!-- Placeholder for icon; replace with actual image or icon -->
+              <div class="icon">
+                <div class="image-anime">
+                  <img src="assets/img/all-images/education/icons/5.png" alt="">
+                </div>
+              </div>
+              <span class="badge">05</span>
+          </div>
+          <h3>Data-driven insights</h3>
+          <p> Unlocking Potential with Data-Driven Insights" </p>
+          <button class="ctn-btn">Learn More</button>
+      </div>
+  </div>
+</div>
+
+
+<div class="healthcare-section">
+  <div class="health-container">
+      <h1>Education  Sector We Cover</h1>
+      <div class="content-wrapper">
+          <div class="sector-list">
+              <ul>
+                  <li>Special Education & Inclusive Learning</li>
+                  <li>Vocational Education</li>
+                  <li>Gamified Education</li>
+                  <li>Remote & Hybrid Learning</li>
+                  <li>Gamified Learning</li>
+              </ul>
+          </div>
+          <div class="sector-image">
+            <div class="image-anime">
+              <img src="assets/img/all-images/education/educaton_sector.png" alt="Healthcare Image">
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<div class="benefits-section">
+  <div class="benefit-container">
+      <h2>Benefits Of Education Solutions</h2>
+      <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="image-anime">
+              <img src="assets/img/all-images/education/benefit1.png" alt="End-to-End Services">
+            </div>
+              <h3>Advanced Learning Tools:</h3>
+              <p>Our education solutions leverage the latest technology, offering innovative tools and resources that enhance learning experiences and outcomes for students and educators alike.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="image-anime">
+              <img src="assets/img/all-images/education/benefit2.png" alt="Customer Experience">
+              </div>
+              <h3>Accessible Education:</h3>
+              <p>Our solutions provide easy access to quality education, ensuring that learners from all backgrounds have the resources to succeed in a rapidly changing world.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="image-anime">
+              <img src="assets/img/all-images/education/benefit3.png" alt="Cost Effective">
+              </div>
+              <h3>Enhanced Collaboration:</h3>
+              <p>Through our educational tools, students and teachers can collaborate more effectively, fostering a more interactive and engaging learning environment.</p>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+<!--===== FOOTER AREA STARTS =======-->
+<div class="vl-footer1-section-area sp8">
+  <div class="container">
+    <div class="row footer">
+      <div class="col-lg-2 col-md-6">
+        <div class="space30 d-md-none d-block"></div>
+        <div class="vl-footer-widget">
+          <h3 style="padding: 0; margin: 0;">Quick Links</h3>
+          <ul>
+            <li style="margin: -7px 0; padding: 0;"><a href="about.html">About Us</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="service.html">It Solution</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="careers.html">Our Careers</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="#">Pricing Plan</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div> 
+      <div class="col-lg-2 col-md-6">
+        <div class="space30 d-md-none d-block"></div>
+        <div class="vl-footer-widget">
+          <h3 style="padding: 0; margin: 0;">Products</h3>
+          <ul class="sub-menu">
+            <li style="margin: -7px 0; padding: 0;"><a href="AI_Agent.html">AI Agent</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="ERP_Solutions.html">ERP Solutions</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="cloud_computing.html">Cloud Computing</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="EMP.html">EMP</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="SCM.html">SCM</a></li>
+          </ul>
+        </div>
+      </div> 
+
+      <div class="col-lg-3 col-md-6">
+        <div class="vl-footer-widget">
+          <div class="space30 d-lg-none d-block"></div>
+          <h3>Services</h3>
+          <ul style="padding: 0; margin: 0;">
+            <li style="margin: -7px 0; padding: 0;"><a href="ai_ml.html">AI/ML</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="block_chain.html">Blockchain</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="cybersecurity.html">Cybersecurity</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="iot.html">Internet of Things</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="support_service.html">Support Services</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="it_consulting.html">IT Consulting</a></li>
+             <li style="margin: -7px 0; padding: 0;"><a href="data_resilience.html">Data Resilience</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="Data_analytics.html">Data analytics</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="Digital_Marketing.html">Digital Marketing</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="API_management.html">API management</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="vl-footer-widget">
+          <div class="space30 d-lg-none d-block"></div>
+          <h3>Industries</h3>
+          <ul style="padding: 0; margin: 0;">
+            <li style="margin: -7px 0; padding: 0;"><a href="Aerospace.html">Aerospace</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="Agriculture.html">Agriculture</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="Education.html">Education</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="Insurance.html">Insurance</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="Life_sciences.html">Life sciences</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="Retail.html">Retail</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6" style="margin-left: -20px;">
+        <div class="vl-footer-widget">
+          <div class="space30 d-lg-none d-block"></div>
+          <h3>Contact Us</h3>
+          <ul style="padding: 0; margin: 0;">
+            <li style="margin: -7px 0; padding: 0;"><a href="tel:+11234567890"><img src="assets/img/icons/phn1.svg" alt="">+91 (40) 35055013</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="#"><img src="assets/img/icons/location1.svg" alt=""><div style="margin: -24px 0px 0px 32px;">Mindspace Survey No. 64, Building Number 9, 13th Floor, Madhapur, Hyderabad, Telangana 500081. </div></a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="mailto:Qunata AIsolution@com"><img src="assets/img/icons/email1.svg" alt="">info@quantaaitech.com</a></li>
+          </ul>
+          <div>
+            <div class="col-lg-3" style="margin-left: -20px;">
+              <div class="footer-logo1 logiAlign">
+                <ul class="iconArrange">
+                  <li ><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                  <li ><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                  <li ><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                  <li ><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+          </div>
+      </div>
+    </div>
+    <div class="space60"></div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="vl-copyright-area">
+          <p>© Copyright 2025 - Qunata AI Tech. All Right Reserved</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--===== FOOTER AREA ENDS =======-->
+
+<!--===== JS SCRIPT LINK =======-->
+<script src="assets/js/plugins/bootstrap.min.js"></script>
+<script src="assets/js/plugins/fontawesome.js"></script>
+<script src="assets/js/plugins/aos.js"></script>
+<script src="assets/js/plugins/counter.js"></script>
+<script src="assets/js/plugins/gsap.min.js"></script>
+<script src="assets/js/plugins/ScrollTrigger.min.js"></script>
+<script src="assets/js/plugins/Splitetext.js"></script>
+<script src="assets/js/plugins/SmoothScroll.js"></script>
+<script src="assets/js/plugins/sidebar.js"></script>
+<script src="assets/js/plugins/magnific-popup.js"></script>
+<script src="assets/js/plugins/mobilemenu.js"></script>
+<script src="assets/js/plugins/owlcarousel.min.js"></script>
+<script src="assets/js/plugins/nice-select.js"></script>
+<script src="assets/js/plugins/waypoints.js"></script>
+<script src="assets/js/plugins/slick-slider.js"></script>
+<script src="assets/js/plugins/circle-progress.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

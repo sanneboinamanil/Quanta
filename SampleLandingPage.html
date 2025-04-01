@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - Join Our Team</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title> Quanta AI Tech - Cloud Computing</title>
+
+     <!--=====FAB ICON=======-->
+    <link rel="shortcut icon" href="assets/img/logo/fav-logo1.png" type="image/x-icon">
+
+    <!--===== CSS LINK =======-->
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/aos.css">
+    <link rel="stylesheet" href="assets/css/plugins/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/plugins/mobile.css">
+    <link rel="stylesheet" href="assets/css/plugins/owlcarousel.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/sidebar.css">
+    <link rel="stylesheet" href="assets/css/plugins/slick-slider.css">
+    <link rel="stylesheet" href="assets/css/plugins/nice-select.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!--=====  JS SCRIPT LINK =======-->
+    <script src="assets/js/plugins/jquery-3-7-1.min.js"></script>
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+        .animate-slide-up {
+            animation: slideUp 0.8s ease-out;
+        }
+        .animate-scale {
+            transition: transform 0.3s ease;
+        }
+        .animate-scale:hover {
+            transform: scale(1.05);
+        }
+        .animate-rotate {
+            transition: transform 0.5s ease;
+        }
+        .animate-rotate:hover {
+            transform: rotate(5deg);
+        }
+        .animate-pulse {
+            animation: pulse 2s infinite;
+        }
+        .animate-bounce {
+            animation: bounce 1s infinite;
+        }
+        .job-link {
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+        }
+        .job-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: currentColor;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.3s ease;
+        }
+        .job-link:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideUp {
+            from { 
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to { 
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .logiAlign i{
+    margin-top: 9px;
+  }
+  /* Desktop Header Menu Alignment */
+  /* In your style section */
+@media (min-width: 992px) {
+  .reLogo{
+    margin: 8px 0px 0px 50px;
+    width: 30px;
+    height: auto;
+    float: left;
+  }
+  .vl-logo{
+    margin-left: 90px;
+  }
+  .mblres{
+    display: none;
+  }
+  .vl-main-menu{
+    margin-left: 550px;
+  }
+  .vl-main-menu nav ul {
+    display: flex;
+    gap: 35px; /* Add gap between main menu items */
+    white-space: nowrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+  }
+
+  /* Reset submenu display */
+  .has-dropdown .sub-menu {
+    display: block !important;
+    flex-direction: column;
+    gap: 0; /* Remove gap for submenus */
+  }
+
+  /* Main menu list items */
+  .vl-main-menu ul > li {
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Submenu list items */
+  .has-dropdown .sub-menu li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+  }
+}
+
+<!--footer-->
+.footer-logo1 .fa-brands
+{
+  margin-top: 11px;
+}
+.footer
+{
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-left: -80px;
+}
+.footer .col-md-6 ul{
+  width: 300px;
+}
+.footer .col-md-6{
+  width: 20%;
+}
+
+/* Footer Mobile Responsive */
+@media (max-width: 767px) {
+    .iconArrange{
+  display: flex;
+  justify-content:start;
+  gap: 5px;
+  margin-left: 6px !important;
+}
+  .reLogo{
+    margin: 8px 0px 0px 0px;
+    width: 30px;
+    height: auto;
+    float: left;
+  }
+  .mainLogo{
+    width: 120px;
+    margin:3px 0px 0px 38px;
+  }
+  .vl-logo{
+    margin-left: 35px;
+  }
+  .vl-footer1-section-area .row{
+    margin-left: -2px;
+  }
+
+  .vl-footer-widget {
+    margin-bottom: 20px;
+  }
+
+  .vl-footer-widget h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .vl-footer-widget ul li {
+    margin: 2.5px 0 !important;
+    padding: 0 !important;
+  }
+
+  .vl-footer-widget ul li a {
+    font-size: 14px;
+  }
+
+  /* Contact Section */
+  .vl-footer-widget ul li a img {
+    width: 18px;
+    margin-left: 5px;
+  }
+
+  /* Address text adjustment */
+  .vl-footer-widget ul li a div {
+    margin-left: 25px !important;
+    line-height: 1.4;
+    font-size: 14px;
+  }
+
+  /* Social Icons */
+  .footer-logo1{
+    margin:-15px 0px 0px -22px;
+  }
+  .footer-logo1 ul {
+    justify-content: center !important;
+    margin-top: 20px;
+  }
+
+  .footer-logo1 ul li {
+    margin: 0 10px !important;
+  }
+
+  /* Copyright */
+  .vl-copyright-area p {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  /* Grid adjustments */
+  .col-lg-3, .col-lg-2 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  /* Remove negative margins */
+  .col-lg-3[style*="margin-left"] {
+    margin-left: 0 !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Tablet adjustments */
+  .vl-footer-widget {
+    margin-bottom: 30px;
+  }
+
+  .col-lg-2, .col-lg-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .footer-logo1 ul {
+    justify-content: flex-start !important;
+  }
+}
+.iconArrange{
+  display: flex;
+  justify-content:start;
+  gap: 5px;
+  margin-left: 21px;
+}
+.iconArrange a i{
+  margin-top: 11px;
+}
+
+    .vl-footer1-section-area a{
+  color: rgb(255, 255, 255) !important;
+}
+.vl-footer1-section-area h3{
+  color: white !important;
+  font-weight: 900 !important;
+}
+.vl-footer1-section-area{
+  background-color: black;
+  font-weight: 200 !important;
+}
+.vl-footer1-section-area .fa-brands{
+  color: black;
+}
+.vl-copyright-area p{
+  color: white !important;
+}
+.vl-footer-widget img {
+  filter: brightness(0) invert(1);
+}
+
+</style>
+</head>
+<body class="bg-gray-50">
+    <!-- Hero Section -->
+    <div class="relative bg-gradient-to-r from-blue-600 to-indigo-700 h-[500px]">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c" alt="Team working" class="w-full h-full object-cover opacity-20">
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
+            <div class="text-center md:text-left">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">Join Our Growing Team</h1>
+                <p class="text-xl text-gray-200 mb-8">Be part of something extraordinary. We're looking for talented individuals who want to make an impact.</p>
+                <a href="#openings" class="inline-block bg-white text-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition duration-300">View Open Positions</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Job Categories -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Explore Our Departments</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition duration-300">
+                    <i class="fas fa-code text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Engineering</h3>
+                    <p class="text-gray-600">Build the future of technology with cutting-edge tools and frameworks.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition duration-300">
+                    <i class="fas fa-chart-line text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Marketing</h3>
+                    <p class="text-gray-600">Drive growth and brand awareness through innovative strategies.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition duration-300">
+                    <i class="fas fa-users text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Human Resources</h3>
+                    <p class="text-gray-600">Shape our culture and help build amazing teams.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Openings -->
+    <section id="openings" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Current Openings</h2>
+            <div class="space-y-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800">Senior Full Stack Developer</h3>
+                            <p class="text-gray-600 mt-2">Remote • Full-time</p>
+                        </div>
+                        <a href="#" class="job-link text-blue-600 font-semibold hover:text-blue-800">View Job Details <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800">Product Marketing Manager</h3>
+                            <p class="text-gray-600 mt-2">Hybrid • Full-time</p>
+                        </div>
+                        <a href="#" class="job-link text-blue-600 font-semibold hover:text-blue-800">View Job Details <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800">UX/UI Designer</h3>
+                            <p class="text-gray-600 mt-2">On-site • Full-time</p>
+                        </div>
+                        <a href="#" class="job-link text-blue-600 font-semibold hover:text-blue-800">View Job Details <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Categories -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Career Categories</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition duration-300 animate-scale">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="Technology" class="w-full h-48 object-cover rounded-lg mb-4 animate-rotate">
+                    <h3 class="text-xl font-semibold mb-2">Technology</h3>
+                    <p class="text-gray-600 mb-4">Software development, IT infrastructure, and data science roles.</p>
+                    <span class="text-blue-600 font-semibold">12 Open Positions</span>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition duration-300 animate-scale">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692" alt="Design" class="w-full h-48 object-cover rounded-lg mb-4 animate-rotate">
+                    <h3 class="text-xl font-semibold mb-2">Design</h3>
+                    <p class="text-gray-600 mb-4">UI/UX design, graphic design, and product design positions.</p>
+                    <span class="text-blue-600 font-semibold">8 Open Positions</span>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition duration-300 animate-scale">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978" alt="Marketing" class="w-full h-48 object-cover rounded-lg mb-4 animate-rotate">
+                    <h3 class="text-xl font-semibold mb-2">Marketing</h3>
+                    <p class="text-gray-600 mb-4">Digital marketing, content creation, and brand management.</p>
+                    <span class="text-blue-600 font-semibold">6 Open Positions</span>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition duration-300 animate-scale">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40" alt="Business" class="w-full h-48 object-cover rounded-lg mb-4 animate-rotate">
+                    <h3 class="text-xl font-semibold mb-2">Business</h3>
+                    <p class="text-gray-600 mb-4">Sales, business development, and operations roles.</p>
+                    <span class="text-blue-600 font-semibold">10 Open Positions</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Added Careers -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Latest Career Opportunities</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-gray-50 p-6 rounded-xl animate-scale">
+                    <div class="flex items-center mb-4">
+                        <span class="bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">New</span>
+                        <span class="ml-2 text-gray-500 text-sm">Posted 2 days ago</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">AI/ML Engineer</h3>
+                    <p class="text-gray-600 mb-4">Join our AI team to develop cutting-edge machine learning solutions.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-blue-600">$120K - $180K</span>
+                        <a href="#" class="job-link text-blue-600 font-semibold hover:text-blue-800">View Job Details <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl animate-scale">
+                    <div class="flex items-center mb-4">
+                        <span class="bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">New</span>
+                        <span class="ml-2 text-gray-500 text-sm">Posted 3 days ago</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Product Designer</h3>
+                    <p class="text-gray-600 mb-4">Create beautiful and intuitive user experiences for our products.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-blue-600">$90K - $140K</span>
+                        <a href="#" class="job-link text-blue-600 font-semibold hover:text-blue-800">View Job Details <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Team Leaders -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Meet Our Team Leaders</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center animate-fade-in">
+                    <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Team Leader" class="w-32 h-32 rounded-full mx-auto mb-4 animate-pulse">
+                    <h3 class="text-xl font-semibold mb-2">David Anderson</h3>
+                    <p class="text-blue-600 mb-2">Chief Technology Officer</p>
+                    <p class="text-gray-600">15+ years of experience in tech leadership and innovation.</p>
+                    <div class="flex justify-center space-x-4 mt-4">
+                        <a href="#" class="text-gray-600 hover:text-blue-600"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-blue-600"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="text-center animate-fade-in">
+                    <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Team Leader" class="w-32 h-32 rounded-full mx-auto mb-4 animate-pulse">
+                    <h3 class="text-xl font-semibold mb-2">Jennifer Lee</h3>
+                    <p class="text-blue-600 mb-2">Head of Design</p>
+                    <p class="text-gray-600">Award-winning designer with global brand experience.</p>
+                    <div class="flex justify-center space-x-4 mt-4">
+                        <a href="#" class="text-gray-600 hover:text-blue-600"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-blue-600"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="text-center animate-fade-in">
+                    <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Team Leader" class="w-32 h-32 rounded-full mx-auto mb-4 animate-pulse">
+                    <h3 class="text-xl font-semibold mb-2">Robert Martinez</h3>
+                    <p class="text-blue-600 mb-2">VP of Marketing</p>
+                    <p class="text-gray-600">Digital marketing expert with startup experience.</p>
+                    <div class="flex justify-center space-x-4 mt-4">
+                        <a href="#" class="text-gray-600 hover:text-blue-600"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-blue-600"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Comments -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">What People Are Saying</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-50 p-8 rounded-xl animate-slide-up">
+                    <div class="flex items-start mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/60.jpg" alt="Commenter" class="w-12 h-12 rounded-full animate-bounce">
+                        <div class="ml-4">
+                            <h4 class="font-semibold">Lisa Thompson</h4>
+                            <p class="text-gray-500 text-sm">Software Engineer • Hired 6 months ago</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"The hiring process was smooth and professional. The team was very responsive and I felt valued throughout the entire journey."</p>
+                    <div class="flex items-center mt-4">
+                        <div class="text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="ml-2 text-gray-500">5.0</span>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl animate-slide-up">
+                    <div class="flex items-start mb-4">
+                        <img src="https://randomuser.me/api/portraits/men/71.jpg" alt="Commenter" class="w-12 h-12 rounded-full animate-bounce">
+                        <div class="ml-4">
+                            <h4 class="font-semibold">James Wilson</h4>
+                            <p class="text-gray-500 text-sm">Product Manager • Hired 3 months ago</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"From the first interview to onboarding, everything was well-organized. The company culture is exactly as advertised - collaborative and innovative."</p>
+                    <div class="flex items-center mt-4">
+                        <div class="text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="ml-2 text-gray-500">4.5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Why Join Us?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-heart text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Health Benefits</h3>
+                    <p class="text-gray-600">Comprehensive health, dental, and vision coverage for you and your family.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-plane text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Paid Time Off</h3>
+                    <p class="text-gray-600">Generous vacation policy and paid holidays to help you recharge.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-graduation-cap text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Learning Budget</h3>
+                    <p class="text-gray-600">Annual budget for courses, conferences, and professional development.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-dumbbell text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Wellness Program</h3>
+                    <p class="text-gray-600">Gym memberships and wellness activities to keep you healthy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">What Our Team Says</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Employee" class="w-12 h-12 rounded-full">
+                        <div class="ml-4">
+                            <h4 class="font-semibold">Sarah Johnson</h4>
+                            <p class="text-gray-600">Software Engineer</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"The culture here is amazing. I've grown so much professionally and made great friends along the way."</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Employee" class="w-12 h-12 rounded-full">
+                        <div class="ml-4">
+                            <h4 class="font-semibold">Michael Chen</h4>
+                            <p class="text-gray-600">Product Manager</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"The opportunities for growth are endless. Leadership truly cares about our development."</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Employee" class="w-12 h-12 rounded-full">
+                        <div class="ml-4">
+                            <h4 class="font-semibold">Emily Rodriguez</h4>
+                            <p class="text-gray-600">Marketing Director</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"I love the work-life balance and flexibility. It's refreshing to work for a company that truly values its employees."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Process -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Hiring Process</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">1</div>
+                    <h3 class="text-xl font-semibold mb-2">Apply</h3>
+                    <p class="text-gray-600">Submit your application and resume</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">2</div>
+                    <h3 class="text-xl font-semibold mb-2">Initial Call</h3>
+                    <p class="text-gray-600">Brief chat with our recruiting team</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">3</div>
+                    <h3 class="text-xl font-semibold mb-2">Interview</h3>
+                    <p class="text-gray-600">Meet with the team and showcase your skills</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">4</div>
+                    <h3 class="text-xl font-semibold mb-2">Offer</h3>
+                    <p class="text-gray-600">Receive and accept your offer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-8">Have Questions?</h2>
+            <p class="text-xl text-gray-300 mb-8">Our recruitment team is here to help you with any questions about our open positions or application process.</p>
+            <a href="mailto:careers@company.com" class="inline-block bg-white text-gray-900 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition duration-300">
+                <i class="fas fa-envelope mr-2"></i>
+                Contact Recruiting Team
+            </a>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title> Quanta AI Tech - About US</title>
+
+     <!--=====FAB ICON=======-->
+    <link rel="shortcut icon" href="assets/img/logo/fav-logo1.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+
+    <!--===== CSS LINK =======-->
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/aos.css">
+    <link rel="stylesheet" href="assets/css/plugins/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/plugins/mobile.css">
+    <link rel="stylesheet" href="assets/css/plugins/owlcarousel.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/sidebar.css">
+    <link rel="stylesheet" href="assets/css/plugins/slick-slider.css">
+    <link rel="stylesheet" href="assets/css/plugins/nice-select.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!--=====  JS SCRIPT LINK =======-->
+    <script src="assets/js/plugins/jquery-3-7-1.min.js"></script>
+</head>
+<style>
+  /* Desktop Header Menu Alignment */
+  /* In your style section */
+@media (min-width: 992px) {
+  .image-container{
+    margin-top: 50px;
+  }
+  .reLogo{
+    margin: 8px 0px 0px 50px;
+    width: 30px;
+    height: auto;
+    float: left;
+  }
+  .vl-logo{
+    margin-left: 90px;
+  }
+  .mblres{
+    display: none;
+  }
+  .vl-main-menu{
+    margin-left: 550px;
+  }
+  .vl-main-menu nav ul {
+    display: flex;
+    gap: 35px; /* Add gap between main menu items */
+    white-space: nowrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+  }
+
+  /* Reset submenu display */
+  .has-dropdown .sub-menu {
+    display: block !important;
+    flex-direction: column;
+    gap: 0; /* Remove gap for submenus */
+  }
+
+  /* Main menu list items */
+  .vl-main-menu ul > li {
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Submenu list items */
+  .has-dropdown .sub-menu li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+  }
+}
+
+<!--footer-->
+.footer-logo1 .fa-brands
+{
+  margin-top: 11px;
+}
+.footer
+{
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-left: -80px;
+}
+.footer .col-md-6 ul{
+  width: 300px;
+}
+.footer .col-md-6{
+  width: 20%;
+}
+
+/* Footer Mobile Responsive */
+@media (max-width: 767px) {
+  .iconArrange{
+  display: flex;
+  justify-content:start;
+  gap: 5px;
+  margin-left: 6px !important;
+}
+  .reLogo{
+    margin: 8px 0px 0px 0px;
+    width: 30px;
+    height: auto;
+    float: left;
+  }
+  .mainLogo{
+    width: 120px;
+    margin:3px 0px 0px 38px;
+  }
+  .vl-logo{
+    margin-left: 35px;
+  }
+  .vl-footer1-section-area .row{
+    margin-left: -2px;
+  }
+
+  .vl-footer-widget {
+    margin-bottom: 20px;
+  }
+
+  .vl-footer-widget h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .vl-footer-widget ul li {
+    margin: 2.5px 0 !important;
+    padding: 0 !important;
+  }
+
+  .vl-footer-widget ul li a {
+    font-size: 14px;
+  }
+
+  /* Contact Section */
+  .vl-footer-widget ul li a img {
+    width: 18px;
+    margin-left: 5px;
+  }
+
+  /* Address text adjustment */
+  .vl-footer-widget ul li a div {
+    margin-left: 25px !important;
+    line-height: 1.4;
+    font-size: 14px;
+  }
+
+  /* Social Icons */
+  .footer-logo1{
+    margin:-15px 0px 0px -22px;
+  }
+  .footer-logo1 ul {
+    justify-content: center !important;
+    margin-top: 20px;
+  }
+
+  .footer-logo1 ul li {
+    margin: 0 10px !important;
+  }
+
+  /* Copyright */
+  .vl-copyright-area p {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  /* Grid adjustments */
+  .col-lg-3, .col-lg-2 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  /* Remove negative margins */
+  .col-lg-3[style*="margin-left"] {
+    margin-left: 0 !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Tablet adjustments */
+  .vl-footer-widget {
+    margin-bottom: 30px;
+  }
+
+  .col-lg-2, .col-lg-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .footer-logo1 ul {
+    justify-content: flex-start !important;
+  }
+}
+.logiAlign i{
+    margin-top: 9px;
+  }
+.vl-footer1-section-area a{
+  color: rgb(255, 255, 255) !important;
+  font-size: 14px !important;
+}
+.vl-footer1-section-area h3{
+  color: white !important;
+  font-weight: 500 !important;
+  font-size: 20px !important;
+}
+.vl-footer1-section-area{
+  background-color: #313030;
+  font-weight: 400 !important;
+}
+.vl-footer1-section-area .fa-brands{
+  color: black;
+}
+.vl-copyright-area p{
+  color: white !important;
+  font-size: 14px !important;
+}
+.vl-footer-widget img {
+  filter: brightness(0) invert(1);
+}
+.iconArrange{
+  display: flex;
+  justify-content:start;
+  gap: 5px;
+  margin-left: 21px;
+}
+.iconArrange a i{
+  margin-top: 11px;
+}
+.about_container{
+  width: 85%;
+  margin: auto;
+  margin-top: 85px !important;
+  font-family: 'Figtree', sans-serif;
+}
+.about_container h1{
+  text-align: center;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.about_container p{
+  text-align: justify;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+}
+#aboutStand ul {
+  list-style-type: disc; /* Ensures disc bullets */
+  padding-left: 20px; /* Adds spacing for indentation */
+  margin: 10px 0; /* Adjusts spacing */
+  padding-bottom: 10px;
+}
+
+#aboutStand li {
+  list-style-type: disc !important;
+}
+#container{
+    height: 510px;
+    /* border: 1px solid black; */
+    background-image: url(assets/img/all-images/about/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0px 0px 25px 0px;
+    position: relative;
+    display: flex;
+    align-items: end;
+}
+#mainTitles {
+  width: 90%;
+  color: white;
+  text-align: center;
+  margin: auto;
+  font-family: 'Poppins', sans-serif;
+  /* border: 3px solid gray; */
+}
+#mainTitles h1{
+  font-size: 65px;
+  font-weight: 600;
+  line-height: 74px;
+}
+#mainTitles p{
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+}
+
+.about_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  padding: 50px 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content {
+  flex: 1 1 45%;
+  min-width: 300px;
+}
+
+.image-container {
+  flex: 1 1 45%;
+  min-width: 300px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+#aboutMission .content {
+  order: 2;
+}
+
+#aboutMission .image-container {
+  order: 1;
+}
+
+.about_title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .about_container {
+    flex-direction: column;
+    padding: 30px 15px;
+    gap: 25px;
+  }
+  
+  .content, .image-container {
+    flex: 1 1 100%;
+  }
+  
+  #aboutMission .content,
+  #aboutMission .image-container {
+    order: initial;
+  }
+  
+  .about_title {
+    font-size: 2rem;
+  }
+}
+</style> 
+<body class="homepage1-body">
+
+<!--===== PRELOADER STARTS =======-->
+<div class="preloader">
+  <div class="loading-container">
+    <div class="loading"></div>
+    <div id="loading-icon"><img src="assets/img/logo/preloader.png" alt=""></div>
+  </div>
+</div>
+<!--===== PRELOADER ENDS =======-->
+
+<!--===== PROGRESS STARTS=======-->
+<div class="paginacontainer">
+     <div class="progress-wrap">
+       <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+       </svg>
+     </div>
+   </div>
+ <!--===== PROGRESS ENDS=======-->
+
+<!--=====HEADER START=======-->
+<header>
+  <div id="vl-header-sticky" class="vl-header-area vl-transparent-header">
+    <div class="container headerfix">
+      <div class="row align-items-center row-bg3 headerparent">
+        <!-- Logo -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <div class="reLogo"><img src="assets/img/logo/preloader2.jpeg" alt="Logo"></div>
+          <div class="vl-logo">
+            <a href="index.html"><img src="assets/img/logo/logo2.png" alt="Company Logo"></a>
+          </div>
+        </div>
+        <!-- Desktop Menu -->
+        <div class="col-lg-7 d-none d-lg-block">
+          <div class="vl-main-menu text-center">
+            <nav class="vl-mobile-menu-active">
+              <ul>
+                <li class="has-dropdown">
+                  <a href="#">Products <i class="fa-solid fa-angle-down"></i></a>
+                  <ul class="sub-menu">
+                    <li><a href="AI_Agent.html">AI Agent</a></li>
+                    <li><a href="ERP_Solutions.html">ERP Solutions</a></li>
+                    <li><a href="cloud_computing.html">Cloud Computing</a></li>
+                    <li><a href="EMP.html">EMP</a></li>
+                    <li><a href="SCM.html">SCM</a></li>
+                  </ul>
+                </li>
+                <li class="has-dropdown">
+                  <a href="#">Services <i class="fa-solid fa-angle-down"></i></a>
+                  <ul class="sub-menu">
+                    <li><a href="ai_ml.html">AI/ML</a></li>
+                    <li><a href="block_chain.html">Blockchain</a></li>
+                    <li><a href="cybersecurity.html">Cybersecurity</a></li>
+                    <li><a href="iot.html">Internet of Things</a></li>
+                    <li><a href="support_service.html">Support Services</a></li>
+                    <li><a href="it_consulting.html">IT Consulting</a></li>
+                    <li><a href="data_resilience.html">Data Resilience</a></li>
+                    <li><a href="Data_analytics.html">Data Analytics</a></li>
+                    <li><a href="Digital_Marketing.html">Digital Marketing</a></li>
+                    <li><a href="API_management.html">API Management</a></li>
+                  </ul>
+                </li>
+                <li class="has-dropdown">
+                  <a href="#">Industries <i class="fa-solid fa-angle-down"></i></a>
+                  <ul class="sub-menu">
+                    <li><a href="Aerospace.html">Aerospace</a></li>
+                    <li><a href="Agriculture.html">Agriculture</a></li>
+                    <li><a href="Education.html">Education</a></li>
+                    <li><a href="Insurance.html">Insurance</a></li>
+                    <li><a href="Life_sciences.html">Life Sciences</a></li>
+                    <li><a href="Retail.html">Retail</a></li>
+                  </ul>
+                </li>
+                <li><a href="careers.html">Careers</a></li>
+                <li class="has-dropdown">
+                  <a href="#">Company <i class="fa-solid fa-angle-down"></i></a>
+                  <ul class="sub-menu">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-6 mblres">
+          <div class="vl-header-action-item d-block d-lg-none" style="margin-top: -50px;">
+            <button type="button" class="vl-offcanvas-toggle">
+              <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+         </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</header>
+ <!--=====HEADER END =======-->
+
+  <!--===== MOBILE HEADER =====-->
+<div class="vl-offcanvas">
+  <div class="vl-offcanvas-wrapper">
+      <div class="vl-offcanvas-header d-flex justify-content-between align-items-center mb-90">
+          <div class="vl-offcanvas-logo">
+            <img src="assets/img/logo/preloader.png" alt="Logo" class="reLogo">
+            <div class="mainLogo"><a href="index.html"><img src="assets/img/logo/logo1.png" alt="Quanta AI Tech"></a></div>
+          </div>
+          <div class="vl-offcanvas-close">
+              <button class="vl-offcanvas-close-toggle"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+      </div>
+      <div class="vl-offcanvas-menu d-lg-none mb-40">
+          <nav></nav>
+      </div>
+      <div class="space24"></div>
+      <div class="vl-offcanvas-info">
+          <span><a href="#"><i class="fa-solid fa-phone"></i>+91 (40) 35055013</a></span>
+          <span><a href="#"><i class="fa-solid fa-location-dot "></i> <div style="margin: -24px 0px 0px 20px;">Rajapushpa Summit, Manikonda, Hyderabad, Telangana 500032</div></a></span>
+          <span><a href="#"><i class="fa-solid fa-envelope"></i> info@quantaaitech.com</a></span>
+      </div>
+      <div class="space24"></div>
+      <div class="vl-offcanvas-social">
+          <h3 class="vl-offcanvas-sm-title">Follow Us</h3>
+          <div class="space8"></div>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a style="margin-left: 5px;" href="#"><i class="fab fa-twitter"></i></a>
+          <a style="margin-left: 5px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a style="margin-left: 5px;" href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+  </div>
+</div>
+<div class="vl-offcanvas-overlay"></div>
+<!--===== MOBILE HEADER  END=====-->
+
+
+<!--===== HERO AREA STARTS =======-->
+<div id="container">
+  <div id="mainTitles">
+    <h1>About Quanta Ai Tech</h1>
+    <p>We help businesses of every size from entrepreneurs to iconic brands.</p>
+  </div>
+</div>
+<!--===== HERO AREA ENDS =======-->
+
+
+<div id="aboutPara" class="about_container">
+  <div>
+    <p>
+      Since our inception in 2012, Quanta AI Tech has transformed from a visionary startup into an award-winning leader in IT services. We empower businesses with cutting-edge solutions in <strong> Cloud Computing, Mobile Innovation, Big Data Analytics,</strong> and  <strong>Emerging Technologies </strong>. Our commitment to forward-thinking strategies and client-focused execution has made us a trusted partner for Fortune 500 companies and industry pioneers.
+    </p>
+  </div>
+</div>
+
+<div id="aboutVision" class="about_container">
+  <div class="content">
+    <h1 class="about_title">Our Vision</h1>
+    <p>
+      Quanta AI Tech is committed to leading the technological frontier by crafting intelligent, scalable solutions that transform industries and foster a digitally connected world. We harness cutting-edge technologies like AI, cloud computing, and data-driven insights to develop adaptive and future-ready systems. Our solutions empower businesses by enhancing efficiency, automation, and seamless connectivity across sectors such as e-commerce, finance, and healthcare. With a focus on scalability, security, and user-centric design, we create robust ecosystems that drive innovation and long-term growth. At Quanta AI Tech, we don’t just embrace the future—we shape it, redefining possibilities through smart, transformative technology.
+    </p>
+  </div>
+  <div class="image-container image-anime">
+    <img src="assets/img/all-images/about/1.png" alt="Vision Illustration">
+  </div>
+</div>
+
+<div id="aboutMission" class="about_container">
+  <div class="content">
+    <h1 class="about_title">Our Mission</h1>
+    <p>
+      Quanta AI Tech is dedicated to providing transformative IT services that drive innovation, enhance operations, and unlock growth for enterprises worldwide. By leveraging technical excellence and Agile methodologies, we deliver scalable, efficient, and future-ready solutions that empower businesses to navigate the evolving digital landscape. Our expertise spans AI, cloud computing, and data-driven strategies, enabling organizations to streamline processes, boost productivity, and stay ahead of industry disruptions. With a commitment to adaptability and innovation, we turn challenges into opportunities, helping enterprises achieve sustainable growth in an ever-changing technological world. At Quanta AI Tech, we don’t just support transformation—we lead it.
+    </p>
+  </div>
+  <div class="image-container image-anime">
+    <img src="assets/img/all-images/about/2.png" alt="Mission Illustration">
+  </div>
+</div>
+<!--===== WORK AREA STARTS =======-->
+<div class="work1-section-area sp1">
+    <img src="assets/img/elements/elements11.png" alt="" class="elements9">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5">
+          <div class="solution-header heading2">
+            <h5><span><img src="assets/img/icons/sub-logo1.svg" alt=""></span>best it solution</h5>
+            <div class="space24"></div>
+            <h2 class="text-anime-style-3">End-to-End IT Solutions for Growing Businesses</h2>
+            <div class="space16"></div>
+            <p data-aos="fade-left" data-aos-duration="800">We provide comprehensive, end-to-end IT solutions of designed to support businesses at stage of growing.</p>
+            <div class="space24"></div>
+            <div class="bg-progress" data-aos="fade-left" data-aos-duration="900">
+              <div class="progress-bar">
+                <label>It Solution <span>98%</span></label>
+                <div class="progress">
+                    <div class="progress-inner" style="width: 98%;"></div>
+                </div>
+            </div>
+        
+            <div class="progress-bar">
+                <label>Cyber Security <span>99%</span></label>
+                <div class="progress">
+                    <div class="progress-inner" style="width: 99%;"></div>
+                </div>
+            </div>
+        
+            <div class="progress-bar">
+                <label>Cloud Solution <span>99%</span></label>
+                <div class="progress">
+                    <div class="progress-inner" style="width: 99%;"></div>
+                </div>
+            </div>
+            </div>
+            <div class="space32"></div>
+            <div class="btn-area1" data-aos="fade-left" data-aos-duration="1000">
+              <a href="contact.html" class="vl-btn2">Discover Our Solutions <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2"></div>
+        <div class="col-lg-5">
+          <div class="soultions-images">
+            <img src="assets/img/elements/elements10.png" alt="" class="elements10">
+            <div class="img1 reveal image-anime">
+              <img src="assets/img/all-images/work/work-img1.png" alt="">
+            </div>
+            <div class="img2 reveal image-anime">
+              <img src="assets/img/all-images/work/work-img2.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--===== WORK AREA ENDS =======-->
+
+<!--===== ABOUT AREA STARTS =======-->
+<div class="about1-section-area-widget sp1" style="background-image: url(assets/img/all-images/bg/service-bg1.png); background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden;">
+  <img src="assets/img/elements/elements9.png" alt="" class="elements9">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <div class="about-images-area">
+          <img src="assets/img/elements/elements10.png" alt="" class="elements10">
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6">
+              <div class="img1 image-anime reveal">
+                <img src="assets/img/all-images/about/about-img1.png" alt="">
+              </div>
+              <div class="space30 d-lg-none d-block"></div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="img1 image-anime reveal">
+                <img src="assets/img/all-images/about/about-img2.png" alt="">
+              </div>
+              <div class="space30"></div>
+              <div class="img1 image-anime reveal">
+                <img src="assets/img/all-images/about/about-img3.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="check-icons aniamtion-key-1">
+            <img src="assets/img/icons/check1.svg" alt="">
+            <p>With 13+ years of experience
+              IT solution help community.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-1"></div>
+      <div class="col-lg-5">
+        <div class="about-header-area heading2">
+          <h5><span><img src="assets/img/icons/sub-logo1.svg" alt=""></span>About Eitech IT Solution</h5>
+          <div class="space24"></div>
+          <h2 class="text-anime-style-3">Unlock Business Potential with Tailored IT Services</h2>
+          <div class="space16"></div>
+          <p data-aos="fade-left" data-aos-duration="800">At Eitech, we understand that every business unique, which is why we offer customized IT solutions designed to meet.</p>
+          <div class="space28"></div>
+          <div class="row" data-aos="fade-left" data-aos-duration="900">
+            <div class="col-lg-6 col-md-6">
+              <div class="progresbar">
+                <div class="progressbar">
+                   <div class="circle" data-percent="96"><canvas width="80" height="80"></canvas>
+                       <div class="count">96%</div>
+                  </div>
+                </div>
+                <div class="content-area">
+                  <h4>IT Solution</h4>
+                  <div class="space8"></div>
+                  <p>Level Is High</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+              <div class="space28 d-md-none d-block"></div>
+              <div class="progresbar">
+                <div class="progressbar">
+                   <div class="circle" data-percent="97"><canvas width="80" height="80"></canvas>
+                       <div class="count">97%</div>
+                  </div>
+                </div>
+                <div class="content-area">
+                  <h4>Cyber Solution</h4>
+                  <div class="space8"></div>
+                  <p>#1 Best Of Solution</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="space28"></div>
+          <div class="pera-box bg1" data-aos="fade-left" data-aos-duration="1000">
+            <p>“The right IT solutions done just support your on business-they transform it, at Eitech, we believe.”</p>
+          </div>
+          <div class="space28"></div>
+          <div class="btn-area1" data-aos="fade-left" data-aos-duration="1200">
+            <a href="contact.html" class="vl-btn2">See How We Can Help <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--===== ABOUT AREA ENDS =======-->
+
+<!--===== ABOUT AREA STARTS =======-->
+<div class="about6-section-area-widget sp1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="about6-header heading2">
+                    <h5><span><img src="assets/img/icons/sub-logo1.svg" alt=""></span>our mission/vision</h5>
+                    <div class="space18"></div>
+                    <h2 class="text-anime-style-3">Driving Innovation: Our Mission Vision at Eitech</h2>
+                    <div class="space16"></div>
+                    <p data-aos="fade-left" data-aos-duration="900">At the of innovation, our cutting-edge IT solutions are designed transform your business ETech operations. </p>
+                    <div class="space24"></div>
+                    <div class="about-boxarea" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="icons">
+                            <img src="assets/img/icons/service-icon1.svg" alt="">
+                        </div>
+                        <div class="content-area">
+                            <a href="service-single.html">Network Infrastructure Solutions</a>
+                            <div class="space16"></div>
+                            <p>In today’s fast-paced world, technology is the backbone of success. Our comprehensive IT.</p>
+                        </div>
+                    </div>
+                    <div class="space24"></div>
+                    <div class="about-boxarea" data-aos="fade-left" data-aos-duration="1100">
+                        <div class="icons">
+                            <img src="assets/img/icons/service-icon5.svg" alt="">
+                        </div>
+                        <div class="content-area">
+                            <a href="service-single.html">Performance Tailored IT Services</a>
+                            <div class="space16"></div>
+                            <p>Our tailored IT services are crafted to meet your unique business needs, ensuring that.</p>
+                        </div>
+                    </div>
+                    <div class="space32"></div>
+                    <div class="btn-area1" data-aos="fade-left" data-aos-duration="1200">
+                        <a href="contact.html" class="vl-btn2">See How We Can Help<i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-6">
+                <div class="images-area">
+                    <img src="assets/img/elements/elements27.png" alt="" class="elements27">
+                    <div class="img1 image-anime reveal">
+                        <img src="assets/img/all-images/ai-ml/quanta_diff/Agile.png" alt="">
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="img1 image-anime reveal">
+                                <div class="space30"></div>
+                                <img src="assets/img/all-images/ai-ml/quanta_diff/Tech.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="img1 image-anime reveal">
+                                <div class="space30"></div>
+                                <img src="assets/img/all-images/ai-ml/quanta_diff/Three.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--===== ABOUT AREA ENDS =======-->
+
+<!--===== TEAM AREA STARTS =======-->
+<div class="team1-section-area sp2">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 m-auto">
+          <div class="team-header space-margin60 heading2 text-center">
+            <h5><span><img src="assets/img/icons/sub-logo1.svg" alt=""></span>our best team</h5>
+            <div class="space20"></div>
+            <h2 class="text-anime-style-3">Meet Our Expert Team</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="800">
+          <div class="team-author-boxarea">
+            <div class="img1 image-anime">
+              <img src="assets/img/all-images/team/team-img1.png" alt="">
+            </div>
+            <div class="content-area">
+              <div class="text">
+                <a href="team.html">Meera Nair</a>
+                <div class="space8"></div>
+                <p>Head Of Cybersecurity</p>
+              </div>
+              <div class="icons">
+                <a href="#"><img src="assets/img/icons/share1.svg" alt=""></a>
+              </div>
+            </div>
+            <ul>
+              <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="1000">
+          <div class="team-author-boxarea">
+            <div class="img1 image-anime">
+              <img src="assets/img/all-images/team/team-img2.png" alt="">
+            </div>
+            <div class="content-area">
+              <div class="text">
+                <a href="team.html">Siddharth Sharma</a>
+                <div class="space8"></div>
+                <p>Software Development</p>
+              </div>
+              <div class="icons">
+                <a href="#"><img src="assets/img/icons/share1.svg" alt=""></a>
+              </div>
+            </div>
+            <ul>
+              <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="1200">
+          <div class="team-author-boxarea">
+            <div class="img1 image-anime">
+              <img src="assets/img/all-images/team/team-img3.png" alt="">
+            </div>
+            <div class="content-area">
+              <div class="text">
+                <a href="team.html">Priya Mehta</a>
+                <div class="space8"></div>
+                <p>Data Analytics Specialist</p>
+              </div>
+              <div class="icons">
+                <a href="#"><img src="assets/img/icons/share1.svg" alt=""></a>
+              </div>
+            </div>
+            <ul>
+              <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--===== TEAM AREA ENDS =======-->
+
+<!--===== TESTIMONIAL AREA STARTS =======-->
+<div class="testimonial1-section-area sp1">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 m-auto">
+        <div class="testimonial-header text-center heading2 space-margin60">
+          <h5><span><img src="assets/img/icons/sub-logo1.svg" alt=""></span>Testimonials</h5>
+          <div class="space20"></div>
+          <h2 class="text-anime-style-3">Experience the Difference Through Our Clients' Eyes</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-5">
+        <div class="img1 image-anime reveal">
+          <img src="assets/img/all-images/testimonial/testimonial-img1.png" alt="">
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="slider-galeria">
+          <div class="testimonial-slider-content-area">
+            <div class="testimonial-author-area">
+              <ul>
+                <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+              </ul>
+              <div class="space16"></div>
+              <img src="assets/img/icons/quito1.svg" alt="" class="quito1">
+                           <img src="assets/img/elements/elements18.png" alt="" class="elements18">
+            <p>Partnering with ETech has transformed our IT Solution Their tailored solutions help streamline our operations, improve cybersecurity, and drive efficiency across the board. We've experienced fewer disruptions, faster an.”</p>
+          </div>
+          <div class="space60"></div>
+            <div class="testimonial-man-info-area">
+              <div class="man-images-text">
+                <div class="mans-img">
+                  <img src="assets/img/all-images/testimonial/testimonial-img2.png" alt="">
+                </div>
+                <div class="man-text">
+                  <a href="team.html">Nani Konedala</a>
+                  <div class="space12"></div>
+                  <p>Owner Taxfirm</p>
+                </div>
+              </div>
+              <img src="assets/img/elements/elements17.png" alt="">
+            </div>
+          </div>
+
+          <div class="testimonial-slider-content-area">
+            <div class="testimonial-author-area">
+              <ul>
+                <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+              </ul>
+              <div class="space16"></div>
+              <img src="assets/img/icons/quito1.svg" alt="" class="quito1">
+                           <img src="assets/img/elements/elements18.png" alt="" class="elements18">
+            <p>Partnering with ETech has transformed our IT Solution Their tailored solutions help streamline our operations, improve cybersecurity, and drive efficiency across the board. We've experienced fewer disruptions, faster an.”</p>
+          </div>
+          <div class="space60"></div>
+            <div class="testimonial-man-info-area">
+              <div class="man-images-text">
+                <div class="mans-img">
+                  <img src="assets/img/all-images/testimonial/testimonial-img3.png" alt="">
+                </div>
+                <div class="man-text">
+                  <a href="team.html">Sri Reddy</a>
+                  <div class="space12"></div>
+                  <p>Owner Taxfirm</p>
+                </div>
+              </div>
+              <img src="assets/img/elements/elements17.png" alt="">
+            </div>
+          </div>
+
+          <div class="testimonial-slider-content-area">
+            <div class="testimonial-author-area">
+              <ul>
+                <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+              </ul>
+              <div class="space16"></div>
+              <img src="assets/img/icons/quito1.svg" alt="" class="quito1">
+                           <img src="assets/img/elements/elements18.png" alt="" class="elements18">
+            <p>Partnering with ETech has transformed our IT Solution Their tailored solutions help streamline our operations, improve cybersecurity, and drive efficiency across the board. We've experienced fewer disruptions, faster an.”</p>
+          </div>
+          <div class="space60"></div>
+            <div class="testimonial-man-info-area">
+              <div class="man-images-text">
+                <div class="mans-img">
+                  <img src="assets/img/all-images/testimonial/testimonial-img4.png" alt="">
+                </div>
+                <div class="man-text">
+                  <a href="team.html">Sardhar</a>
+                  <div class="space12"></div>
+                  <p>Owner Taxfirm</p>
+                </div>
+              </div>
+              <img src="assets/img/elements/elements17.png" alt="">
+            </div>
+          </div>
+
+          <div class="testimonial-slider-content-area">
+            <div class="testimonial-author-area">
+              <ul>
+                <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+              </ul>
+              <div class="space16"></div>
+              <img src="assets/img/icons/quito1.svg" alt="" class="quito1">
+                           <img src="assets/img/elements/elements18.png" alt="" class="elements18">
+            <p>Partnering with ETech has transformed our IT Solution Their tailored solutions help streamline our operations, improve cybersecurity, and drive efficiency across the board. We've experienced fewer disruptions, faster an.”</p>
+          </div>
+          <div class="space60"></div>
+            <div class="testimonial-man-info-area">
+              <div class="man-images-text">
+                <div class="mans-img">
+                  <img src="assets/img/all-images/testimonial/testimonial-img5.png" alt="">
+                </div>
+                <div class="man-text">
+                  <a href="team.html">Srujana </a>
+                  <div class="space12"></div>
+                  <p>Owner Taxfirm</p>
+                </div>
+              </div>
+              <img src="assets/img/elements/elements17.png" alt="">
+            </div>
+          </div>
+
+          <div class="testimonial-slider-content-area">
+            <div class="testimonial-author-area">
+              <ul>
+                <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+              </ul>
+              <div class="space16"></div>
+              <img src="assets/img/icons/quito1.svg" alt="" class="quito1">
+                           <img src="assets/img/elements/elements18.png" alt="" class="elements18">
+            <p>Partnering with ETech has transformed our IT Solution Their tailored solutions help streamline our operations, improve cybersecurity, and drive efficiency across the board. We've experienced fewer disruptions, faster an.”</p>
+          </div>
+          <div class="space60"></div>
+            <div class="testimonial-man-info-area">
+              <div class="man-images-text">
+                <div class="mans-img">
+                  <img src="assets/img/all-images/testimonial/testimonial-img2.png" alt="">
+                </div>
+                <div class="man-text">
+                  <a href="team.html">Chendra Sekhar</a>
+                  <div class="space12"></div>
+                  <p>Owner Taxfirm</p>
+                </div>
+              </div>
+              <img src="assets/img/elements/elements17.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-1">
+       <div class="slider-galeria-thumbs text-center d-lg-block d-none">
+         <div class="testimonial3-sliders-img">
+           <img src="assets/img/all-images/testimonial/testimonial-img2.png" alt="">
+         </div>
+         <div class="testimonial3-sliders-img">
+          <img src="assets/img/all-images/testimonial/testimonial-img3.png" alt="">
+         </div>
+         <div class="testimonial3-sliders-img">
+          <img src="assets/img/all-images/testimonial/testimonial-img4.png" alt="">
+         </div>
+         <div class="testimonial3-sliders-img">
+          <img src="assets/img/all-images/testimonial/testimonial-img5.png" alt="">
+         </div>
+         <div class="testimonial3-sliders-img">
+          <img src="assets/img/all-images/testimonial/testimonial-img2.png" alt="">
+         </div>
+         
+         <div class="testimonial3-sliders-img">
+          <img src="assets/img/all-images/testimonial/testimonial-img2.png" alt="">
+        </div>
+        <div class="testimonial3-sliders-img">
+         <img src="assets/img/all-images/testimonial/testimonial-img3.png" alt="">
+        </div>
+        <div class="testimonial3-sliders-img">
+         <img src="assets/img/all-images/testimonial/testimonial-img4.png" alt="">
+        </div>
+        <div class="testimonial3-sliders-img">
+         <img src="assets/img/all-images/testimonial/testimonial-img5.png" alt="">
+        </div>
+        <div class="testimonial3-sliders-img">
+         <img src="assets/img/all-images/testimonial/testimonial-img2.png" alt="">
+        </div>
+
+        <div class="testimonial3-sliders-img">
+          <img src="assets/img/all-images/testimonial/testimonial-img2.png" alt="">
+        </div>
+        <div class="testimonial3-sliders-img">
+         <img src="assets/img/all-images/testimonial/testimonial-img3.png" alt="">
+        </div>
+        <div class="testimonial3-sliders-img">
+         <img src="assets/img/all-images/testimonial/testimonial-img4.png" alt="">
+        </div>
+        <div class="testimonial3-sliders-img">
+         <img src="assets/img/all-images/testimonial/testimonial-img5.png" alt="">
+        </div>
+        <div class="testimonial3-sliders-img">
+         <img src="assets/img/all-images/testimonial/testimonial-img2.png" alt="">
+        </div>
+       </div>
+     </div>
+    </div>
+  </div>
+</div>
+<!--===== TESTIMONIAL AREA ENDS =======-->
+
+<!--===== CTA AREA STARTS =======-->
+<div class="cta1-section-area sp1">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5">
+        <div class="cta-header heading1">
+          <h2 data-aos="fade-left" data-aos-duration="700">Transform Your IT Today-Speak with Our Experts!</h2>
+          <div class="space16"></div>
+          <p data-aos="fade-left" data-aos-duration="800">Ready to take your business to the next level with cutting-edge IT solutions? Our team is here to help you transform.</p>
+          <div class="space24"></div>
+          <form data-aos="fade-left" data-aos-duration="900">
+            <input type="text" placeholder="Email Address">
+            <button type="submit" class="vl-btn1">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="col-lg-3"></div>
+      <div class="col-lg-4">
+        <div class="cta-images">
+          <img src="assets/img/elements/elements7.png" alt="" class="elements7 keyframe5">
+          <div class="img1">
+            <img src="assets/img/all-images/cta/cta-img1.png" alt="">
+          </div>
+          <ul class="aniamtion-key-1">
+            <li><a href="#"><img src="assets/img/icons/check5.svg" alt="">IT Solution Services</a></li>
+            <li><a href="#"><img src="assets/img/icons/check5.svg" alt="">Cyber Security Services</a></li>
+            <li><a href="#"><img src="assets/img/icons/check5.svg" alt="">Software Development</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--===== CTA AREA ENDS =======-->
+
+<!--===== FOOTER AREA STARTS =======-->
+<div class="vl-footer1-section-area sp8">
+  <div class="container">
+    <div class="row footer">
+      <div class="col-lg-2 col-md-6">
+        <div class="space30 d-md-none d-block"></div>
+        <div class="vl-footer-widget">
+          <h3 style="padding: 0; margin: 0;">Quick Links</h3>
+          <ul>
+            <li style="margin: -7px 0; padding: 0;"><a href="about.html">About Us</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="service.html">It Solution</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="careers.html">Our Careers</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="#">Pricing Plan</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div> 
+      <div class="col-lg-2 col-md-6">
+        <div class="space30 d-md-none d-block"></div>
+        <div class="vl-footer-widget">
+          <h3 style="padding: 0; margin: 0;">Products</h3>
+          <ul class="sub-menu">
+            <li style="margin: -7px 0; padding: 0;"><a href="AI_Agent.html">AI Agent</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="ERP_Solutions.html">ERP Solutions</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="cloud_computing.html">Cloud Computing</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="EMP.html">EMP</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="SCM.html">SCM</a></li>
+          </ul>
+        </div>
+      </div> 
+
+      <div class="col-lg-3 col-md-6">
+        <div class="vl-footer-widget">
+          <div class="space30 d-lg-none d-block"></div>
+          <h3>Services</h3>
+          <ul style="padding: 0; margin: 0;">
+            <li style="margin: -7px 0; padding: 0;"><a href="ai_ml.html">AI/ML</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="block_chain.html">Blockchain</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="cybersecurity.html">Cybersecurity</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="iot.html">Internet of Things</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="support_service.html">Support Services</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="it_consulting.html">IT Consulting</a></li>
+             <li style="margin: -7px 0; padding: 0;"><a href="data_resilience.html">Data Resilience</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="Data_analytics.html">Data analytics</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="Digital_Marketing.html">Digital Marketing</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="API_management.html">API management</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="vl-footer-widget">
+          <div class="space30 d-lg-none d-block"></div>
+          <h3>Industries</h3>
+          <ul style="padding: 0; margin: 0;">
+            <li style="margin: -7px 0; padding: 0;"><a href="Aerospace.html">Aerospace</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="Agriculture.html">Agriculture</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="Education.html">Education</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="Insurance.html">Insurance</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="Life_sciences.html">Life sciences</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="Retail.html">Retail</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6" style="margin-left: -20px;">
+        <div class="vl-footer-widget">
+          <div class="space30 d-lg-none d-block"></div>
+          <h3>Contact Us</h3>
+          <ul style="padding: 0; margin: 0;">
+            <li style="margin: -7px 0; padding: 0;"><a href="tel:+11234567890"><img src="assets/img/icons/phn1.svg" alt="">+91 (40) 35055013</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="#"><img src="assets/img/icons/location1.svg" alt=""><div style="margin: -24px 0px 0px 32px;">Mindspace Survey No. 64, Building Number 9, 13th Floor, Madhapur, Hyderabad, Telangana 500081.</div></a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="mailto:Qunata AIsolution@com"><img src="assets/img/icons/email1.svg" alt="">info@quantaaitech.com</a></li>
+          </ul>
+          <div>
+            <div class="col-lg-3" style="margin-left: -20px;">
+              <div class="footer-logo1 logiAlign">
+                <ul class="iconArrange">
+                  <li ><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                  <li ><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                  <li ><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                  <li ><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+          </div>
+      </div>
+    </div>
+    <div class="space60"></div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="vl-copyright-area">
+          <p>© Copyright 2025 - Qunata AI Tech. All Right Reserved</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--===== FOOTER AREA ENDS =======-->
+
+<!--===== JS SCRIPT LINK =======-->
+<script src="assets/js/plugins/bootstrap.min.js"></script>
+<script src="assets/js/plugins/fontawesome.js"></script>
+<script src="assets/js/plugins/aos.js"></script>
+<script src="assets/js/plugins/counter.js"></script>
+<script src="assets/js/plugins/gsap.min.js"></script>
+<script src="assets/js/plugins/ScrollTrigger.min.js"></script>
+<script src="assets/js/plugins/Splitetext.js"></script>
+<script src="assets/js/plugins/SmoothScroll.js"></script>
+<script src="assets/js/plugins/sidebar.js"></script>
+<script src="assets/js/plugins/magnific-popup.js"></script>
+<script src="assets/js/plugins/mobilemenu.js"></script>
+<script src="assets/js/plugins/owlcarousel.min.js"></script>
+<script src="assets/js/plugins/nice-select.js"></script>
+<script src="assets/js/plugins/waypoints.js"></script>
+<script src="assets/js/plugins/slick-slider.js"></script>
+<script src="assets/js/plugins/circle-progress.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
+

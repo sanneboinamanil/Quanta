@@ -1,0 +1,1461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Qunata AI Tech</title>
+
+     <!--=====FAB ICON=======-->
+    <link rel="shortcut icon" href="assets/img/logo/fav-logo1.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+
+    <!--===== CSS LINK =======-->
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/aos.css">
+    <link rel="stylesheet" href="assets/css/plugins/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/plugins/mobile.css">
+    <link rel="stylesheet" href="assets/css/plugins/owlcarousel.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/sidebar.css">
+    <link rel="stylesheet" href="assets/css/plugins/slick-slider.css">
+    <link rel="stylesheet" href="assets/css/plugins/nice-select.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!--=====  JS SCRIPT LINK =======-->
+    <script src="assets/js/plugins/jquery-3-7-1.min.js"></script>
+</head>
+<style>
+  *{
+    font-family: 'Figtree', sans-serif;
+  }
+  * h1{
+    font-weight: 600;
+  }
+  .logiAlign i{
+    margin-top: 9px;
+  }
+  /* Desktop Header Menu Alignment */
+  /* In your style section */
+@media (min-width: 992px) {
+  .hero1-section-area{
+    position: relative;
+  }
+  .heroImgMove{
+    position: relative;
+    bottom: -15px;
+  }
+  .mainHead{
+    width: 140%;
+    /* border: 1px solid; */
+    font-size: 54px !important;
+    text-align: start;
+    line-height: 65px !important;
+    font-weight: 600 !important;
+  }
+  .mainHeadPara{
+    font-weight: 300 !important;
+  }
+  .reLogo{
+    margin: 8px 0px 0px 50px;
+    width: 30px;
+    height: auto;
+    float: left;
+  }
+  .vl-logo{
+    margin-left: 90px;
+  }
+  .mblres{
+    display: none;
+  }
+  .vl-main-menu{
+    margin-left: 550px;
+  }
+  .vl-main-menu nav ul {
+    display: flex;
+    gap: 35px; /* Add gap between main menu items */
+    white-space: nowrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+  }
+
+  /* Reset submenu display */
+  .has-dropdown .sub-menu {
+    display: block !important;
+    flex-direction: column;
+    gap: 0; /* Remove gap for submenus */
+  }
+
+  /* Main menu list items */
+  .vl-main-menu ul > li {
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Submenu list items */
+  .has-dropdown .sub-menu li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+  }
+  .mobileResponsive{
+    display: none !important;
+  }
+}
+
+<!--footer-->
+.footer-logo1 .fa-brands
+{
+  margin-top: 11px;
+}
+.footer
+{
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-left: -80px;
+}
+.footer .col-md-6 ul{
+  width: 300px;
+}
+.footer .col-md-6{
+  width: 20%;
+}
+
+/* Footer Mobile Responsive */
+@media (max-width: 767px) {
+  .use-cases-title {
+    margin-left: -18px !important;
+    text-align: left;
+  }
+  .iconArrange{
+  display: flex;
+  justify-content:start;
+  gap: 5px;
+  margin-left: 6px !important;
+}
+  .reLogo{
+    margin: 8px 0px 0px 0px;
+    width: 30px;
+    height: auto;
+    float: left;
+  }
+  .mainLogo{
+    width: 120px;
+    margin:3px 0px 0px 38px;
+  }
+  .vl-logo{
+    margin-left: 35px;
+  }
+  .vl-footer1-section-area .row{
+    margin-left: -2px;
+  }
+
+  .vl-footer-widget {
+    margin-bottom: 20px;
+  }
+
+  .vl-footer-widget h3 {
+    font-size: 20px !important;
+    margin-bottom: 15px;
+  }
+
+  .vl-footer-widget ul li {
+    margin: 2.5px 0 !important;
+    padding: 0 !important;
+  }
+
+  .vl-footer-widget ul li a {
+    font-size: 14px;
+  }
+
+  /* Contact Section */
+  .vl-footer-widget ul li a img {
+    width: 18px;
+    margin-left: 5px;
+  }
+
+  /* Address text adjustment */
+  .vl-footer-widget ul li a div {
+    margin-left: 25px !important;
+    line-height: 1.4;
+    font-size: 14px;
+  }
+
+  /* Social Icons */
+  .footer-logo1{
+    margin:-15px 0px 0px -22px;
+  }
+  .footer-logo1 ul {
+    justify-content: center !important;
+    margin-top: 20px;
+  }
+
+  .footer-logo1 ul li {
+    margin: 0 10px !important;
+  }
+
+  /* Copyright */
+  .vl-copyright-area p {
+    text-align: center;
+    font-size: 14px !important;
+  }
+
+  /* Grid adjustments */
+  .col-lg-3, .col-lg-2 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  /* Remove negative margins */
+  .col-lg-3[style*="margin-left"] {
+    margin-left: 0 !important;
+  }
+  .desktopResponsive{
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Tablet adjustments */
+  .vl-footer-widget {
+    margin-bottom: 30px;
+  }
+
+  .col-lg-2, .col-lg-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .footer-logo1 ul {
+    justify-content: flex-start !important;
+  }
+}
+.vl-footer1-section-area a{
+  color: rgb(255, 255, 255) !important;
+  font-size: 14px !important;
+}
+.vl-footer1-section-area h3{
+  color: white !important;
+  font-weight: 500 !important;
+  font-size: 20px !important;
+}
+.vl-footer1-section-area{
+  background-color: #313030;
+  font-weight: 400 !important;
+}
+.vl-footer1-section-area .fa-brands{
+  color: black;
+}
+.vl-copyright-area p{
+  color: white !important;
+  font-size: 14px !important;
+}
+.vl-footer-widget img {
+  filter: brightness(0) invert(1);
+}
+.iconArrange{
+  display: flex;
+  justify-content:start;
+  gap: 5px;
+  margin-left: 21px;
+}
+.iconArrange a i{
+  margin-top: 11px;
+}
+/* Parent container styling */
+.certificatsAlign {
+    padding: 100px 20px; /* Added 100px padding on top and bottom */
+}
+
+/* Title Section */
+#titiles {
+    margin-bottom: 40px; /* Increased space below title */
+}
+
+#titiles h2 {
+    font-size: 44px !important;
+    font-weight: 600;
+    line-height: 48px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#titiles p {
+    font-size: 18px !important;
+    font-weight: 500;
+    line-height: 26px;
+    color: #666;
+    max-width: 500px;
+    margin: 0 auto;
+    white-space: nowrap;
+}
+
+/* Parent container styling */
+.certificatsAlign {
+    padding: 80px 20px;
+    background-color: rgba(174, 168, 168, 0.104);
+}
+
+/* Align title to the left */
+#titiles {
+    text-align: left;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+#titiles h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: 'Figtree', sans-serif;
+}
+
+#titiles p {
+    font-size: 16px;
+    color: #666;
+    max-width: 700px;
+    margin: 0;
+    font-family: 'Figtree', sans-serif;
+}
+
+/* Flexbox for responsive layout */
+#certifications {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px; /* Adds spacing between images */
+}
+
+/* Image container */
+#certifications div {
+    flex: 1 1 50px; /* Adjusts width dynamically */
+    max-width: 95px; /* Prevents images from stretching too much */
+    background: transparent;
+}
+
+/* Manually control #increaseImg size */
+#increaseImg {
+    flex: 1 1 auto !important; /* Auto allows it to grow */
+    max-width: 186px !important; /* Ensures it doesn't shrink */
+    display: flex;
+    align-items: start;
+    margin-top: -3.4%;
+}
+
+/* Image styling */
+#certifications img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    .certificatsAlign {
+        padding: 60px 20px;
+    }
+
+    #certifications {
+        justify-content: center;
+    }
+
+    #certifications div {
+        max-width: 45%; /* Two columns */
+    }
+
+    #titiles h2 {
+        font-size: 24px;
+    }
+
+    #titiles p {
+        font-size: 14px;
+    }
+
+    #increaseImg {
+        max-width: 160px; /* Slightly reduced on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .certificatsAlign {
+        padding: 40px 15px;
+    }
+
+    #certifications div {
+        max-width: 100%; /* Stacks images in a single column */
+    }
+
+    #increaseImg {
+        max-width: 100%; /* Full width for mobile */
+    }
+}
+.service1-boxarea a{
+  font-weight: 700 !important;
+}
+.newCardsHere{
+  height: 450px;
+  position: relative;
+  padding: 0px !important;
+}
+.spacingCard1 {
+  position: absolute;
+  bottom: 0.1px;
+  padding: 10px 30px;
+  /* border: 3px solid red; */
+  background: rgba(255, 255, 255, 0.064); /* Semi-transparent white (adjust opacity) */
+  backdrop-filter: blur(1px); /* Subtle blur effect */
+  -webkit-backdrop-filter: blur(8px); /* Safari support */
+  border-radius: 30px 30px 0px 0px;
+}
+.spacingCard1 p{
+  color: white !important;
+}
+.spacingCard1 a{
+  color: white !important;
+  font-weight: bold !important;
+}
+.newCardsHere2{
+  height: 450px;
+  position: relative;
+  padding: 0px !important;
+}
+.spacingCard2{
+  position: absolute;
+  bottom: 0.1px;
+  padding: 30px;
+}
+.spacingCard2 p{
+  color:rgb(55, 56, 92) !important;
+}
+.spacingCard2 a{
+  color:rgb(55, 56, 92) !important;
+  font-weight: bold !important;
+}
+.bgCoverSpace{
+  height: 200px;
+}
+.ocuppying{
+  height: 100%;
+  width: 100%;
+}
+
+.case-studies {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 30%;
+    margin: 0 1%;
+    transition: transform 0.3s;
+    position: relative; /* Needed for absolute positioning of the button */
+}
+.content{
+  padding: 20px 10px 40px 20px;
+}
+.content1{
+  padding: 20px 10px 60px 20px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card .imgInCard {
+    width: 100%;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.card p {
+    color: #666;
+    margin-bottom: 10px; /* Adjusted for spacing */
+}
+
+.read-more {
+    color: blue;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+}
+.read-more::after {
+    content: ' →'; /* Added arrow icon */
+}
+
+.view-all {
+    position: absolute; /* Top right positioning */
+    top: 20px;
+    right: 20px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.view-all::after {
+    content: ' →'; /* Added arrow icon */
+}
+
+.view-all:hover {
+    text-decoration: underline;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center; /* Center cards on mobile */
+    }
+
+    .card {
+        width: 80%; /* Full-width on mobile */
+        margin: 10px 0; /* Spacing between cards */
+    }
+
+    .read-more {
+        right: 20px; /* Adjusted for mobile */
+    }
+
+    .view-all {
+        top: 10px; /* Adjusted for mobile */
+        right: 10px; /* Adjusted for mobile */
+    }
+}
+.knowMoreCase{
+  bottom: 8px;
+}
+
+
+
+.use-cases-container {
+    background: linear-gradient(to bottom, #6a5acd 50%, white 50%);
+    color: white;
+    padding: 80px 20px;
+}
+
+.use-cases-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-left: 163px;
+}
+
+.cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.cardUseCase {
+    background: white;
+    padding: 20px 20px 50px 20px !important;
+    width: 100%;
+    text-align: left;
+    color: black;
+    box-sizing: border-box;
+    max-width: 350px;
+    box-shadow: 0 1px 3px rgba(180, 180, 180, 0.3);
+    /* border: 1px solid; */
+}
+
+.number-circle {
+    color: #6a5acd;
+    font-size: 34px;
+    line-height: 29px;
+    font-weight: 500;
+}
+
+.card-title {
+    font-size: 24px;
+    margin: 20px 0 10px;
+    color: #6a5acd;
+}
+
+.card-description {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.learn-more {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    border: 1px solid black;
+    padding: 6px 20px;
+    position: absolute;
+    bottom: 10px;
+    border-radius: 6px;
+}
+
+.bi-arrow-up-right {
+    padding-left: 10px;
+    display: inline-block; /* Required for transform to work on inline elements */
+    transition: transform 0.3s ease; /* Move transition here for smoother effect */
+}
+
+.learn-more:hover {
+    color: blue;
+    border-color: blue; /* Optional: change border color on hover */
+}
+
+.learn-more:hover .bi-arrow-up-right {
+  margin-top: -15px !important;
+  transform: rotate(45deg); /* Rotate 45 degrees instead of rotateY */
+}
+
+/* Tablet and larger screens */
+@media (min-width: 768px) {
+    .cards-wrapper {
+        justify-content: space-around;
+        gap: 0;
+    }
+    
+    .cardUseCase {
+        width: 30%; /* Original width for larger screens */
+        padding: 20px 20px 20px 35px;
+    }
+}
+
+</style>  
+<body class="homepage1-body">
+
+<!--===== PRELOADER STARTS =======-->
+<div class="preloader">
+  <div class="loading-container">
+    <div class="loading"></div>
+    <div id="loading-icon"><img src="assets/img/logo/preloader.png" alt=""></div>
+  </div>
+</div>
+<!--===== PRELOADER ENDS =======-->
+
+<!--===== PROGRESS STARTS=======-->
+<div class="paginacontainer">
+     <div class="progress-wrap">
+       <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+       </svg>
+     </div>
+   </div>
+ <!--===== PROGRESS ENDS=======-->
+<!--=====HEADER START=======-->
+<header>
+  <div id="vl-header-sticky" class="vl-header-area vl-transparent-header">
+    <div class="container headerfix">
+      <div class="row align-items-center row-bg3 headerparent">
+        <!-- Logo -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <div class="reLogo"><img src="assets/img/logo/preloader2.jpeg" alt="Logo"></div>
+          <div class="vl-logo">
+            <a href="index.html"><img src="assets/img/logo/logo2.png" alt="Company Logo" ></a>
+          </div>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="col-lg-7 d-none d-lg-block">
+          <div class="vl-main-menu text-center">
+            <nav class="vl-mobile-menu-active">
+              <ul>
+                <li class="has-dropdown">
+                  <a href="#">Products <i class="fa-solid fa-angle-down"></i></a>
+                  <ul class="sub-menu">
+                    <li><a href="AI_Agent.html">AI Agent</a></li>
+                    <li><a href="ERP_Solutions.html">ERP Solutions</a></li>
+                    <li><a href="cloud_computing.html">Cloud Computing</a></li>
+                    <li><a href="EMP.html">EMP</a></li>
+                    <li><a href="SCM.html">SCM</a></li>
+                  </ul>
+                </li>
+                <li class="has-dropdown">
+                  <a href="#">Services <i class="fa-solid fa-angle-down"></i></a>
+                  <ul class="sub-menu">
+                    <li><a href="ai_ml.html">AI/ML</a></li>
+                    <li><a href="block_chain.html">Blockchain</a></li>
+                    <li><a href="cybersecurity.html">Cybersecurity</a></li>
+                    <li><a href="iot.html">Internet of Things</a></li>
+                    <li><a href="support_service.html">Support Services</a></li>
+                    <li><a href="it_consulting.html">IT Consulting</a></li>
+                    <li><a href="data_resilience.html">Data Resilience</a></li>
+                    <li><a href="Data_analytics.html">Data Analytics</a></li>
+                    <li><a href="Digital_Marketing.html">Digital Marketing</a></li>
+                    <li><a href="API_management.html">API Management</a></li>
+                  </ul>
+                </li>
+                <li class="has-dropdown">
+                  <a href="#">Industries <i class="fa-solid fa-angle-down"></i></a>
+                  <ul class="sub-menu">
+                    <li><a href="Aerospace.html">Aerospace</a></li>
+                    <li><a href="Agriculture.html">Agriculture</a></li>
+                    <li><a href="Education.html">Education</a></li>
+                    <li><a href="Insurance.html">Insurance</a></li>
+                    <li><a href="Life_sciences.html">Life Sciences</a></li>
+                    <li><a href="Retail.html">Retail</a></li>
+                  </ul>
+                </li>
+                <li><a href="careers.html">Careers</a></li>
+                <li class="has-dropdown">
+                  <a href="#">Company <i class="fa-solid fa-angle-down"></i></a>
+                  <ul class="sub-menu">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-6 mblres">
+          <div class="vl-header-action-item d-block d-lg-none" style="margin-top: -50px;">
+            <button type="button" class="vl-offcanvas-toggle">
+              <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+         </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</header>
+ <!--=====HEADER END =======-->
+
+<!--===== HERO AREA STARTS =======-->
+<div class="hero1-section-area" style="background-image: url(assets/img/all-images/bg/try2.jpg);">
+  <!-- <img src="assets/img/elements/elements5.png" alt="" class="elements5"> -->
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <div class="hero1-header heading1">
+          <!-- <h5 data-aos="fade-left" data-aos-duration="800"><span><img src="assets/img/icons/sub-logo1.svg" alt=""></span>Create your Dream Project With Us</h5> -->
+          <div class="space16"></div>
+          <h1 class="text-anime-style-3 mainHead">Advanced IT Solutions <br> For Modern Businesses</h1>
+          <div class="space16"></div>
+          <p data-aos="fade-left" data-aos-duration="900" class="mainHeadPara">We specialize in providing innovative scalable IT solutions tailored to meet the unique needs of your business, from comprehensive</p>
+          <div class="space32"></div>
+          <!-- <div class="btn-area1" data-aos="fade-left" data-aos-duration="1000">
+            <a href="contact.html" class="vl-btn1">Explore Our Solutions <i class="fa-solid fa-arrow-right"></i></a>
+          </div> -->
+        </div>
+      </div>
+      <div class="col-lg-1"></div>
+      <div class="col-lg-5 heroImgMove">
+        <div class="hero-images-area">
+          <div class="img1">
+            <img src="assets/img/all-images/hero/aizip.webp" alt="">
+          </div>
+          <div class="image-bg1">
+            <!-- <img src="assets/img/all-images/bg/img-bg1.png" alt=""> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--===== HERO AREA ENDS =======-->
+<!--===== MOBILE HEADER =====-->
+<div class="vl-offcanvas">
+  <div class="vl-offcanvas-wrapper">
+      <div class="vl-offcanvas-header d-flex justify-content-between align-items-center mb-90">
+          <div class="vl-offcanvas-logo">
+            <img src="assets/img/logo/preloader.png" alt="Logo" class="reLogo">
+            <div class="mainLogo"><a href="index.html"><img src="assets/img/logo/logo1.png" alt="Quanta AI Tech"></a></div>
+          </div>
+          <div class="vl-offcanvas-close">
+              <button class="vl-offcanvas-close-toggle"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+      </div>
+      <div class="vl-offcanvas-menu d-lg-none mb-40">
+          <nav></nav>
+      </div>
+      <div class="space24"></div>
+      <div class="vl-offcanvas-info">
+          <span><a href="#"><i class="fa-solid fa-phone"></i>+91 (40) 35055013</a></span>
+          <span><a href="#"><i class="fa-solid fa-location-dot "></i> <div style="margin: -24px 0px 0px 20px;">Rajapushpa Summit, Manikonda, Hyderabad, Telangana 500032</div></a></span>
+          <span><a href="#"><i class="fa-solid fa-envelope"></i> info@quantaaitech.com</a></span>
+      </div>
+      <div class="space24"></div>
+      <div class="vl-offcanvas-social">
+          <h3 class="vl-offcanvas-sm-title">Follow Us</h3>
+          <div class="space8"></div>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a style="margin-left: 5px;" href="#"><i class="fab fa-twitter"></i></a>
+          <a style="margin-left: 5px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a style="margin-left: 5px;" href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+  </div>
+</div>
+<div class="vl-offcanvas-overlay"></div>
+<!--===== MOBILE HEADER  END=====-->
+<div class="service1-section-area sp2">
+  <div class="container">
+    <div class="space16"></div>
+    <h1 data-aos="fade-left" data-aos-duration="800" style="font-size: 40px;color:rgb(55, 56, 92);font-weight: 600;line-height: 48px;font-family: 'Figtree', sans-serif; text-align: center; margin-bottom: 30px;">About Qunata</h1>
+    <div class="spaca16"></div>
+    <p data-aos="fade-left" data-aos-duration="800" style="font-size: 18px;color:rgb(55, 56, 92);font-weight: 500;line-height: 26px;font-family: 'Figtree', sans-serif; text-align: justify;">
+      Since our inception in 2012, Quanta AI Tech has transformed from a visionary startup into an award-winning leader in IT services. We empower businesses with cutting-edge solutions in  Cloud Computing, Mobile Innovation, Big Data Analytics, and  Emerging Technologies . Our commitment to forward-thinking strategies and client-focused execution has made us a trusted partner for Fortune 500 companies and industry pioneers.
+    </p>
+  </div>
+</div>
+<!--===== ABOUT AREA STARTS =======-->
+<div class="about1-section-area sp1">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <div class="about-images-area">
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6">
+              <div class="img1 image-anime reveal">
+                <img src="assets/img/all-images/about/about-img1.png" alt="">
+              </div>
+              <div class="space30 d-lg-none d-block"></div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="img1 image-anime reveal">
+                <img src="assets/img/all-images/about/about-img2.png" alt="">
+              </div>
+              <div class="space30"></div>
+              <div class="img1 image-anime reveal">
+                <img src="assets/img/all-images/about/about-img3.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="check-icons aniamtion-key-1">
+            <img src="assets/img/icons/check1.svg" alt="">
+            <p>With 13+ years of experience
+              IT solution help community.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-1"></div>
+      <div class="col-lg-5">
+        <div class="about-header-area heading2">
+          <div class="space24"></div>
+          <h2 class="text-anime-style-3">Unlock Business Potential with Tailored IT Services</h2>
+          <div class="space16"></div>
+          <p data-aos="fade-left" data-aos-duration="800">At Quanta, we understand that every business unique, which is why we offer customized IT solutions designed to meet.</p>
+          <div class="space28"></div>
+          <div class="row" data-aos="fade-left" data-aos-duration="900">
+            <div class="col-lg-6 col-md-6">
+              <div class="progresbar">
+                <div class="progressbar">
+                   <div class="circle" data-percent="96"><canvas width="80" height="80"></canvas>
+                       <div class="count">96%</div>
+                  </div>
+                </div>
+                <div class="content-area">
+                  <h4>IT Solution</h4>
+                  <div class="space8"></div>
+                  <p>Level Is High</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+              <div class="space28 d-md-none d-block"></div>
+              <div class="progresbar">
+                <div class="progressbar">
+                   <div class="circle" data-percent="97"><canvas width="80" height="80"></canvas>
+                       <div class="count">97%</div>
+                  </div>
+                </div>
+                <div class="content-area">
+                  <h4>Cyber Solution</h4>
+                  <div class="space8"></div>
+                  <p>#1 Best Of Solution</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="space28"></div>
+          <div class="pera-box" data-aos="fade-left" data-aos-duration="1000">
+            <p>“The right IT solutions done just support your on business-they transform it, at Quanta, we believe.”</p>
+          </div>
+          <div class="space28"></div>
+          <div class="btn-area1" data-aos="fade-left" data-aos-duration="1200">
+            <a href="contact.html" class="vl-btn2">See How We Can Help <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--===== ABOUT AREA ENDS =======-->
+
+<!--===== SERVICE AREA STARTS =======-->
+<div class="service1-section-area sp2" style="background-image: url(assets/img/all-images/bg/service-bg1.png); background-position: center; background-repeat: no-repeat; background-size: cover;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 m-auto">
+        <div class="service-header text-center heading2 space-margin60">
+          <h5><span><img src="assets/img/icons/sub-logo1.svg" alt=""></span>Our Services</h5>
+          <div class="space24"></div>
+          <h2 class="text-anime-style-3 desktopResponsive" style="white-space: nowrap;">Our Industry Expertise and Solutions</h2>
+          <h2 class="text-anime-style-3 mobileResponsive" style="white-space: nowrap;">Our Industry Expertise <br> and Solutions</h2>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="row">
+
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="800">
+        <div class="service1-boxarea newCardsHere">
+          <div class="ocuppying" style="background-image: url(/assets/img/all-images/index/newCards/image\ 64.png);">
+            <div class="space24"></div>
+            <div class="arrow">
+              <a href="cloud_computing.html"><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="spacingCard1">
+              <a href="cloud_computing.html">Cloud Computing</a>
+              <div class="space16"></div>
+              <p>Explore how we help businesses scale, innovate, and secure their operations through flexible, reliable, and cost-effective cloud solutions that deliver seamless experiences and foster growth.</p>
+              <div class="space24"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="800">
+        <div class="service1-boxarea newCardsHere2">
+          <div class="bgCoverSpace" style="background-image: url(/assets/img/all-images/index/newCards/Rectangle\ 15445.png);background-position: center; background-repeat: no-repeat; background-size: cover;">
+            <div class="arrow">
+            <a href="service-single.html"><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="space24"></div>
+          </div>
+          <div class="spacingCard2" style="background-color: white;">
+            <a href="service-single.html">Big Data</a>
+            <div class="space16"></div>
+            <p>Uncover how we turn data into actionable insights, enabling businesses to make informed decisions, optimize operations, and gain a competitive edge with advanced analytics and data management strategies.</p>
+            <div class="space24"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="800">
+        <div class="service1-boxarea newCardsHere2">
+          <div class="bgCoverSpace" style="background-image: url(/assets/img/all-images/index/newCards/Rectangle\ 173.png);background-position: center; background-repeat: no-repeat; background-size: cover;">
+            <div class="arrow">
+              <a href="ai_ml.html"><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="space24"></div>
+          </div>
+          <div class="spacingCard2" style="background-color: white;">
+            <a href="ai_ml.html">Artificial Intelligence</a>
+            <div class="space16"></div>
+            <p>Discover how we are harnessing the power of AI to enhance automation, drive intelligent decision-making, and transform business processes to boost efficiency and performance.</p>
+            <div class="space24"></div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="800">
+        <div class="service1-boxarea">
+          <div class="icons">
+            <img src="assets/img/icons/service-icon1.svg" alt="">
+          </div>
+          <div class="arrow">
+            <a href="service-single.html"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="space24"></div>
+          <a href="service-single.html">Sustainability</a>
+          <div class="space16"></div>
+          <p>Learn how we integrate sustainability into our solutions to create environmentally responsible and energy-efficient technology strategies, helping organizations reduce their carbon footprint and promote a greener future.</p>
+          <div class="space24"></div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="900">
+        <div class="service1-boxarea">
+          <div class="icons">
+            <img src="assets/img/icons/service-icon2.svg" alt="">
+          </div>
+          <div class="arrow">
+            <a href="service-single.html"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="space24"></div>
+          <a href="service-single.html">E - learning</a>
+          <div class="space16"></div>
+          <p>See how we are reshaping the future of education through innovative e-learning platforms that empower organizations to deliver personalized, engaging, and scalable learning experiences.</p>
+          <div class="space24"></div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="service1-boxarea">
+          <div class="icons">
+            <img src="assets/img/icons/service-icon3.svg" alt="">
+          </div>
+          <div class="arrow">
+            <a href="service-single.html"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="space24"></div>
+          <a href="service-single.html">Data Analytics</a>
+          <div class="space16"></div>
+          <p>We help businesses make informed decisions, optimize operations, and drive growth with data-driven analytics, providing insights to stay ahead in a competitive landscape.</p>
+          <div class="space24"></div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="1100">
+        <div class="service1-boxarea">
+          <div class="icons">
+            <img src="assets/img/icons/service-icon4.svg" alt="">
+          </div>
+          <div class="arrow">
+            <a href="service-single.html"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="space24"></div>
+          <a href="service-single.html">Devops</a>
+          <div class="space16"></div>
+          <p>Our DevOps solutions provide faster delivery and more efficiency while streamlining development, improving collaboration, and propelling growth for enterprises.</p>
+          <div class="space24"></div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="1200">
+        <div class="service1-boxarea">
+          <div class="icons">
+            <img src="assets/img/icons/service-icon5.svg" alt="">
+          </div>
+          <div class="arrow">
+            <a href="service-single.html"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="space24"></div>
+          <a href="service-single.html">Cyber Security</a>
+          <div class="space16"></div>
+          <p>By providing robust cybersecurity solutions, we help businesses safeguard resources, lower risks, and promote growth while ensuring resilience in a rapidly evolving digital landscape.</p>
+          <div class="space24"></div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="1300">
+        <div class="service1-boxarea">
+          <div class="icons">
+            <img src="assets/img/icons/service-icon6.svg" alt="">
+          </div>
+          <div class="arrow">
+            <a href="service-single.html"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="space24"></div>
+          <a href="service-single.html">Block chain</a>
+          <div class="space16"></div>
+          <p>With blockchain technologies, we help companies increase security, boost growth, and improve transparency—enabling efficiency and trust in a decentralised world.</p>
+          <div class="space24"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--===== SERVICE AREA ENDS =======-->
+
+<!--===== WORK AREA STARTS =======-->
+<div class="work1-section-area sp1">
+  <img src="assets/img/elements/elements11.png" alt="" class="elements9">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-5">
+        <div class="solution-header heading2">
+          <h5><span><img src="assets/img/icons/sub-logo1.svg" alt=""></span>best it solution</h5>
+          <div class="space24"></div>
+          <h2 class="text-anime-style-3">End-to-End IT Solutions for Growing Businesses</h2>
+          <div class="space16"></div>
+          <p data-aos="fade-left" data-aos-duration="800">We provide comprehensive, end-to-end IT solutions of designed to support businesses at stage of growing.</p>
+          <div class="space24"></div>
+          <div class="bg-progress" data-aos="fade-left" data-aos-duration="900">
+            <div class="progress-bar">
+              <label>It Solution <span>98%</span></label>
+              <div class="progress">
+                  <div class="progress-inner" style="width: 98%;"></div>
+              </div>
+          </div>
+      
+          <div class="progress-bar">
+              <label>Cyber Security <span>99%</span></label>
+              <div class="progress">
+                  <div class="progress-inner" style="width: 99%;"></div>
+              </div>
+          </div>
+      
+          <div class="progress-bar">
+              <label>Cloud Solution <span>99%</span></label>
+              <div class="progress">
+                  <div class="progress-inner" style="width: 99%;"></div>
+              </div>
+          </div>
+          </div>
+          <div class="space32"></div>
+          <div class="btn-area1" data-aos="fade-left" data-aos-duration="1000">
+            <a href="contact.html" class="vl-btn2">Discover Our Solutions <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2"></div>
+      <div class="col-lg-5">
+        <div class="soultions-images">
+          <img src="assets/img/elements/elements10.png" alt="" class="elements10">
+          <div class="img1 reveal image-anime">
+            <img src="assets/img/all-images/work/work-img1.png" alt="">
+          </div>
+          <div class="img2 reveal image-anime">
+            <img src="assets/img/all-images/work/work-img2.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--===== WORK AREA ENDS =======-->
+<div class="service1-section-area sp2" style="background-image: url(assets/img/all-images/bg/service-bg1.png); background-position: center; background-repeat: no-repeat; background-size: cover;">
+<div class="case-studies">
+  <h1>Case Studies</h1>
+  <div class="cards">
+      <div class="card image-anime">
+        <div class="imgInCard"><img src="/assets/img/all-images/index/caseStydy/image 35.png" alt="E-learning"></div>
+        <div class="content">
+          <h2>E-learning</h2>
+          <p>Discover how we are transforming education through dynamic e-learning platforms enabling organizations to deliver personalized, engaging, and scalable learning experiences for their audiences.</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+      <div class="card image-anime">
+        <div class="imgInCard"><img src="/assets/img/all-images/index/caseStydy/image 36.png" alt="AI Human Collab"></div>
+        <div class="content">
+          <h2>AI Human Collab</h2>
+          <p>Learn how our AI-driven solutions are empowering businesses by enhancing human decision-making, boosting productivity, and creating intelligent systems that work alongside people for optimal results.</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+      <div class="card image-anime">
+        <div class="imgInCard"><img src="/assets/img/all-images/index/caseStydy/image 37.png" alt="Cyber Security"></div>
+        <div class="content">
+          <h2>Cyber Security</h2>
+          <p>See how Waris is securing the digital landscape for various organizations, protecting them from emerging threats and ensuring the integrity of their data through advanced cybersecurity strategies and solutions.</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+  </div>
+  <a href="#" class="view-all">View all</a>
+</div>
+</div>
+
+
+
+<div class="service1-section-area sp2">
+  <div class="case-studies">
+    <h1>Latest insights</h1>
+    <div class="cards">
+        <div class="card image-anime">
+          <div class="imgInCard"><img src="/assets/img/all-images/index/caseStydy/image 35.png" alt="E-learning"></div>
+          <div class="content1">
+            <h2>Public Cloud Market</h2>
+            <a href="#" class="read-more knowMoreCase">Know More</a>
+          </div>
+        </div>
+        <div class="card image-anime">
+          <div class="imgInCard"><img src="/assets/img/all-images/index/caseStydy/image 36.png" alt="AI Human Collab"></div>
+          <div class="content1">
+            <h2>Digital Marketing</h2>
+            <a href="#" class="read-more knowMoreCase">Know More</a>
+          </div>
+        </div>
+        <div class="card image-anime">
+          <div class="imgInCard"><img src="/assets/img/all-images/index/caseStydy/image 37.png" alt="Cyber Security"></div>
+          <div class="content1">
+            <h2>Data Analytics</h2>
+            <a href="#" class="read-more knowMoreCase">Know More</a>
+          </div>
+        </div>
+    </div>
+  </div>
+  </div>
+
+
+  <div class="use-cases-container">
+    <h1 class="use-cases-title">Use Cases</h1>
+    <div class="cards-wrapper">
+        <div class="cardUseCase" id="use-case-1">
+            <div class="number-circle">01</div>
+            <h2 class="card-title">Optimizing Corporate Connectivity</h2>
+            <hr>
+            <p class="card-description">A global retail company faced frequent downtime affecting its operations. Your solution provided a robust, scalable network infrastructure, reducing downtime by 90% and enhancing productivity across branches.</p>
+            <a class="learn-more" href="#">Learn more <span><i class="bi bi-arrow-up-right"></i></span></a>
+        </div>
+        <div class="cardUseCase" id="use-case-2">
+            <div class="number-circle">02</div>
+            <h2 class="card-title">Preventing Data <br> Breaches</h2>
+            <hr>
+            <p class="card-description">Conducted a full cybersecurity audit to identify vulnerabilities in the hospital’s infrastructure. Deployed advanced threat detection systems, including firewalls, encryption, and multifactor authentication for sensitive data.</p>
+            <a class="learn-more" href="#">Learn more <span><i class="bi bi-arrow-up-right"></i></span></a>
+        </div>
+        <div class="cardUseCase" id="use-case-3">
+            <div class="number-circle">03</div>
+            <h2 class="card-title">Improving Marketing Campaigns</h2>
+            <hr>
+            <p class="card-description">Analyzed customer purchasing behavior, demographics, and browsing patterns to identify key segments. Used data insights to create personalized, targeted marketing campaigns tailored to specific customer profiles.</p>
+            <a class="learn-more" href="#">Learn more <span><i class="bi bi-arrow-up-right"></i></span></a>
+        </div>
+    </div>
+</div>
+
+<!--===== TEAM AREA STARTS =======-->
+<div class="team1-section-area sp2">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 m-auto">
+        <div class="team-header space-margin60 heading2 text-center">
+          <h5><span><img src="assets/img/icons/sub-logo1.svg" alt=""></span>our best team</h5>
+          <div class="space20"></div>
+          <h2 class="text-anime-style-3">Meet Our Expert Team</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="800">
+        <div class="team-author-boxarea">
+          <div class="img1 image-anime">
+            <img src="assets/img/all-images/team/team-img1.png" alt="">
+          </div>
+          <div class="content-area">
+            <div class="text">
+              <a href="team.html">Meera Nair</a>
+              <div class="space8"></div>
+              <p>Head Of Cybersecurity</p>
+            </div>
+            <div class="icons">
+              <a href="#"><img src="assets/img/icons/share1.svg" alt=""></a>
+            </div>
+          </div>
+          <ul>
+            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="team-author-boxarea">
+          <div class="img1 image-anime">
+            <img src="assets/img/all-images/team/team-img2.png" alt="">
+          </div>
+          <div class="content-area">
+            <div class="text">
+              <a href="team.html">Siddharth Sharma</a>
+              <div class="space8"></div>
+              <p>Software Development</p>
+            </div>
+            <div class="icons">
+              <a href="#"><img src="assets/img/icons/share1.svg" alt=""></a>
+            </div>
+          </div>
+          <ul>
+            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="1200">
+        <div class="team-author-boxarea">
+          <div class="img1 image-anime">
+            <img src="assets/img/all-images/team/team-img3.png" alt="">
+          </div>
+          <div class="content-area">
+            <div class="text">
+              <a href="team.html">Priya Mehta</a>
+              <div class="space8"></div>
+              <p>Data Analytics Specialist</p>
+            </div>
+            <div class="icons">
+              <a href="#"><img src="assets/img/icons/share1.svg" alt=""></a>
+            </div>
+          </div>
+          <ul>
+            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--===== TEAM AREA ENDS =======-->
+
+
+<div class="sp1 certificatsAlign">
+  <div class="container">
+    <div class="row">
+      <div id="titiles">
+        <h2>Accreditations & Certifications</h2>
+        <p>Quanta AI Tech, an award-winning IT company, we leverage Cloud, Mobile, and Big Data to transform businesses.</p>
+      </div>
+      <div id="certifications">
+        <div><img src="assets/img/all-images/index/certifications/2-300x300-1.png 1.png" alt=""></div>
+        <div><img src="assets/img/all-images/index/certifications/hippa.png" alt="Hippa"></div>
+        <div id="increaseImg"><img src="assets/img/all-images/index/certifications/4-2-300x300-1.png 1.png" alt="Certification"></div>
+        <div id="adjestImg"><img src="assets/img/all-images/index/certifications/5-300x300-1.png 1.png" alt=""></div>
+        <div><img src="assets/img/all-images/index/certifications/3-300x300-1.png 1.png" alt=""></div>
+        <div><img src="assets/img/all-images/index/certifications/GPTW-1.png 1.png" alt=""></div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--===== FOOTER AREA STARTS =======-->
+<div class="vl-footer1-section-area sp8">
+  <div class="container">
+    <div class="row footer">
+      <div class="col-lg-2 col-md-6">
+        <div class="space30 d-md-none d-block"></div>
+        <div class="vl-footer-widget">
+          <h3 style="padding: 0; margin: 0;">Quick Links</h3>
+          <ul>
+            <li style="margin: -7px 0; padding: 0;"><a href="about.html">About Us</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="service.html">It Solution</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="careers.html">Our Careers</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="#">Pricing Plan</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div> 
+      <div class="col-lg-2 col-md-6">
+        <div class="space30 d-md-none d-block"></div>
+        <div class="vl-footer-widget">
+          <h3 style="padding: 0; margin: 0;">Products</h3>
+          <ul class="sub-menu">
+            <li style="margin: -7px 0; padding: 0;"><a href="AI_Agent.html">AI Agent</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="ERP_Solutions.html">ERP Solutions</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="cloud_computing.html">Cloud Computing</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="EMP.html">EMP</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="SCM.html">SCM</a></li>
+          </ul>
+        </div>
+      </div> 
+
+      <div class="col-lg-3 col-md-6">
+        <div class="vl-footer-widget">
+          <div class="space30 d-lg-none d-block"></div>
+          <h3>Services</h3>
+          <ul style="padding: 0; margin: 0;">
+            <li style="margin: -7px 0; padding: 0;"><a href="ai_ml.html">AI/ML</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="block_chain.html">Blockchain</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="cybersecurity.html">Cybersecurity</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="iot.html">Internet of Things</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="support_service.html">Support Services</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="it_consulting.html">IT Consulting</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="data_resilience.html">Data Resilience</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="Data_analytics.html">Data analytics</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="Digital_Marketing.html">Digital Marketing</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="API_management.html">API management</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="vl-footer-widget">
+          <div class="space30 d-lg-none d-block"></div>
+          <h3>Industries</h3>
+          <ul style="padding: 0; margin: 0;">
+            <li style="margin: -7px 0; padding: 0;"><a href="Aerospace.html">Aerospace</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="Agriculture.html">Agriculture</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="Education.html">Education</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="Insurance.html">Insurance</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="Life_sciences.html">Life sciences</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="Retail.html">Retail</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6" style="margin-left: -20px;">
+        <div class="vl-footer-widget">
+          <div class="space30 d-lg-none d-block"></div>
+          <h3>Contact Us</h3>
+          <ul style="padding: 0; margin: 0;">
+            <li style="margin: -7px 0; padding: 0;"><a href="tel:+11234567890"><img src="assets/img/icons/phn1.svg" alt="">+91 (40) 35055013</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="#"><img src="assets/img/icons/location1.svg" alt=""><div style="margin: -24px 0px 0px 32px;">Mindspace Survey No. 64, Building Number 9, 13th Floor, Madhapur, Hyderabad, Telangana 500081. </div></a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="mailto:Qunata AIsolution@com"><img src="assets/img/icons/email1.svg" alt="">info@quantaaitech.com</a></li>
+          </ul>
+          <div>
+            <div class="col-lg-3" style="margin-left: -20px;">
+              <div class="footer-logo1 logiAlign">
+                <ul class="iconArrange">
+                  <li ><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                  <li ><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                  <li ><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                  <li ><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+          </div>
+      </div>
+    </div>
+    <div class="space60"></div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="vl-copyright-area">
+          <p>© Copyright 2025 - Qunata AI Tech. All Right Reserved</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--===== FOOTER AREA ENDS =======-->
+
+<!--===== JS SCRIPT LINK =======-->
+<script src="assets/js/plugins/bootstrap.min.js"></script>
+<script src="assets/js/plugins/fontawesome.js"></script>
+<script src="assets/js/plugins/aos.js"></script>
+<script src="assets/js/plugins/counter.js"></script>
+<script src="assets/js/plugins/gsap.min.js"></script>
+<script src="assets/js/plugins/ScrollTrigger.min.js"></script>
+<script src="assets/js/plugins/Splitetext.js"></script>
+<script src="assets/js/plugins/SmoothScroll.js"></script>
+<script src="assets/js/plugins/sidebar.js"></script>
+<script src="assets/js/plugins/magnific-popup.js"></script>
+<script src="assets/js/plugins/mobilemenu.js"></script>
+<script src="assets/js/plugins/owlcarousel.min.js"></script>
+<script src="assets/js/plugins/nice-select.js"></script>
+<script src="assets/js/plugins/waypoints.js"></script>
+<script src="assets/js/plugins/slick-slider.js"></script>
+<script src="assets/js/plugins/circle-progress.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

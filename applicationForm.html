@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quanta AI Tech - AI & ML</title>
+
+    <!--===== FAVICON =====-->
+    <link rel="shortcut icon" href="assets/img/logo/fav-logo1.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+
+    <!--===== CSS LINK =====-->
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/aos.css">
+    <link rel="stylesheet" href="assets/css/plugins/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/plugins/owlcarousel.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/slick-slider.css">
+    <link rel="stylesheet" href="assets/css/plugins/nice-select.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/plugins/ai-ml.css">
+
+    <!--===== JS SCRIPT LINK =====-->
+    <script src="assets/js/plugins/jquery-3-7-1.min.js"></script>
+</head>
+<style>
+    *{
+        font-family: 'Figtree', sans-serif;
+    }
+  @media (min-width: 992px) {
+    .reLogo{
+      margin: 8px 0px 0px 50px;
+      width: 30px;
+      height: auto;
+      float: left;
+    }
+    .vl-logo{
+      margin-left: 90px;
+    }
+    .mblres{
+      display: none;
+    }
+    .vl-main-menu{
+      margin-left: 550px;
+    }
+    .vl-main-menu nav ul {
+      display: flex;
+      gap: 35px; /* Add gap between main menu items */
+      white-space: nowrap;
+      justify-content: center;
+      margin: 0 auto;
+      padding: 0;
+      list-style: none;
+    }
+  
+    /* Reset submenu display */
+    .has-dropdown .sub-menu {
+      display: block !important;
+      flex-direction: column;
+      gap: 0; /* Remove gap for submenus */
+    }
+  
+    /* Main menu list items */
+    .vl-main-menu ul > li {
+      position: relative;
+      margin: 0;
+      padding: 0;
+    }
+  
+    /* Submenu list items */
+    .has-dropdown .sub-menu li {
+      display: block;
+      margin: 0;
+      padding: 0;
+      white-space: nowrap;
+    }
+  }
+  
+  <!--footer-->
+  .footer-logo1 .fa-brands
+  {
+    margin-top: 50px;
+  }
+  .footer
+  {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-left: -80px;
+  }
+  .footer .col-md-6 ul{
+    width: 300px;
+  }
+  .footer .col-md-6{
+    width: 20%;
+  }
+  
+  /* Footer Mobile Responsive */
+  @media (max-width: 767px) {
+    .iconArrange{
+  display: flex;
+  justify-content:start;
+  gap: 5px;
+  margin-left: 6px !important;
+}
+    #desktop{
+      display: none;
+    }
+    .reLogo{
+      margin: 8px 0px 0px 0px;
+      width: 30px;
+      height: auto;
+      float: left;
+    }
+    .mainLogo{
+      width: 120px;
+      margin:3px 0px 0px 38px;
+    }
+    .vl-logo{
+      margin-left: 35px;
+    }
+    .vl-footer1-section-area .row{
+      margin-left: -2px;
+    }
+  
+    .vl-footer-widget {
+      margin-bottom: 20px;
+    }
+  
+    .vl-footer-widget h3 {
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+  
+    .vl-footer-widget ul li {
+      margin: 2.5px 0 !important;
+      padding: 0 !important;
+    }
+  
+    .vl-footer-widget ul li a {
+      font-size: 14px;
+    }
+  
+    /* Contact Section */
+    .vl-footer-widget ul li a img {
+      width: 18px;
+      margin-left: 5px;
+    }
+  
+    /* Address text adjustment */
+    .vl-footer-widget ul li a div {
+      margin-left: 25px !important;
+      line-height: 1.4;
+      font-size: 14px;
+    }
+  
+    /* Social Icons */
+    .footer-logo1{
+      margin:-15px 0px 0px -22px;
+    }
+    .footer-logo1 ul {
+      justify-content: center !important;
+      margin-top: 20px;
+    }
+  
+    .footer-logo1 ul li {
+      margin: 0 10px !important;
+    }
+  
+    /* Copyright */
+    .vl-copyright-area p {
+      text-align: center;
+      font-size: 14px;
+    }
+  
+    /* Grid adjustments */
+    .col-lg-3, .col-lg-2 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  
+    /* Remove negative margins */
+    .col-lg-3[style*="margin-left"] {
+      margin-left: 0 !important;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+
+  /* Keep your other tablet-specific styles */
+    .reLogo{
+      margin: 8px 0px 0px 0px !important;
+      width: 40px !important;
+      height: auto;
+      float: left;
+      padding-right: 10px;
+      padding-left: 5px;
+    }
+    .mainLogo{
+      width: 100px !important;
+      margin:3px 0px 0px 40px !important;
+    }
+    .vl-footer-widget {
+      margin-bottom: 30px;
+    }
+  
+    .col-lg-2, .col-lg-3 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  
+    .footer-logo1 ul {
+      justify-content: flex-start !important;
+    }
+  }
+
+.icon-text {
+    display: flex; /* Use flexbox to align items in a row */
+    align-items: center; /* Center items vertically */
+    justify-content: start;
+    gap: 10px;
+}
+
+.icon-text i {
+    margin-right: 10px; /* Space between the icon and text */
+    font-size: 24px; /* Increase the size of the icon */
+    color: #080732; /* Change color if needed */
+    transform: rotate(90deg); /* Rotate the arrow */
+    padding-bottom: 10px;
+}
+.iconArrange{
+  display: flex;
+  justify-content:start;
+  gap: 5px;
+  margin-left: 21px;
+}
+.iconArrange a i{
+  margin-top: 11px;
+}
+
+.vl-footer1-section-area a{
+  color: rgb(255, 255, 255) !important;
+  font-size: 14px !important;
+}
+.vl-footer1-section-area h3{
+  color: white !important;
+  font-weight: 500 !important;
+  font-size: 20px !important;
+}
+.vl-footer1-section-area{
+  background-color: #313030;
+  font-weight: 400 !important;
+}
+.vl-footer1-section-area .fa-brands{
+  color: black;
+}
+.vl-copyright-area p{
+  color: white !important;
+  font-size: 14px !important;
+}
+.vl-footer-widget img {
+  filter: brightness(0) invert(1);
+}
+/* General Styling */
+.form-container {
+    max-width: 800px;
+    margin: 100px auto 50px auto; /* Added bottom margin to prevent footer overlap */
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-container h3 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.form-container h3 + span {
+    display: block;
+    margin-bottom: 30px;
+    color: #7f8c8d;
+    font-size: 16px;
+}
+
+.form-container h3 + span input {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 16px;
+    color: #3498db;
+    font-weight: 500;
+    width: 300px;
+    background: transparent;
+}
+
+/* Form Layout */
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form-row .form-group {
+    flex: 1 1 calc(50% - 20px); /* Ensures two items per row with gap */
+    min-width: 250px;
+}
+
+/* Special handling for address group to keep items in one line */
+.adressGroupRaMowa .form-group {
+    flex: 1 1 calc(33.333% - 20px); /* Three items per row */
+    min-width: 180px; /* Smaller min-width for address fields */
+}
+
+/* YOP field - keeps it inline with other elements */
+#GrandParent > div > .form-group {
+    flex: 1 1 calc(50% - 20px);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #34495e;
+    font-size: 15px;
+}
+
+/* Input Fields */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="number"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: all 0.3s;
+    background-color: #f9f9f9;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+    background-color: #fff;
+}
+
+/* Radio Button Group */
+.gender-group .radio-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.gender-group .btn {
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 14px;
+    border: 1px solid #ddd !important;
+}
+
+.gender-group .btn:hover {
+    transform: translateY(-2px);
+}
+
+.gender-group .btn-outline-primary {
+    color: #3498db;
+}
+
+.gender-group .btn-outline-danger {
+    color: #e74c3c;
+}
+
+.gender-group .btn-outline-secondary {
+    color: #7f8c8d;
+}
+
+.gender-group input[type="radio"]:checked + .btn-outline-primary {
+    background-color: #3498db;
+    color: white;
+}
+
+.gender-group input[type="radio"]:checked + .btn-outline-danger {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.gender-group input[type="radio"]:checked + .btn-outline-secondary {
+    background-color: #7f8c8d;
+    color: white;
+}
+
+/* DOB Fields */
+.dob-container {
+    display: flex;
+    gap: 10px;
+}
+
+.dob-container input {
+    flex: 1;
+    text-align: center;
+    padding: 12px 5px;
+}
+
+/* Error Messages */
+.error {
+    color: #e74c3c;
+    font-size: 13px;
+    margin-top: 5px;
+    display: none;
+}
+
+input:invalid.touched + .error,
+.dob-group .error,
+.gender-group .error {
+    display: block;
+}
+
+input:invalid.touched {
+    border-color: #e74c3c;
+}
+
+input:invalid.touched:focus {
+    box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.2);
+}
+
+/* Submit Button */
+#submitBtn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 14px 25px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 500;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#submitBtn:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#submitBtn:active {
+    transform: translateY(0);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 20px;
+        margin: 50px auto 30px auto; /* Adjusted margins for mobile */
+    }
+    
+    .form-container h3 + span input {
+        width: 200px;
+    }
+    
+    .form-row .form-group,
+    .adressGroupRaMowa .form-group,
+    #GrandParent > div > .form-group {
+        flex: 1 1 100%; /* Stack all fields on mobile */
+    }
+    
+    .dob-container {
+        flex-direction: row; /* Keep DOB fields inline */
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        padding: 15px;
+        margin: 30px auto 20px auto;
+    }
+    
+    .form-container h3 + span {
+        font-size: 14px;
+    }
+    
+    .form-container h3 + span input {
+        width: 150px;
+        font-size: 14px;
+    }
+    
+    .gender-group .radio-group {
+        flex-direction: column;
+    }
+}
+  </style> 
+<body class="homepage1-body" onload="loadJobDetails()">
+
+<!--===== PRELOADER =====-->
+<div class="preloader">
+    <div class="loading-container">
+        <div class="loading"></div>
+        <div id="loading-icon"><img src="assets/img/logo/preloader.png" alt=""></div>
+    </div>
+</div>
+
+<!--===== PROGRESS BAR =====-->
+<div class="paginacontainer">
+    <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+        </svg>
+    </div>
+</div>
+
+<!--=====HEADER START=======-->
+<header>
+    <div id="vl-header-sticky" class="vl-header-area vl-transparent-header">
+      <div class="container headerfix">
+        <div class="row align-items-center row-bg3 headerparent">
+          <!-- Logo -->
+          <div class="col-lg-2 col-md-6 col-6">
+            <div class="reLogo"><img src="assets/img/logo/preloader2.jpeg" alt="Logo"></div>
+            <div class="vl-logo">
+              <a href="index.html"><img src="assets/img/logo/logo2.png" alt="Company Logo"></a>
+            </div>
+          </div>
+  
+          <!-- Desktop Menu -->
+          <div class="col-lg-7 d-none d-lg-block">
+            <div class="vl-main-menu text-center">
+              <nav class="vl-mobile-menu-active">
+                <ul>
+                  <li class="has-dropdown">
+                    <a href="#">Products <i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="sub-menu">
+                      <li><a href="AI_Agent.html">AI Agent</a></li>
+                      <li><a href="ERP_Solutions.html">ERP Solutions</a></li>
+                      <li><a href="cloud_computing.html">Cloud Computing</a></li>
+                      <li><a href="EMP.html">EMP</a></li>
+                      <li><a href="SCM.html">SCM</a></li>
+                    </ul>
+                  </li>
+                  <li class="has-dropdown">
+                    <a href="#">Services <i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="sub-menu">
+                      <li><a href="ai_ml.html">AI/ML</a></li>
+                      <li><a href="block_chain.html">Blockchain</a></li>
+                      <li><a href="cybersecurity.html">Cybersecurity</a></li>
+                      <li><a href="iot.html">Internet of Things</a></li>
+                      <li><a href="support_service.html">Support Services</a></li>
+                      <li><a href="it_consulting.html">IT Consulting</a></li>
+                      <li><a href="data_resilience.html">Data Resilience</a></li>
+                      <li><a href="Data_analytics.html">Data Analytics</a></li>
+                      <li><a href="Digital_Marketing.html">Digital Marketing</a></li>
+                      <li><a href="API_management.html">API Management</a></li>
+                    </ul>
+                  </li>
+                  <li class="has-dropdown">
+                    <a href="#">Industries <i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="sub-menu">
+                      <li><a href="Aerospace.html">Aerospace</a></li>
+                      <li><a href="Agriculture.html">Agriculture</a></li>
+                      <li><a href="Education.html">Education</a></li>
+                      <li><a href="Insurance.html">Insurance</a></li>
+                      <li><a href="Life_sciences.html">Life Sciences</a></li>
+                      <li><a href="Retail.html">Retail</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="careers.html">Careers</a></li>
+                  <li class="has-dropdown">
+                    <a href="#">Company <i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="sub-menu">
+                      <li><a href="about.html">About Us</a></li>
+                      <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-6 mblres">
+            <div class="vl-header-action-item d-block d-lg-none" style="margin-top: -50px;">
+              <button type="button" class="vl-offcanvas-toggle">
+                <i class="fa-solid fa-bars-staggered"></i>
+              </button>
+           </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </header>
+<!--=====HEADER END =======-->
+<!--===== MOBILE HEADER =====-->
+<div class="vl-offcanvas">
+    <div class="vl-offcanvas-wrapper">
+        <div class="vl-offcanvas-header d-flex justify-content-between align-items-center mb-90">
+            <div class="vl-offcanvas-logo">
+              <img src="assets/img/logo/preloader.png" alt="Logo" class="reLogo">
+              <div class="mainLogo"><a href="index.html"><img src="assets/img/logo/logo1.png" alt="Quanta AI Tech"></a></div>
+            </div>
+            <div class="vl-offcanvas-close">
+                <button class="vl-offcanvas-close-toggle"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </div>
+        <div class="vl-offcanvas-menu d-lg-none mb-40">
+            <nav></nav>
+        </div>
+        <div class="space24"></div>
+        <div class="vl-offcanvas-info">
+            <span><a href="#"><i class="fa-solid fa-phone"></i>+91 (40) 35055013</a></span>
+            <span><a href="#"><i class="fa-solid fa-location-dot "></i> <div style="margin: -24px 0px 0px 20px;">Rajapushpa Summit, Manikonda, Hyderabad, Telangana 500032</div></a></span>
+            <span><a href="#"><i class="fa-solid fa-envelope"></i> info@quantaaitech.com</a></span>
+        </div>
+        <div class="space24"></div>
+        <div class="vl-offcanvas-social">
+            <h3 class="vl-offcanvas-sm-title">Follow Us</h3>
+            <div class="space8"></div>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a style="margin-left: 5px;" href="#"><i class="fab fa-twitter"></i></a>
+            <a style="margin-left: 5px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a style="margin-left: 5px;" href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+  </div>
+  <div class="vl-offcanvas-overlay"></div>
+  <!--===== MOBILE HEADER  END=====-->
+
+  <div class="formDiv">
+  <div class="form-container">
+    <h3 style="padding-bottom: 30px;">Applicant Details</h3><span>for<input type="text" id="jobRole" readonly></span>
+    <form id="applicationForm" novalidate>
+        <!-- Name Section -->
+        <div class="form-row">
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" required>
+                <div class="error">Please enter your first name</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" required>
+                <div class="error">Please enter your last name</div>
+            </div>
+        </div>
+    
+        <div class="form-group">
+            <label for="applicantMobile">Mobile Number</label>
+            <input type="tel" id="applicantMobile" pattern="[0-9]{10}" required>
+            <div class="error">Please enter a valid 10-digit mobile number</div>
+        </div>
+    
+        <div class="form-group">
+            <label for="applicantEmail">Email Id</label>
+            <input type="email" id="applicantEmail" required>
+            <div class="error">Please enter a valid email address</div>
+        </div>
+    
+        <div class="form-row">
+            <div class="form-group gender-group">
+                <label>Gender</label>
+                <div class="radio-group">
+                    <input type="radio" name="gender" id="male" value="male" class="btn-check" autocomplete="off" required>
+                    <label for="male" class="btn btn-outline-primary">Male</label>
+                
+                    <input type="radio" name="gender" id="female" value="female" class="btn-check" autocomplete="off">
+                    <label for="female" class="btn btn-outline-danger">Female</label>
+                
+                    <input type="radio" name="gender" id="not_preferred" value="not_preferred" class="btn-check" autocomplete="off">
+                    <label for="not_preferred" class="btn btn-outline-secondary">Not prefered to say</label>
+                </div>
+                <div class="error">Please select your gender</div>
+            </div>
+    
+            <div class="form-group dob-group">
+                <label>Date of Birth</label>
+                <div class="dob-container">
+                    <input type="number" id="dobDay" placeholder="DD" min="1" max="31" required>
+                    <input type="number" id="dobMonth" placeholder="MM" min="1" max="12" required>
+                    <input type="number" id="dobYear" placeholder="YYYY" min="1900" max="2099" required>
+                </div>
+                <div class="error">Please enter a valid date</div>
+            </div>
+        </div>
+        <div id="GrandParent" class="form-group">
+        <div>
+        <div class="form-group">
+            <label for="applicantYOP">Year of Passing (YOP)</label>
+            <input type="number" id="applicantYOP" min="1900" max="2099" required>
+            <div class="error">Please enter a valid year between 1900-2099</div>
+        </div>
+        </div>
+    
+        <!-- Address Section - Grouped like Gender/DOB -->
+        <div class="form-row adressGroupRaMowa">
+            <div class="form-group">
+                <label for="applicantState">State</label>
+                <input type="text" id="applicantState" required>
+                <div class="error">Please enter your state</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="applicantCity">City</label>
+                <input type="text" id="applicantCity" required>
+                <div class="error">Please enter your city</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="applicantPincode">Pincode</label>
+                <input type="text" id="applicantPincode" pattern="[0-9]{6}" required>
+                <div class="error">Please enter a valid 6-digit pincode</div>
+            </div>
+        </div>
+        <button type="button" id="submitBtn">Submit Application</button>
+    </form>
+</div>
+  </div>
+  <script>
+    function loadJobDetails() {
+        document.getElementById("jobRole").value = localStorage.getItem("jobRole") || "";
+    }
+
+    // Initialize the form - hide all error messages on load
+    document.addEventListener('DOMContentLoaded', function() {
+        // Hide gender error
+        document.querySelector('.gender-group .error').style.display = 'none';
+        
+        // Hide DOB error
+        document.querySelector('.dob-group .error').style.display = 'none';
+        
+        // Load job details
+        loadJobDetails();
+    });
+
+    // Track touched fields to show validation only after interaction
+    document.querySelectorAll('input, select').forEach(input => {
+        input.addEventListener('blur', () => {
+            input.classList.add('touched');
+            // Validate the field when it loses focus
+            if (input.name === 'gender') {
+                validateGender();
+            } else if (input.id.includes('dob')) {
+                validateDOB();
+            }
+        });
+    });
+
+    // Add touch class to gender radios when any is selected
+    document.querySelectorAll('input[name="gender"]').forEach(radio => {
+        radio.addEventListener('change', () => {
+            document.querySelectorAll('input[name="gender"]').forEach(r => {
+                r.classList.add('touched');
+            });
+            validateGender();
+        });
+    });
+
+    // Add touch class to DOB fields when they change
+    ['dobDay', 'dobMonth', 'dobYear'].forEach(id => {
+        document.getElementById(id).addEventListener('change', function() {
+            this.classList.add('touched');
+            validateDOB();
+        });
+    });
+
+    document.getElementById('submitBtn').addEventListener('click', function() {
+        // Mark all fields as touched to show validation errors
+        document.querySelectorAll('input, select').forEach(input => {
+            input.classList.add('touched');
+        });
+
+        if (!validateForm()) {
+            return;
+        }
+
+        sendApplication();
+    });
+
+    function validateGender() {
+        const genderSelected = document.querySelector('input[name="gender"]:checked');
+        const errorElement = document.querySelector('.gender-group .error');
+        
+        // Only show error if the field has been touched
+        const isTouched = Array.from(document.querySelectorAll('input[name="gender"]'))
+            .some(radio => radio.classList.contains('touched'));
+        
+        if (!isTouched) {
+            errorElement.style.display = 'none';
+            return false;
+        }
+
+        if (!genderSelected) {
+            errorElement.style.display = 'block';
+            return false;
+        } else {
+            errorElement.style.display = 'none';
+            return true;
+        }
+    }
+
+    function validateDOB() {
+        const day = document.getElementById('dobDay').value;
+        const month = document.getElementById('dobMonth').value;
+        const year = document.getElementById('dobYear').value;
+        const errorElement = document.querySelector('.dob-group .error');
+        
+        // Only show error if any DOB field has been touched
+        const isTouched = ['dobDay', 'dobMonth', 'dobYear'].some(id => 
+            document.getElementById(id).classList.contains('touched')
+        );
+        
+        if (!isTouched) {
+            errorElement.style.display = 'none';
+            return false;
+        }
+
+        if (!day || !month || !year) {
+            errorElement.style.display = 'block';
+            return false;
+        }
+        
+        // Rest of your DOB validation logic...
+        const maxDays = new Date(year, month, 0).getDate();
+        if (day < 1 || day > maxDays) {
+            errorElement.textContent = 'Please enter a valid day for the selected month/year';
+            errorElement.style.display = 'block';
+            return false;
+        }
+        
+        const dobDate = new Date(year, month - 1, day);
+        const today = new Date();
+        if (dobDate > today) {
+            errorElement.textContent = 'Date of birth cannot be in the future';
+            errorElement.style.display = 'block';
+            return false;
+        }
+        
+        const minAgeDate = new Date();
+        minAgeDate.setFullYear(minAgeDate.getFullYear() - 16);
+        if (dobDate > minAgeDate) {
+            errorElement.textContent = 'You must be at least 16 years old';
+            errorElement.style.display = 'block';
+            return false;
+        }
+        
+        errorElement.style.display = 'none';
+        return true;
+    }
+
+    // Rest of your existing functions (sendApplication, showAlert, validateForm) remain the same
+    function sendApplication() {
+        if (!validateForm()) return;
+        if (!confirm('Are you sure you want to submit this application?')) return;
+
+        let jobRole = document.getElementById("jobRole").value;
+        let jobLocation = localStorage.getItem("jobLocation") || "";
+        let jobExperience = localStorage.getItem("jobExperience") || "";
+        let jobPositions = localStorage.getItem("jobPositions") || "";
+        let jobSkills = localStorage.getItem("jobSkills") || "";
+
+        let gender= document.querySelector('input[name="gender"]:checked').value;
+        
+        const day = document.getElementById('dobDay').value.padStart(2, '0');
+        const month = document.getElementById('dobMonth').value.padStart(2, '0');
+        const year = document.getElementById('dobYear').value;
+        const applicantDob = `${day}/${month}/${year}`;
+        
+        let firstName = document.getElementById("firstName").value;
+        let lastName = document.getElementById("lastName").value;
+        let yop = document.getElementById("applicantYOP").value;
+        let mobile = document.getElementById("applicantMobile").value;
+        let email = document.getElementById("applicantEmail").value;
+        let state = document.getElementById("applicantState").value;
+        let city = document.getElementById("applicantCity").value;
+        let pincode = document.getElementById("applicantPincode").value;
+
+        let subject = `Job Application Recived- ${jobRole}`;
+        let body = `Dear Hiring Manager,\r\n\r\n`
+            + `Please find my application for the following role:\r\n\r\n`
+            + `🔹 Job Role: ${jobRole}\r\n`
+            + `🔹 Location: ${jobLocation}\r\n`
+            + `🔹 Experience Required: ${jobExperience}\r\n`
+            + `🔹 No of Positions: ${jobPositions}\r\n`
+            + `🔹 Skillset: ${jobSkills}\r\n\r\n`
+            + `-------------------------\r\n`
+            + `Applicant Details:\r\n`
+            + `🔹 Name: ${firstName} ${lastName}\r\n`
+            + `🔹 Mobile: ${mobile}\r\n`
+            + `🔹 Email: ${email}\r\n`
+            + `🔹 Address: ${city}, ${state} - ${pincode}\r\n`
+            + `🔹 Gender: ${gender}\r\n`
+            + `🔹 Date of Birth: ${applicantDob}\r\n`
+            + `🔹 Year of Passing: ${yop}\r\n\r\n`
+            + `⚠️ Please remember to attach your resume and recent photo before sending this email.\r\n`
+            + `Looking forward to your response.\r\n\r\n`
+            + `Regards,\r\n`
+            + `${firstName} ${lastName}`;
+
+        showAlert('success', 'Redirecting to email...');
+        const mailtoLink = `mailto:quantaaitech@gmail.com?subject=${
+            encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        
+        window.location.href = mailtoLink;
+    }
+
+    function showAlert(type, message) {
+        const alertBox = document.createElement('div');
+        alertBox.style.position = 'fixed';
+        alertBox.style.top = '20px';
+        alertBox.style.right = '20px';
+        alertBox.style.padding = '15px 25px';
+        alertBox.style.borderRadius = '6px';
+        alertBox.style.color = 'white';
+        alertBox.style.zIndex = '1000';
+        alertBox.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
+        
+        if(type === 'success') {
+            alertBox.style.background = '#28a745';
+        } else if(type === 'error') {
+            alertBox.style.background = '#dc3545';
+        } else {
+            alertBox.style.background = '#ffc107';
+            alertBox.style.color = '#000';
+        }
+        
+        alertBox.textContent = message;
+        document.body.appendChild(alertBox);
+        
+        setTimeout(() => {
+            alertBox.remove();
+        }, 5000);
+    }
+
+    function validateForm() {
+        let isValid = true;
+        const errors = [];
+        
+        // Validate required fields
+        const requiredFields = [
+            'firstName', 'lastName', 'applicantMobile', 
+            'applicantEmail', 'applicantYOP', 'applicantState',
+            'applicantCity', 'applicantPincode'
+        ];
+        
+        requiredFields.forEach(fieldId => {
+            const field = document.getElementById(fieldId);
+            if (!field.value.trim()) {
+                errors.push(`${field.labels ? field.labels[0].textContent : 'Field'} is required`);
+                isValid = false;
+            }
+        });
+
+        // Validate gender only if touched
+        const genderTouched = Array.from(document.querySelectorAll('input[name="gender"]'))
+            .some(radio => radio.classList.contains('touched'));
+        
+        if (genderTouched && !validateGender()) {
+            errors.push('Please select your gender');
+            isValid = false;
+        }
+
+        // Validate DOB only if any field is touched
+        const dobTouched = ['dobDay', 'dobMonth', 'dobYear'].some(id => 
+            document.getElementById(id).classList.contains('touched')
+        );
+        
+        if (dobTouched && !validateDOB()) {
+            errors.push('Please enter a valid date of birth');
+            isValid = false;
+        }
+
+        // Other validations...
+        const emailField = document.getElementById('applicantEmail');
+        if (emailField.value && !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailField.value)) {
+            errors.push('Please enter a valid email address');
+            isValid = false;
+        }
+
+        const mobileField = document.getElementById('applicantMobile');
+        if (mobileField.value && !/^\d{10}$/.test(mobileField.value)) {
+            errors.push('Mobile number must be 10 digits');
+            isValid = false;
+        }
+
+        const yopField = document.getElementById('applicantYOP');
+        if (yopField.value && (yopField.value < 1900 || yopField.value > new Date().getFullYear())) {
+            errors.push('Please enter a valid year of passing');
+            isValid = false;
+        }
+
+        const pincodeField = document.getElementById('applicantPincode');
+        if (pincodeField.value && !/^\d{6}$/.test(pincodeField.value)) {
+            errors.push('Pincode must be 6 digits');
+            isValid = false;
+        }
+
+        if (!isValid) {
+            showAlert('error', `Please fix the following errors:\n${errors.join('\n')}`);
+        }
+
+        return isValid;
+    }
+</script>
+
+
+<!--===== FOOTER AREA STARTS =======-->
+<div class="vl-footer1-section-area sp8">
+  <div class="container">
+    <div class="row footer">
+      <div class="col-lg-2 col-md-6">
+        <div class="space30 d-md-none d-block"></div>
+        <div class="vl-footer-widget">
+          <h3 style="padding: 0; margin: 0;">Quick Links</h3>
+          <ul>
+            <li style="margin: -7px 0; padding: 0;"><a href="about.html">About Us</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="service.html">It Solution</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="careers.html">Our Careers</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="#">Pricing Plan</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div> 
+      <div class="col-lg-2 col-md-6">
+        <div class="space30 d-md-none d-block"></div>
+        <div class="vl-footer-widget">
+          <h3 style="padding: 0; margin: 0;">Products</h3>
+          <ul class="sub-menu">
+            <li style="margin: -7px 0; padding: 0;"><a href="AI_Agent.html">AI Agent</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="ERP_Solutions.html">ERP Solutions</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="cloud_computing.html">Cloud Computing</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="EMP.html">EMP</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="SCM.html">SCM</a></li>
+          </ul>
+        </div>
+      </div> 
+
+      <div class="col-lg-3 col-md-6">
+        <div class="vl-footer-widget">
+          <div class="space30 d-lg-none d-block"></div>
+          <h3>Services</h3>
+          <ul style="padding: 0; margin: 0;">
+            <li style="margin: -7px 0; padding: 0;"><a href="ai_ml.html">AI/ML</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="block_chain.html">Blockchain</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="cybersecurity.html">Cybersecurity</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="iot.html">Internet of Things</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="support_service.html">Support Services</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="it_consulting.html">IT Consulting</a></li>
+             <li style="margin: -7px 0; padding: 0;"><a href="data_resilience.html">Data Resilience</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="Data_analytics.html">Data analytics</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="Digital_Marketing.html">Digital Marketing</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="API_management.html">API management</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="vl-footer-widget">
+          <div class="space30 d-lg-none d-block"></div>
+          <h3>Industries</h3>
+          <ul style="padding: 0; margin: 0;">
+            <li style="margin: -7px 0; padding: 0;"><a href="Aerospace.html">Aerospace</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="Agriculture.html">Agriculture</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="Education.html">Education</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="Insurance.html">Insurance</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="Life_sciences.html">Life sciences</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="Retail.html">Retail</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6" style="margin-left: -20px;">
+        <div class="vl-footer-widget">
+          <div class="space30 d-lg-none d-block"></div>
+          <h3>Contact Us</h3>
+          <ul style="padding: 0; margin: 0;">
+            <li style="margin: -7px 0; padding: 0;"><a href="tel:+11234567890"><img src="assets/img/icons/phn1.svg" alt="">+91 (40) 35055013</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="#"><img src="assets/img/icons/location1.svg" alt=""><div style="margin: -24px 0px 0px 32px;">Mindspace Survey No. 64, Building Number 9, 13th Floor, Madhapur, Hyderabad, Telangana 500081. </div></a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="mailto:Qunata AIsolution@com"><img src="assets/img/icons/email1.svg" alt="">info@quantaaitech.com</a></li>
+          </ul>
+          <div>
+            <div class="col-lg-3" style="margin-left: -20px;">
+              <div class="footer-logo1 logiAlign">
+                <ul class="iconArrange">
+                  <li ><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                  <li ><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                  <li ><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                  <li ><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+          </div>
+      </div>
+    </div>
+    <div class="space60"></div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="vl-copyright-area">
+          <p>© Copyright 2025 - Qunata AI Tech. All Right Reserved</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--===== FOOTER AREA ENDS =======-->
+
+<!--===== JS SCRIPT LINK =====-->
+<script src="assets/js/plugins/bootstrap.min.js"></script>
+<script src="assets/js/plugins/fontawesome.js"></script>
+<script src="assets/js/plugins/aos.js"></script>
+<script src="assets/js/plugins/magnific-popup.js"></script>
+<script src="assets/js/plugins/owlcarousel.min.js"></script>
+<script src="assets/js/plugins/slick-slider.js"></script>
+<script src="assets/js/plugins/nice-select.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

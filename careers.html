@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title> Quanta AI Tech - Agriculture</title>
+
+     <!--=====FAB ICON=======-->
+    <link rel="shortcut icon" href="assets/img/logo/fav-logo1.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+
+    <!--===== CSS LINK =======-->
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/aos.css">
+    <link rel="stylesheet" href="assets/css/plugins/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/plugins/mobile.css">
+    <link rel="stylesheet" href="assets/css/plugins/owlcarousel.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/sidebar.css">
+    <link rel="stylesheet" href="assets/css/plugins/slick-slider.css">
+    <link rel="stylesheet" href="assets/css/plugins/nice-select.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    
+    <!--=====  JS SCRIPT LINK =======-->
+    <script src="assets/js/plugins/jquery-3-7-1.min.js"></script>
+
+    <script>
+      function applyJob(button) {
+          let jobCard = button.closest(".jobCards");
+          let role = jobCard.querySelector(".roleCard h2")?.innerText || "N/A";
+          let location = jobCard.querySelector(".locatinCard p")?.innerText || "N/A";
+          let experience = jobCard.querySelector(".experience")?.innerText || "N/A";
+          let positions = jobCard.querySelector(".positions")?.innerText || "N/A";
+          let skills = jobCard.querySelector(".skills p")?.innerText || "N/A";
+
+          localStorage.setItem("jobRole", role);
+          localStorage.setItem("jobLocation", location);
+          localStorage.setItem("jobExperience", experience);
+          localStorage.setItem("jobPositions", positions);
+          localStorage.setItem("jobSkills", skills);
+
+          window.location.href = "confirmatonForm.html";
+      }
+
+      function filterJobs(category) {
+          // Remove active class from all categories
+          document.querySelectorAll('.mylist li').forEach(li => {
+              li.classList.remove('active');
+          });
+          
+          // Add active class to clicked category
+          event.target.classList.add('active');
+          
+          // Filter job cards
+          const jobCards = document.querySelectorAll('.jobCards');
+          jobCards.forEach(card => {
+              card.style.display = card.dataset.category === category ? 'flex' : 'none';
+          });
+      }
+  </script>
+</head>
+<style>
+  *{
+    font-family: 'Figtree', sans-serif; /* Use Figtree font */
+  }
+  body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+        .animate-slide-up {
+            animation: slideUp 0.8s ease-out;
+        }
+        .animate-scale {
+            transition: transform 0.3s ease;
+        }
+        .animate-scale:hover {
+            transform: scale(1.05);
+        }
+        .animate-rotate {
+            transition: transform 0.5s ease;
+        }
+        .animate-rotate:hover {
+            transform: rotate(5deg);
+        }
+        .animate-pulse {
+            animation: pulse 2s infinite;
+        }
+        .animate-bounce {
+            animation: bounce 1s infinite;
+        }
+        .job-link {
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+        }
+        .job-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: currentColor;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.3s ease;
+        }
+        .job-link:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideUp {
+            from { 
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to { 
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .logiAlign i{
+    margin-top: 9px;
+  }
+  .careertitles h1{
+    font-size: 65px;
+    line-height: 78px;
+    font-weight: 700;
+  }
+  .careertitles p{
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 500 !important;
+  }
+  /* Desktop Header Menu Alignment */
+  /* In your style section */
+@media (min-width: 992px) {
+  .carreMargin{
+    margin-top: -100px !important;
+  }
+  .carrerGap{
+    padding-bottom: 85px !important;
+  }
+  .lifeAtQuanta{
+    padding-bottom: 25px !important;
+  }
+  .subheadingLifetAtQuanta{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    padding-bottom: 35px !important;
+  }
+  .ourPara{
+    margin-top: 85px !important;
+    margin-bottom: 85px !important;
+    background:transparent;
+    width: 82%;
+    margin: auto;
+    border-radius: 10px;
+    /* border: 1px solid; */
+  }
+  .paraContent p{
+    text-align: justify;
+  }
+  .reLogo{
+    margin: 8px 0px 0px 50px;
+    width: 30px;
+    height: auto;
+    float: left;
+  }
+  .vl-logo{
+    margin-left: 90px;
+  }
+  .mblres{
+    display: none;
+  }
+  .vl-main-menu{
+    margin-left: 550px;
+  }
+  .vl-main-menu nav ul {
+    display: flex;
+    gap: 35px; /* Add gap between main menu items */
+    white-space: nowrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+  }
+
+  /* Reset submenu display */
+  .has-dropdown .sub-menu {
+    display: block !important;
+    flex-direction: column;
+    gap: 0; /* Remove gap for submenus */
+  }
+
+  /* Main menu list items */
+  .vl-main-menu ul > li {
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Submenu list items */
+  .has-dropdown .sub-menu li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+  }
+  .footer-logo1 .fa-brands
+  {
+    margin-top: 50px;
+  }
+  .footer
+  {
+    display: flex;
+    width: 82%;
+    margin: auto;
+  }
+  .footer .col-md-6 ul{
+    width: 300px;
+  }
+  .footer .col-md-6{
+    width: 20%;
+  }
+  .vl-footer-widget{
+    margin-left: -90px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Tablet adjustments */
+  .vl-footer-widget {
+    margin-bottom: 30px;
+  }
+
+  .col-lg-2, .col-lg-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .footer-logo1 ul {
+    justify-content: flex-start !important;
+  }
+  .vl-footer-widget {
+      margin-bottom: 30px;
+    }
+  
+    .col-lg-2, .col-lg-3 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  
+    .footer-logo1 ul {
+      justify-content: flex-start !important;
+    }
+}
+/* Footer Mobile Responsive */
+@media (max-width: 767px) {
+  .carrerGap{
+    padding-bottom: 60px;
+  }
+  #mainTitles h1{
+    font-size: 45px !important;
+    line-height: 40px !important;
+    padding: 0px 10px;
+    font-weight: 500 !important;
+  }
+  #mainTitles p{
+    font-size: 25px !important;
+    line-height: 35px !important;
+    padding: 0px 10px;
+    font-weight: 300 !important;
+  }
+  .paraContent{
+    padding: 25px;
+    text-align: justify;
+  }
+  .iconArrange{
+  display: flex;
+  justify-content:start;
+  gap: 5px;
+  margin-left: 6px !important;
+}
+  .reLogo{
+    margin: 8px 0px 0px 0px;
+    width: 30px;
+    height: auto;
+    float: left;
+  }
+  .mainLogo{
+    width: 120px;
+    margin:3px 0px 0px 38px;
+  }
+  .vl-logo{
+    margin-left: 35px;
+  }
+  .iconArrange{
+  display: flex;
+  justify-content:start;
+  gap: 5px;
+  margin-left: 6px !important;
+}
+
+.vl-footer1-section-area .row{
+      margin-left: -2px;
+    }
+  
+    .vl-footer-widget {
+      margin-bottom: 20px;
+    }
+  
+    .vl-footer-widget h3 {
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+  
+    .vl-footer-widget ul li {
+      padding: 0 !important;
+    }
+  
+    .vl-footer-widget ul li a {
+      font-size: 14px;
+    }
+  
+    /* Contact Section */
+    .vl-footer-widget ul li a img {
+      width: 18px;
+      margin-left: 5px;
+    }
+  
+    /* Address text adjustment */
+    .vl-footer-widget ul li a div {
+      line-height: 1.4;
+      font-size: 14px;
+    }
+  
+    /* Social Icons */
+    .footer-logo1{
+      margin:-15px 0px 0px -22px;
+    }
+    .footer-logo1 ul {
+      justify-content: center !important;
+      margin-top: 20px;
+    }
+  
+    .footer-logo1 ul li {
+      margin: 0 10px !important;
+    }
+  
+    /* Copyright */
+    .vl-copyright-area p {
+      text-align: center;
+      font-size: 14px;
+    }
+  
+    /* Grid adjustments */
+    .col-lg-3, .col-lg-2 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  
+    /* Remove negative margins */
+    .col-lg-3[style*="margin-left"] {
+      margin-left: 0 !important;
+    }
+}
+.iconArrange{
+  display: flex;
+  justify-content:start;
+  gap: 5px;
+  margin-left: 21px;
+}
+.iconArrange a i{
+  margin-top: 10px !important;
+}
+.vl-footer1-section-area a{
+  color: rgb(255, 255, 255) !important;
+  font-size: 14px !important;
+}
+.vl-footer1-section-area h3{
+  color: white !important;
+  font-weight: 500 !important;
+  font-size: 20px !important;
+}
+.vl-footer1-section-area{
+  background-color: #313030;
+  font-weight: 400 !important;
+}
+.vl-footer1-section-area .fa-brands{
+  color: black;
+}
+.vl-copyright-area p{
+  color: white !important;
+  font-size: 14px !important;
+}
+.vl-footer-widget img {
+  filter: brightness(0) invert(1);
+}
+
+
+#container{
+    height: 510px;
+    /* border: 1px solid black; */
+    background-image: url(assets/img/all-images/career/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 0px 25px 0px;
+}
+#mainTitles{
+  z-index: 10;
+  margin-top: 10%;
+  text-align: center !important;
+}
+#mainTitles h1{
+  font-size: 65px;
+  font-weight: 600;
+  line-height: 78px;
+}
+#mainTitles p{
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 500;
+}
+#openings{
+  background-color: #F1F1F1;
+}
+.jobCardsParent{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  background-color: #F1F1F1;
+}
+.jobCards{
+  background-color: white;
+  padding: 15px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 15px;
+  position: relative;
+  padding-bottom: 100px;
+}
+.jobCards h2{
+  font-size: 24px;
+  line-height: 34px;
+}
+.jobCards p{
+  font-size: 14px;
+  line-height: 20px;
+  color:rgb(51, 51, 51);
+}
+.locatinCard{
+  margin-left: 7%;
+}
+.underLine{
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.251);
+}
+.buttonCard{
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  /* margin: auto; */
+}
+.buttonCard button{
+  font-size: 14px;
+  line-height: 20px;
+  padding: 8.5px 28.5px;
+  color: white;
+  background-color: #194786;
+  border-radius: 25px;
+}
+.buttonCard button:hover{
+  transform: scale(1.08);
+}
+.experianceLayout{
+  display: flex;
+  justify-content: start;
+  gap: 30px;
+}
+
+/* video */
+.video-container {
+    background: #000;
+    overflow: hidden;
+}
+
+.thumbnail-overlay {
+    opacity: 1;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.bi-play-circle-fill {
+    width: fit-content;
+    margin: auto;
+    margin-top: 25px;
+    cursor: pointer;
+    opacity: 0.4;
+    font-size: 75px !important;
+    z-index: 10;
+    transition: all 0.3s ease-in-out; /* Added transition for all properties */
+    pointer-events: auto; /* Override parent's pointer-events: none */
+}
+
+.bi-play-circle-fill:hover {
+    scale: 1.1;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5)); /* Added shadow for better visibility */
+}
+
+  .forVideoText{
+      color: white;
+      font-weight: 400 !important;
+      font-size: 30px;
+      line-height: 40px;
+      color: rgba(255, 255, 255, 0.7) !important; 
+      text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+      letter-spacing: 0.05em;
+  }
+
+.video-container.playing .thumbnail-overlay {
+    opacity: 0;
+}
+
+video {
+    display: none;
+}
+
+.video-container.playing video {
+    display: block;
+}
+
+
+/* Responsive height control */
+@media (min-width: 1024px) {
+    .video-container {
+        aspect-ratio: 21/5; /* Even shorter height on large screens */
+    }
+}
+
+.bi-play-circle-fill {
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+video {
+    display: none;
+}
+
+.video-container.playing video {
+    display: block;
+}
+
+
+.carrerContainer{
+        width: 88%;
+        margin: auto;
+        margin-top: 50px;
+        padding: 40px 5px;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 100px;
+        /* border: 2px solid black; */
+    }
+    .marginbottom30{
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 36px;
+    }
+    .mylist{
+        background-color: white;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 13px;
+        font-size: 25px;
+        font-weight: 400;
+        padding: 10px;
+        border-radius: 50px;
+    }
+    .mylist li {
+        cursor: pointer;
+        padding: 10px 20px;
+        transition: all 0.3s ease;
+        font-size: 18px;
+        font-weight: 500;
+        background-color: #F1F1F1;
+        border-radius: 25px;
+    }
+    .mylist li:hover{
+      background-color: #194786;
+      color: white;
+    }
+    .mylist li.active {
+        background-color: #194786;
+        color: white;
+        border-radius: 25px;
+    }
+    @media (max-width: 767px) {
+    .currentOpenings{
+      margin-bottom: -80px;
+    }
+    .marginbottom30{
+      margin-bottom: -80px;
+    }
+
+    .carrerContainer{
+        width: 100% !important;
+        margin: auto;
+        margin-top: 50px;
+        padding: 40px 5px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 100px;
+        /* border: 2px solid black; */
+    }
+
+  .mylist {
+    width: 92% !important;
+    justify-content: flex-start;
+    overflow-x: auto;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For IE/Edge */
+  }
+  
+  .mylist::-webkit-scrollbar {
+    display: none; /* For Chrome/Safari/Opera */
+  }
+  
+  .mylist li {
+    flex-shrink: 0;
+  }
+}
+.currentOpenings{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+</style> 
+<body class="homepage1-body">
+<!--===== PRELOADER STARTS =======-->
+<div class="preloader">
+  <div class="loading-container">
+    <div class="loading"></div>
+    <div id="loading-icon"><img src="assets/img/logo/preloader.png" alt=""></div>
+  </div>
+</div>
+<!--===== PRELOADER ENDS =======-->
+
+<!--===== PROGRESS STARTS=======-->
+<div class="paginacontainer">
+     <div class="progress-wrap">
+       <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+       </svg>
+     </div>
+   </div>
+ <!--===== PROGRESS ENDS=======-->
+
+<!--=====HEADER START=======-->
+<header>
+  <div id="vl-header-sticky" class="vl-header-area vl-transparent-header">
+    <div class="container headerfix">
+      <div class="row align-items-center row-bg3 headerparent">
+        <!-- Logo -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <div class="reLogo"><img src="assets/img/logo/preloader2.jpeg" alt="Logo"></div>
+          <div class="vl-logo">
+            <a href="index.html"><img src="assets/img/logo/logo2.png" alt="Company Logo"></a>
+          </div>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="col-lg-7 d-none d-lg-block">
+          <div class="vl-main-menu text-center">
+            <nav class="vl-mobile-menu-active">
+              <ul>
+                <li class="has-dropdown">
+                  <a href="#">Products <i class="fa-solid fa-angle-down"></i></a>
+                  <ul class="sub-menu">
+                    <li><a href="AI_Agent.html">AI Agent</a></li>
+                    <li><a href="ERP_Solutions.html">ERP Solutions</a></li>
+                    <li><a href="cloud_computing.html">Cloud Computing</a></li>
+                    <li><a href="EMP.html">EMP</a></li>
+                    <li><a href="SCM.html">SCM</a></li>
+                  </ul>
+                </li>
+                <li class="has-dropdown">
+                  <a href="#">Services <i class="fa-solid fa-angle-down"></i></a>
+                  <ul class="sub-menu">
+                    <li><a href="ai_ml.html">AI/ML</a></li>
+                    <li><a href="block_chain.html">Blockchain</a></li>
+                    <li><a href="cybersecurity.html">Cybersecurity</a></li>
+                    <li><a href="iot.html">Internet of Things</a></li>
+                    <li><a href="support_service.html">Support Services</a></li>
+                    <li><a href="it_consulting.html">IT Consulting</a></li>
+                    <li><a href="data_resilience.html">Data Resilience</a></li>
+                    <li><a href="Data_analytics.html">Data Analytics</a></li>
+                    <li><a href="Digital_Marketing.html">Digital Marketing</a></li>
+                    <li><a href="API_management.html">API Management</a></li>
+                  </ul>
+                </li>
+                <li class="has-dropdown">
+                  <a href="#">Industries <i class="fa-solid fa-angle-down"></i></a>
+                  <ul class="sub-menu">
+                    <li><a href="Aerospace.html">Aerospace</a></li>
+                    <li><a href="Agriculture.html">Agriculture</a></li>
+                    <li><a href="Education.html">Education</a></li>
+                    <li><a href="Insurance.html">Insurance</a></li>
+                    <li><a href="Life_sciences.html">Life Sciences</a></li>
+                    <li><a href="Retail.html">Retail</a></li>
+                  </ul>
+                </li>
+                <li><a href="careers.html">Careers</a></li>
+                <li class="has-dropdown">
+                  <a href="#">Company <i class="fa-solid fa-angle-down"></i></a>
+                  <ul class="sub-menu">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-6 mblres">
+          <div class="vl-header-action-item d-block d-lg-none" style="margin-top: -50px;">
+            <button type="button" class="vl-offcanvas-toggle">
+              <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+         </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</header>
+ <!--=====HEADER END =======-->
+
+  <!--===== MOBILE HEADER =====-->
+<div class="vl-offcanvas">
+  <div class="vl-offcanvas-wrapper">
+      <div class="vl-offcanvas-header d-flex justify-content-between align-items-center mb-90">
+          <div class="vl-offcanvas-logo">
+            <img src="assets/img/logo/preloader.png" alt="Logo" class="reLogo">
+            <div class="mainLogo"><a href="index.html"><img src="assets/img/logo/logo1.png" alt="Quanta AI Tech"></a></div>
+          </div>
+          <div class="vl-offcanvas-close">
+              <button class="vl-offcanvas-close-toggle"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+      </div>
+      <div class="vl-offcanvas-menu d-lg-none mb-40">
+          <nav></nav>
+      </div>
+      <div class="space24"></div>
+      <div class="vl-offcanvas-info">
+          <span><a href="#"><i class="fa-solid fa-phone"></i>+91 (40) 35055013</a></span>
+          <span><a href="#"><i class="fa-solid fa-location-dot "></i> <div style="margin: -24px 0px 0px 20px;">Rajapushpa Summit, Manikonda, Hyderabad, Telangana 500032</div></a></span>
+          <span><a href="#"><i class="fa-solid fa-envelope"></i> info@quantaaitech.com</a></span>
+      </div>
+      <div class="space24"></div>
+      <div class="vl-offcanvas-social">
+          <h3 class="vl-offcanvas-sm-title">Follow Us</h3>
+          <div class="space8"></div>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a style="margin-left: 5px;" href="#"><i class="fab fa-twitter"></i></a>
+          <a style="margin-left: 5px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a style="margin-left: 5px;" href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+  </div>
+</div>
+<div class="vl-offcanvas-overlay"></div>
+<!--===== MOBILE HEADER  END=====-->
+<div id="container">
+  <div id="mainTitles">
+    <h1 class="text-white">The Blueprint of Your Career <br> Growth Can Start Here</h1>
+        <p class="text-gray-200">Let's grow together</p>
+  </div>
+</div>
+
+<div class="ourPara">
+  <div class="paraContent">
+    <p>We seek talented and motivated professionals to join us through rewarding careers, fellowships, and procurement contracts. We are committed to building a diverse, gender-balanced workforce that embodies our core values of efficiency, competence, and integrity. With headquarters in USA and offices worldwide, we welcome staff who are eager to work internationally and tackle global challenges. We offer a range of career opportunities, fostering professional growth in an inclusive environment. We promote continuous learning and career development to help staff achieve their goals.</p>
+  </div>
+</div>
+<!-- Current Openings -->
+
+<section id="openings" class="py-20">
+  <div class="max-w-7xl mx-auto">
+      <h2 class="text-3xl font-bold text-center currentOpenings">Current Openings</h2>
+      <div class="space-y-6">
+          <div class="carrerContainer">
+              <h1 class="marginbottom30">Categories</h1>
+              <ul class="mylist">
+                  <li onclick="filterJobs('technology')">Technology</li>
+                  <li onclick="filterJobs('design')">Design</li>
+                  <li onclick="filterJobs('marketing')">Marketing</li>
+                  <li onclick="filterJobs('business')">Business</li>
+                  <li onclick="filterJobs('bussAnn')">Bussiness Analytics</li>
+                  <li onclick="filterJobs('legal')">Legal</li>
+              </ul>
+          </div>
+        <div class="jobCardsParent">
+
+          <div class="jobCards" data-category="technology">
+            <div class="locatinCard"><p>India | Hyderabad</p></div>
+            <div class="roleCard"><h2>Sr. .Net Developer</h2></div>
+            <div class="experianceLayout">
+              <div class="experience"><p>Experience:<strong> 3-6 yrs</strong></p></div>
+              <div class="positions"><p>No of Positions:<strong> 1</strong></p></div>
+            </div>
+            <div><p>Skillset:</p></div>
+            <div class="underLine"></div>
+            <div class="skills"><p>ASP.NET, SQL Server, HTML, CSS, JavaScript, C#/VB.NET, Web API, .NET framework, IIS, jQuery, MVC</p></div>
+            <div class="buttonCard"><button onclick="applyJob(this)">APPLY</button></div>
+          </div>
+
+          <div class="jobCards" data-category="technology">
+            <div class="locatinCard"><p>India | Hyderabad</p></div>
+            <div class="roleCard"><h2>Frontend developer</h2></div>
+            <div class="experianceLayout">
+              <div class="experience"><p>Experience:<strong> 3-5 yrs</strong></p></div>
+              <div class="positions"><p>No of Positions:<strong> 2</strong></p></div>
+            </div>
+            <div><p>Skillset:</p></div>
+            <div class="underLine"></div>
+            <div class="skills"><p>HTML, CSS, JavaScript, jQuery, Material, Angular, Bootstrap, etc.,</p></div>
+            <div class="buttonCard"><button onclick="applyJob(this)">APPLY</button></div>
+          </div>
+
+          <div class="jobCards" data-category="technology">
+            <div class="locatinCard"><p>India | Hyderabad</p></div>
+            <div class="roleCard"><h2>iOS Developer</h2></div>
+            <div class="experianceLayout">
+              <div class="experience"><p>Experience:<strong> 3-5 yrs</strong></p></div>
+              <div class="positions"><p>No of Positions:<strong> 1</strong></p></div>
+            </div>
+            <div><p>Skillset:</p></div>
+            <div class="underLine"></div>
+            <div class="skills"><p>Swift, Objective C, C++,MVVM pattern, JSON, Flutter etc.,</p></div>
+            <div class="buttonCard"><button onclick="applyJob(this)">APPLY</button></div>
+          </div>
+
+          <div class="jobCards" data-category="technology">
+            <div class="locatinCard"><p>India | Hyderabad</p></div>
+            <div class="roleCard"><h2>Android Developer</h2></div>
+            <div class="experianceLayout">
+              <div class="experience"><p>Experience:<strong> min 2+ yrs</strong></p></div>
+              <div class="positions"><p>No of Positions:<strong> 1</strong></p></div>
+            </div>
+            <div><p>Skillset:</p></div>
+            <div class="underLine"></div>
+            <div class="skills"><p>Proven software development experience and Android skills development. • Proven working experience in Android app development. • Have published at least one original Android app.</p></div>
+            <div class="buttonCard"><button onclick="applyJob(this)">APPLY</button></div>
+          </div>
+
+          <div class="jobCards" data-category="technology">
+            <div class="locatinCard"><p>India | Hyderabad</p></div>
+            <div class="roleCard"><h2>Angular Developer</h2></div>
+            <div class="experianceLayout">
+              <div class="experience"><p>Experience:<strong> 3-6 yrs</strong></p></div>
+              <div class="positions"><p>No of Positions:<strong> 1</strong></p></div>
+            </div>
+            <div><p>Skillset:</p></div>
+            <div class="underLine"></div>
+            <div class="skills"><p>Experience with all levels of operation available to the front-end, such as from creating XHRs in vanilla JS to using a custom wrapper around resource • Experience with building the infrastructure for serving the front-end app and assets</p></div>
+            <div class="buttonCard"><button onclick="applyJob(this)">APPLY</button></div>
+          </div>
+
+          <div class="jobCards" data-category="technology">
+            <div class="locatinCard"><p>India | Hyderabad</p></div>
+            <div class="roleCard"><h2> React Developer</h2></div>
+            <div class="experianceLayout">
+              <div class="experience"><p>Experience:<strong> 2-5 years</strong></p></div>
+              <div class="positions"><p>No of Positions:<strong> 2</strong></p></div>
+            </div>
+            <div><p>Skillset:</p></div>
+            <div class="underLine"></div>
+            <div class="skills"><p>React.js, Next.js, JavaScript, TypeScript, Redux, Zustand, HTML, CSS, Tailwind CSS, Material UI, Webpack, Babel, Jest, Cypress, REST APIs, GraphQL, Node.js, Express.js, Git, GitHub, Firebase, OAuth, JWT Authentication, SSR, CSR, PWA</p></div>
+            <div class="buttonCard"><button onclick="applyJob(this)">APPLY</button></div>
+          </div>
+
+          <div class="jobCards" data-category="technology">
+            <div class="locatinCard"><p>India | Hyderabad</p></div>
+            <div class="roleCard"><h2>Senior Full Stack Developer</h2></div>
+            <div class="experianceLayout">
+              <div class="experience"><p>Experience:<strong> 4-8 years</strong></p></div>
+              <div class="positions"><p>No of Positions:<strong> 2</strong></p></div>
+            </div>
+            <div><p>Skillset:</p></div>
+            <div class="underLine"></div>
+            <div class="skills"><p>JavaScript, TypeScript, React.js, Angular, Vue.js, Node.js, Express.js, NestJS, ASP.NET, C#, Java, Spring Boot, SQL, PostgreSQL, MySQL, MongoDB, REST APIs, AWS, Azure, CI/CD, Git, Redis, RabbitMQ, WebSockets</p></div>
+            <div class="buttonCard"><button onclick="applyJob(this)">APPLY</button></div>
+          </div>
+
+          <div class="jobCards" data-category="technology">
+            <div class="locatinCard"><p>India | Hyderabad</p></div>
+            <div class="roleCard"><h2>DevOps Engineer</h2></div>
+            <div class="experianceLayout">
+              <div class="experience"><p>Experience:<strong> 4-8 years</strong></p></div>
+              <div class="positions"><p>No of Positions:<strong> 1</strong></p></div>
+            </div>
+            <div><p>Skillset:</p></div>
+            <div class="underLine"></div>
+            <div class="skills"><p>Docker, Kubernetes, AWS, Azure, Google Cloud, Terraform, Ansible, Jenkins, GitHub Actions, CI/CD, Linux, Bash, Python, Prometheus, Grafana, ELK Stack, Nginx, Apache, Helm, ArgoCD, GitOps, Monitoring & Logging</p></div>
+            <div class="buttonCard"><button onclick="applyJob(this)">APPLY</button></div>
+          </div>
+
+          <div class="jobCards" data-category="technology">
+            <div class="locatinCard"><p>India | Hyderabad</p></div>
+            <div class="roleCard"><h2>Data Engineer</h2></div>
+            <div class="experianceLayout">
+              <div class="experience"><p>Experience:<strong> 3-6 years</strong></p></div>
+              <div class="positions"><p>No of Positions:<strong> 2</strong></p></div>
+            </div>
+            <div><p>Skillset:</p></div>
+            <div class="underLine"></div>
+            <div class="skills"><p>Python, SQL, Apache Spark, Hadoop, Airflow, AWS Glue, Redshift, BigQuery, Snowflake, ETL Pipelines, Kafka, Databricks, Data Lakes, Pandas, NumPy, Terraform, Docker, Kubernetes, Git</p></div>
+            <div class="buttonCard"><button onclick="applyJob(this)">APPLY</button></div>
+          </div>
+
+          <div class="jobCards" data-category="technology">
+            <div class="locatinCard"><p>India | Hyderabad</p></div>
+            <div class="roleCard"><h2>Cybersecurity Engineer</h2></div>
+            <div class="experianceLayout">
+              <div class="experience"><p>Experience:<strong> 4-8 years</strong></p></div>
+              <div class="positions"><p>No of Positions:<strong> 2</strong></p></div>
+            </div>
+            <div><p>Skillset:</p></div>
+            <div class="underLine"></div>
+            <div class="skills"><p>Kali Linux, Metasploit, Burp Suite, Nmap, Wireshark, SIEM, SOC, OWASP, Penetration Testing, Ethical Hacking, Cloud Security, Zero Trust Architecture, Web Security, Network Security, Python, PowerShell, CEH, CISSP</p></div>
+            <div class="buttonCard"><button onclick="applyJob(this)">APPLY</button></div>
+          </div>
+
+          <div class="jobCards" data-category="technology">
+            <div class="locatinCard"><p>India | Hyderabad</p></div>
+            <div class="roleCard"><h2>Embedded Systems Engineer</h2></div>
+            <div class="experianceLayout">
+              <div class="experience"><p>Experience:<strong> 3-6 years</strong></p></div>
+              <div class="positions"><p>No of Positions:<strong> 1</strong></p></div>
+            </div>
+            <div><p>Skillset:</p></div>
+            <div class="underLine"></div>
+            <div class="skills"><p>C, C++, Embedded C, RTOS, ARM Cortex, STM32, Raspberry Pi, Microcontrollers, IoT Protocols (MQTT, CoAP), PCB Design, VHDL, FPGA, CAN, I2C, SPI, Bluetooth, Zigbee</p></div>
+            <div class="buttonCard"><button onclick="applyJob(this)">APPLY</button></div>
+          </div>
+
+          <div class="jobCards" data-category="marketing">
+            <div class="locatinCard"><p>India | Hyderabad</p></div>
+            <div class="roleCard"><h2>Product Marketing Manager</h2></div>
+            <div class="experianceLayout">
+              <div class="experience"><p>Experience:<strong> 3-5 years</strong></p></div>
+              <div class="positions"><p>No of Positions:<strong> 1</strong></p></div>
+            </div>
+            <div><p>Skillset:</p></div>
+            <div class="underLine"></div>
+            <div class="skills"><p>Market research, GTM strategy, product positioning, branding, demand generation, content marketing, SEO, PPC campaigns, CRM (Salesforce, HubSpot), Google Analytics</p></div>
+            <div class="buttonCard"><button onclick="applyJob(this)">APPLY</button></div>
+          </div>
+
+          <div class="jobCards" data-category="design">
+            <div class="locatinCard"><p>India | Hyderabad</p></div>
+            <div class="roleCard"><h2>UX/UI Designer</h2></div>
+            <div class="experianceLayout">
+              <div class="experience"><p>Experience:<strong> 3-5 years</strong></p></div>
+              <div class="positions"><p>No of Positions:<strong> 1</strong></p></div>
+            </div>
+            <div><p>Skillset:</p></div>
+            <div class="underLine"></div>
+            <div class="skills"><p>UProficiency user research, wireframing, prototyping, UI design, UX design, design systems, usability testing, Figma, Adobe XD, interaction design</p></div>
+            <div class="buttonCard"><button onclick="applyJob(this)">APPLY</button></div>
+          </div>
+
+          <div class="jobCards" data-category="business">
+            <div class="locatinCard"><p>India | Hyderabad</p></div>
+            <div class="roleCard"><h2>Compliance Officer</h2></div>
+            <div class="experianceLayout">
+              <div class="experience"><p>Experience:<strong> 3-5 years</strong></p></div>
+              <div class="positions"><p>No of Positions:<strong> 1</strong></p></div>
+            </div>
+            <div><p>Skillset:</p></div>
+            <div class="underLine"></div>
+            <div class="skills"><p>Regulatory compliance, risk assessment, internal auditing, policy development, legal research, AML/KYC, data privacy (GDPR, CCPA), corporate governance, reporting & documentation, compliance training</p></div>
+            <div class="buttonCard"><button onclick="applyJob(this)">APPLY</button></div>
+          </div>
+
+          <div class="jobCards" data-category="business">
+            <div class="locatinCard"><p>India | Hyderabad</p></div>
+            <div class="roleCard"><h2>Deputy Compliance Officer</h2></div>
+            <div class="experianceLayout">
+              <div class="experience"><p>Experience:<strong> 3-5 years</strong></p></div>
+              <div class="positions"><p>No of Positions:<strong> 1</strong></p></div>
+            </div>
+            <div><p>Skillset:</p></div>
+            <div class="underLine"></div>
+            <div class="skills"><p>Regulatory compliance, risk assessment, internal audits, policy implementation, AML/KYC, data privacy (GDPR, CCPA), corporate governance, compliance monitoring, reporting & documentation, stakeholder communication</p></div>
+            <div class="buttonCard"><button onclick="applyJob(this)">APPLY</button></div>
+          </div>
+
+          <div class="jobCards" data-category="business">
+            <div class="locatinCard"><p>India | Hyderabad</p></div>
+            <div class="roleCard"><h2>Legal Officer</h2></div>
+            <div class="experianceLayout">
+              <div class="experience"><p>Experience:<strong> 3-5 years</strong></p></div>
+              <div class="positions"><p>No of Positions:<strong> 1</strong></p></div>
+            </div>
+            <div><p>Skillset:</p></div>
+            <div class="underLine"></div>
+            <div class="skills"><p>Legal research, contract drafting, regulatory compliance, corporate law, litigation support, risk management, intellectual property law, dispute resolution, legal documentation, stakeholder communication</p></div>
+            <div class="buttonCard"><button onclick="applyJob(this)">APPLY</button></div>
+          </div>
+
+          <div class="jobCards" data-category="technology">
+            <div class="locatinCard"><p>India | Hyderabad</p></div>
+            <div class="roleCard"><h2>Next.js Developer</h2></div>
+            <div class="experianceLayout">
+              <div class="experience"><p>Experience:<strong> 3-5 years</strong></p></div>
+              <div class="positions"><p>No of Positions:<strong> 1</strong></p></div>
+            </div>
+            <div><p>Skillset:</p></div>
+            <div class="underLine"></div>
+            <div class="skills"><p>Next.js, React.js, TypeScript, JavaScript (ES6+), SSR (Server-Side Rendering), SSG (Static Site Generation), API routes, Tailwind CSS, Redux, React Query, SEO optimization, Node.js</p></div>
+            <div class="buttonCard"><button onclick="applyJob(this)">APPLY</button></div>
+          </div>
+
+          <div class="jobCards" data-category="marketing">
+            <div class="locatinCard"><p>India | Hyderabad</p></div>
+            <div class="roleCard"><h2>CRM Manager</h2></div>
+            <div class="experianceLayout">
+              <div class="experience"><p>Experience:<strong> 3-5 years</strong></p></div>
+              <div class="positions"><p>No of Positions:<strong> 1</strong></p></div>
+            </div>
+            <div><p>Skillset:</p></div>
+            <div class="underLine"></div>
+            <div class="skills"><p>CRM strategy, customer segmentation, data analytics, lead nurturing, marketing automation, Salesforce, HubSpot, campaign management, retention strategies, A/B testing, reporting & insights</p></div>
+            <div class="buttonCard"><button onclick="applyJob(this)">APPLY</button></div>
+          </div>
+
+          <div class="jobCards" data-category="marketing">
+            <div class="locatinCard"><p>India | Hyderabad</p></div>
+            <div class="roleCard"><h2>Marketing Manager</h2></div>
+            <div class="experianceLayout">
+              <div class="experience"><p>Experience:<strong> 3-5 years</strong></p></div>
+              <div class="positions"><p>No of Positions:<strong> 1</strong></p></div>
+            </div>
+            <div><p>Skillset:</p></div>
+            <div class="underLine"></div>
+            <div class="skills"><p>Marketing strategy, brand management, digital marketing, content marketing, SEO, PPC campaigns, social media marketing, lead generation, CRM (Salesforce, HubSpot), data analytics & reporting</p></div>
+            <div class="buttonCard"><button onclick="applyJob(this)">APPLY</button></div>
+          </div>
+
+          <div class="jobCards" data-category="technology">
+            <div class="locatinCard"><p>India | Hyderabad</p></div>
+            <div class="roleCard"><h2>Tableau Developer</h2></div>
+            <div class="experianceLayout">
+              <div class="experience"><p>Experience:<strong> 3-5 years</strong></p></div>
+              <div class="positions"><p>No of Positions:<strong> 1</strong></p></div>
+            </div>
+            <div><p>Skillset:</p></div>
+            <div class="underLine"></div>
+            <div class="skills"><p>Tableau Desktop, Tableau Server, data visualization, dashboard development, data blending, ETL processes, SQL, data modeling, performance optimization, calculated fields, Tableau Prep</p></div>
+            <div class="buttonCard"><button onclick="applyJob(this)">APPLY</button></div>
+          </div>
+
+          <div class="jobCards" data-category="technology">
+            <div class="locatinCard"><p>India | Hyderabad</p></div>
+            <div class="roleCard"><h2>Power BI Developer</h2></div>
+            <div class="experianceLayout">
+              <div class="experience"><p>Experience:<strong> 3-5 years</strong></p></div>
+              <div class="positions"><p>No of Positions:<strong> 1</strong></p></div>
+            </div>
+            <div><p>Skillset:</p></div>
+            <div class="underLine"></div>
+            <div class="skills"><p>Power BI Desktop, Power BI Service, DAX, data modeling, dashboard development, Power Query, SQL, ETL processes, data visualization, performance optimization, report automation</p></div>
+            <div class="buttonCard"><button onclick="applyJob(this)">APPLY</button></div>
+          </div>
+
+        </div>
+      </div>
+  </div>
+</section>
+<!-- Benefits Section -->
+<section class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center carrerGap">Employee Benefits</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="text-center">
+              <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <img src="assets/img/all-images/career/whyjoinus/Rectangle 126.svg" alt="">
+              </div>
+              <h3 class="text-xl font-semibold mb-2">Caring for families</h3>
+              <p class="text-gray-600">Caring for families with 20 weeks for mothers and 6 for adoptive parents.</p>
+          </div>
+          <div class="text-center">
+              <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <img src="assets/img/all-images/career/whyjoinus/Rectangle 127.svg" alt="">
+              </div>
+              <h3 class="text-xl font-semibold mb-2">Employee health</h3>
+              <p class="text-gray-600">Quanta provides health coverage and paid leave for all full-time employees.</p>
+          </div>
+          <div class="text-center">
+              <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <img src="assets/img/all-images/career/whyjoinus/Rectangle 128.svg" alt="">
+              </div>
+              <h3 class="text-xl font-semibold mb-2">Parental leave</h3>
+              <p class="text-gray-600">Quanta offers 20 weeks of leave for mothers and 6 for adoptive parents.</p>
+          </div>
+          <div class="text-center">
+              <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <img src="assets/img/all-images/career/whyjoinus/Rectangle 129.svg" alt="">
+              </div>
+              <h3 class="text-xl font-semibold mb-2">Learning & Development</h3>
+              <p class="text-gray-600">Tailored development and access to thousands of LinkedIn courses.</p>
+          </div>
+
+          <div class="text-center">
+            <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <img src="assets/img/all-images/career/whyjoinus/Rectangle 122.svg" alt="">
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Employee first approach</h3>
+            <p class="text-gray-600">Because our people are our greatest strength</p>
+        </div>
+        <div class="text-center">
+            <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <img src="assets/img/all-images/career/whyjoinus/Rectangle 123.svg" alt="">
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Fast track growth</h3>
+            <p class="text-gray-600">Career acceleration for high-performing individual</p>
+        </div>
+        <div class="text-center">
+            <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <img src="assets/img/all-images/career/whyjoinus/Rectangle 124.svg" alt="">
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Tenure Reward Bonus</h3>
+            <p class="text-gray-600">Rewarding commitment with long-term benefits</p>
+        </div>
+        <div class="text-center">
+            <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <img src="assets/img/all-images/career/whyjoinus/Rectangle 125.svg" alt="">
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Birthday vacation</h3>
+            <p class="text-gray-600">Take an additional day’s holiday to celebrate your big day</p>
+        </div>
+      </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center lifeAtQuanta carrerGap">Life At Quanta</h2>
+      <h4 class="text-center subheadingLifetAtQuanta">Careers, culture, and community at Quanta</h4>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="shadow-sm animate-scale">
+            <img src="assets\img\all-images\career\lifeAtQuanta\SM908044.jpg" alt="">
+          </div>
+          <div class="shadow-sm animate-scale">
+            <img src="assets\img\all-images\career\lifeAtQuanta\SM384518.jpg" alt="">
+          </div>
+          <div class="shadow-sm animate-scale">
+            <img src="assets/img/all-images/career/lifeAtQuanta/SM946533.jpg" alt="">
+          </div>
+          <div class="shadow-sm animate-scale">
+            <img src="assets\img\all-images\career\lifeAtQuanta\SM519797.jpg" alt="">
+          </div>
+          <div class="shadow-sm animate-scale">
+            <img src="assets\img\all-images\career\lifeAtQuanta\SM940864.jpg" alt="">
+          </div>
+          <div class="shadow-sm animate-scale">
+            <img src="assets\img\all-images\career\lifeAtQuanta\SM756050.jpg" alt="">
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Application Process -->
+<section class="py-12 bg-white">
+  <div class="w-full px-0">
+      <h2 class="text-3xl font-bold text-center carrerGap">Experience Qunata's unique work and culture that is like no other</h2>
+      <div class="w-full max-w-screen-2xl mx-auto">
+          <!-- Video Container -->
+          <div class="video-container relative bg-black w-full aspect-[21/9]">
+              <!-- Thumbnail Overlay -->
+              <div class="thumbnail-overlay absolute inset-0 w-full h-full flex flex-col items-center justify-center transition-opacity duration-300">
+                  <img src="assets/img/all-images/career/thubline/WhatsApp Image 2025-03-29 at 17.16.56_7577a0de.jpg" alt="Video thumbnail" class="absolute inset-0 w-full h-full object-cover">
+                  <div class="absolute inset-0 bg-black/40 backdrop-blur-[2px]"></div>
+                  
+                  <!-- Play Button & Text -->
+                  <div class="relative z-10 text-center space-y-4 flex flex-col items-center">
+                    <h3 class="px-6 py-2 forVideoText">
+                      Hear It From Our People
+                    <i class="bi bi-play-circle-fill text-white text-5xl block"></i>
+                </div>
+                
+              </div>
+
+              <!-- Video Element -->
+              <video class="w-full h-full object-cover" muted playsinline>
+                  <source src="assets/video/WhatsApp Video 2025-03-29 at 16.27.33_05fb2451.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+              </video>
+          </div>
+      </div>
+  </div>
+</section>
+
+<script>
+const videoContainer = document.querySelector('.video-container');
+const video = document.querySelector('video');
+
+// Click to play
+videoContainer.addEventListener('click', function() {
+    if(video.paused) {
+        video.play();
+        videoContainer.classList.add('playing');
+    } else {
+        video.pause();
+        videoContainer.classList.remove('playing');
+    }
+});
+
+// Spacebar control
+document.addEventListener('keydown', (e) => {
+    if(e.code === 'Space') {
+        e.preventDefault();
+        video.paused ? video.play() : video.pause();
+        videoContainer.classList.toggle('playing');
+    }
+});
+</script>
+
+<!-- Contact Section -->
+<section class="py-20 bg-gray-900 text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold mb-8">Have Questions?</h2>
+      <p class="text-xl text-gray-300 mb-8">Our recruitment team is here to help you with any questions about our open positions or application process.</p>
+      <a href="mailto:careers@company.com" class="inline-block bg-white text-gray-900 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition duration-300">
+          <i class="fas fa-envelope mr-2"></i>
+          Contact Recruiting Team
+      </a>
+  </div>
+</section>
+
+<!--===== FOOTER AREA STARTS =======-->
+<div class="vl-footer1-section-area sp8">
+  <div class="container">
+    <div class="row footer">
+      <div class="col-lg-2 col-md-6">
+        <div class="space30 d-md-none d-block"></div>
+        <div class="vl-footer-widget quickLinks">
+          <h3 style="padding: 0; margin: 0;">Quick Links</h3>
+          <ul>
+            <li style="margin: -7px 0; padding: 0;"><a href="about.html">About Us</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="service.html">It Solution</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="careers.html">Our Careers</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="#">Pricing Plan</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div> 
+      <div class="col-lg-2 col-md-6">
+        <div class="space30 d-md-none d-block"></div>
+        <div class="vl-footer-widget">
+          <h3 style="padding: 0; margin: 0;">Products</h3>
+          <ul class="sub-menu">
+            <li style="margin: -7px 0; padding: 0;"><a href="AI_Agent.html">AI Agent</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="ERP_Solutions.html">ERP Solutions</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="cloud_computing.html">Cloud Computing</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="EMP.html">EMP</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="SCM.html">SCM</a></li>
+          </ul>
+        </div>
+      </div> 
+
+      <div class="col-lg-3 col-md-6">
+        <div class="vl-footer-widget">
+          <div class="space30 d-lg-none d-block"></div>
+          <h3>Services</h3>
+          <ul style="padding: 0; margin: 0;">
+            <li style="margin: -7px 0; padding: 0;"><a href="ai_ml.html">AI/ML</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="block_chain.html">Blockchain</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="cybersecurity.html">Cybersecurity</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="iot.html">Internet of Things</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="support_service.html">Support Services</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="it_consulting.html">IT Consulting</a></li>
+             <li style="margin: -7px 0; padding: 0;"><a href="data_resilience.html">Data Resilience</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="Data_analytics.html">Data analytics</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="Digital_Marketing.html">Digital Marketing</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="API_management.html">API management</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="vl-footer-widget">
+          <div class="space30 d-lg-none d-block"></div>
+          <h3>Industries</h3>
+          <ul style="padding: 0; margin: 0;">
+            <li style="margin: -7px 0; padding: 0;"><a href="Aerospace.html">Aerospace</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="Agriculture.html">Agriculture</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="Education.html">Education</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="Insurance.html">Insurance</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="Life_sciences.html">Life sciences</a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="Retail.html">Retail</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6" style="margin-left: -20px;">
+        <div class="vl-footer-widget">
+          <div class="space30 d-lg-none d-block"></div>
+          <h3>Contact Us</h3>
+          <ul>
+            <li style="margin: -7px 0; padding: 0;"><a href="tel:+11234567890"><img src="assets/img/icons/phn1.svg" alt=""><div style="margin: -20px 0px 0px 32px;">+91 (40) 35055013</div></a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="#"><img src="assets/img/icons/location1.svg" alt=""><div style="margin: -24px 0px 0px 32px;">Mindspace Survey No. 64, Building Number 9, 13th Floor, Madhapur, Hyderabad, Telangana 500081. </div></a></li>
+            <li style="margin: -7px 0; padding: 0;"><a href="mailto:Qunata AIsolution@com"><img src="assets/img/icons/email1.svg" alt=""><div style="margin: -20px 0px 0px 32px;">info@quantaaitech.com</div></a></li>
+          </ul>
+          <div>
+            <div class="col-lg-3" style="margin-left: -20px;">
+              <div class="footer-logo1 logiAlign">
+                <ul class="iconArrange">
+                  <li ><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                  <li ><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                  <li ><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                  <li ><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+          </div>
+      </div>
+    </div>
+    <div class="space60"></div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="vl-copyright-area">
+          <p>© Copyright 2025 - Qunata AI Tech. All Right Reserved</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--===== FOOTER AREA ENDS =======-->
+
+<!--===== JS SCRIPT LINK =======-->
+<script src="assets/js/plugins/bootstrap.min.js"></script>
+<script src="assets/js/plugins/fontawesome.js"></script>
+<script src="assets/js/plugins/aos.js"></script>
+<script src="assets/js/plugins/counter.js"></script>
+<script src="assets/js/plugins/gsap.min.js"></script>
+<script src="assets/js/plugins/ScrollTrigger.min.js"></script>
+<script src="assets/js/plugins/Splitetext.js"></script>
+<script src="assets/js/plugins/SmoothScroll.js"></script>
+<script src="assets/js/plugins/sidebar.js"></script>
+<script src="assets/js/plugins/magnific-popup.js"></script>
+<script src="assets/js/plugins/mobilemenu.js"></script>
+<script src="assets/js/plugins/owlcarousel.min.js"></script>
+<script src="assets/js/plugins/nice-select.js"></script>
+<script src="assets/js/plugins/waypoints.js"></script>
+<script src="assets/js/plugins/slick-slider.js"></script>
+<script src="assets/js/plugins/circle-progress.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Your Job</title>
+    <script>
+        function applyJob(button) {
+            let jobCard = button.closest(".jobCards");
+            let role = jobCard.querySelector(".roleCard h2")?.innerText || "N/A";
+            let location = jobCard.querySelector(".locatinCard p")?.innerText || "N/A";
+            let experience = jobCard.querySelector(".experience")?.innerText || "N/A";
+            let positions = jobCard.querySelector(".positions")?.innerText || "N/A";
+            let skills = jobCard.querySelector(".skills p")?.innerText || "N/A";
+
+            localStorage.setItem("jobRole", role);
+            localStorage.setItem("jobLocation", location);
+            localStorage.setItem("jobExperience", experience);
+            localStorage.setItem("jobPositions", positions);
+            localStorage.setItem("jobSkills", skills);
+
+            window.location.href = "confirmatonForm.html";
+        }
+
+        function filterJobs(category) {
+            // Remove active class from all categories
+            document.querySelectorAll('.mylist li').forEach(li => {
+                li.classList.remove('active');
+            });
+            
+            // Add active class to clicked category
+            event.target.classList.add('active');
+            
+            // Filter job cards
+            const jobCards = document.querySelectorAll('.jobCards');
+            jobCards.forEach(card => {
+                card.style.display = card.dataset.category === category ? 'flex' : 'none';
+            });
+        }
+    </script>
+</head>
+<style>
+    .container{
+        background-color: rgba(220, 220, 220, 0.296);
+    }
+    .carrerContainer{
+        border: 3px solid black;
+        width: 80%;
+        margin: auto;
+        margin-top: 50px;
+        padding: 40px 0px;
+        text-align: center;
+    }
+    .marginbottom30{
+        margin-bottom: 50px;
+    }
+    .mylist{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
+        font-size: 25px;
+        font-weight: 400;
+        padding: 0;
+    }
+    .mylist li {
+        cursor: pointer;
+        padding: 5px 15px;
+        transition: all 0.3s ease;
+    }
+    .mylist li.active {
+        background-color: #194786;
+        color: white;
+        border-radius: 25px;
+    }
+    #openings{
+        margin-bottom: 100px;
+        background-color: #F1F1F1;
+    }
+    .jobCardsParent{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        background-color: #F1F1F1;
+        padding: 20px 0;
+    }
+    .jobCards{
+        background-color: white;
+        padding: 15px;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 15px;
+        position: relative;
+        padding-bottom: 100px;
+    }
+    .jobCards h2{
+        font-size: 24px;
+        line-height: 34px;
+    }
+    .jobCards p{
+        font-size: 14px;
+        line-height: 20px;
+        color:rgb(51, 51, 51);
+    }
+    .locatinCard{
+        margin-left: 7%;
+    }
+    .underLine{
+        height: 1px;
+        background-color: rgba(0, 0, 0, 0.251);
+    }
+    .buttonCard{
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .buttonCard button{
+        font-size: 14px;
+        line-height: 20px;
+        padding: 8.5px 28.5px;
+        color: white;
+        background-color: #194786;
+        border-radius: 25px;
+        cursor: pointer;
+        border: none;
+    }
+    .buttonCard button:hover{
+        transform: scale(1.08);
+    }
+    .experianceLayout{
+        display: flex;
+        justify-content: start;
+        gap: 30px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="carrerContainer">
+            <h1 class="marginbottom30">Career Categories</h1>
+            <ul class="mylist">
+                <li onclick="filterJobs('technology')">Technology</li>
+                <li onclick="filterJobs('design')">Design</li>
+                <li onclick="filterJobs('marketing')">Marketing</li>
+                <li onclick="filterJobs('business')">Business</li>
+            </ul>
+        </div>
+    </div>
+
+    <section id="openings" class="py-20">
+        <div class="max-w-7xl mx-auto">
+            <div class="space-y-6">
+              <div class="jobCardsParent">
+
+                <!-- Technology Jobs -->
+                <div class="jobCards" data-category="technology">
+                  <div class="locatinCard"><p>India | Hyderabad</p></div>
+                  <div class="roleCard"><h2>Sr. .Net Developer</h2></div>
+                  <div class="experianceLayout">
+                    <div class="experience"><p>Experience:<strong> 3-6 yrs</strong></p></div>
+                    <div class="positions"><p>No of Positions:<strong> 1</strong></p></div>
+                  </div>
+                  <div><p>Skillset:</p></div>
+                  <div class="underLine"></div>
+                  <div class="skills"><p>ASP.NET, SQL Server, HTML, CSS, JavaScript, C#/VB.NET, Web API, .NET framework, IIS, jQuery, MVC</p></div>
+                  <div class="buttonCard"><button onclick="applyJob(this)">APPLY</button></div>
+                </div>
+
+                <!-- Design Jobs -->
+                <div class="jobCards" data-category="design">
+                  <div class="locatinCard"><p>India | Hyderabad</p></div>
+                  <div class="roleCard"><h2>UX/UI Designer</h2></div>
+                  <div class="experianceLayout">
+                    <div class="experience"><p>Experience:<strong> 3-5 yrs</strong></p></div>
+                    <div class="positions"><p>No of Positions:<strong> 1</strong></p></div>
+                  </div>
+                  <div><p>Skillset:</p></div>
+                  <div class="underLine"></div>
+                  <div class="skills"><p>User research, wireframing, prototyping, UI design, UX design, design systems, usability testing, Figma, Adobe XD</p></div>
+                  <div class="buttonCard"><button onclick="applyJob(this)">APPLY</button></div>
+                </div>
+
+                <!-- Add remaining job cards with appropriate data-category attributes -->
+                <!-- Example structure for other jobs -->
+                <div class="jobCards" data-category="technology">
+                  <!-- Job content -->
+                </div>
+
+              </div>
+            </div>
+        </div>
+      </section>
+</body>
+</html>
